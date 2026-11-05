@@ -184,22 +184,14 @@ def obter_literal(sujeito, propriedade):
 # ============================================================
 # 4. CONSULTA 1 - ENCONTRAR ENTIDADES FOLCLÓRICAS
 # ------------------------------------------------------------
-# Padrão: (None, rdf:type, classe) -> objeto fixo, o resto livre,
-#         repetido para cada subclasse de EntidadeFolclorica.
 # Busca: todos os indivíduos que são de alguma das 6 subclasses
 #        de classificação (Assombração, Encantado, Guardião...).
-# Resultado esperado: as 32 entidades principais, em ordem
-#        alfabética pelo identificador. As 46 referências externas
-#        não aparecem, pois só têm o tipo EntidadeFolclorica.
 # ============================================================
 
 print("\n" + "=" * 60)
 print("CONSULTA 1 - ENTIDADES FOLCLÓRICAS")
 print("=" * 60)
 
-# EntidadeFolclorica fica de fora de propósito: as 46 referências
-# externas só têm esse tipo genérico, e aqui listamos as 32 fichas
-# completas, que têm uma das subclasses abaixo.
 classes_entidade = [
     EX.Assombracao,
     EX.Encantado,
@@ -234,11 +226,7 @@ print(
 # ============================================================
 # 5. CONSULTA 2 - ENTIDADES ASSOCIADAS À PARAÍBA
 # ------------------------------------------------------------
-# Padrão: (None, ex:possuiEstado, ex:Estado_pb) -> predicado e
-#         objeto fixos; o sujeito é a incógnita.
 # Busca: quem possui o estado Paraíba.
-# Resultado esperado: 32 entidades (todas as fichas coletadas,
-#        pois a coleta filtrou justamente por PB).
 # ============================================================
 
 print("\n" + "=" * 60)
@@ -260,10 +248,7 @@ for sujeito, predicado, objeto in resultados:
 # ============================================================
 # 6. CONSULTA 3 - ENTIDADES ASSOCIADAS À CAATINGA
 # ------------------------------------------------------------
-# Padrão: (None, ex:associadaABioma, ex:Bioma_caatinga) ->
-#         predicado e objeto fixos.
 # Busca: entidades ligadas ao bioma Caatinga.
-# Resultado esperado: 21 entidades (um subconjunto das 32).
 # ============================================================
 
 print("\n" + "=" * 60)
@@ -285,13 +270,7 @@ for sujeito, predicado, objeto in resultados:
 # ============================================================
 # 7. CONSULTA 4 - RELAÇÕES DO TIPO RIVAL
 # ------------------------------------------------------------
-# Padrão: (None, ex:tipoRelacao, None) -> só o predicado fixo;
-#         depois, para cada relação "rival", dois padrões com
-#         sujeito e predicado fixos: (relacao, entidadeOrigem, None)
-#         e (relacao, entidadeDestino, None).
 # Busca: relações cujo tipo é "rival", com origem, destino e motivo.
-# Resultado esperado: 8 relações, cada uma com origem, destino e
-#        o motivo registrado pela API.
 # ============================================================
 
 print("\n" + "=" * 60)
@@ -339,12 +318,7 @@ for relacao, predicado, tipo in relacoes_rivais:
 # ============================================================
 # 8. CONSULTA 5 - CITAÇÕES E AUTORES
 # ------------------------------------------------------------
-# Padrão: (None, rdf:type, ex:Citacao) -> objeto fixo; depois,
-#         para cada citação, padrões com sujeito e predicado
-#         fixos (autor, obra e texto).
 # Busca: todas as citações com autor, obra e texto.
-# Resultado esperado: 49 citações. Campos ausentes aparecem
-#        como "Não informado".
 # ============================================================
 
 print("\n" + "=" * 60)
@@ -381,12 +355,7 @@ for citacao, predicado, objeto in citacoes:
 # ============================================================
 # 9. CONSULTA 6 - TUDO SOBRE UMA ENTIDADE (SUJEITO FIXO)
 # ------------------------------------------------------------
-# Padrão: (ex:mula-sem-cabeca, None, None) -> só o sujeito fixo;
-#         predicado e objeto são as incógnitas.
 # Busca: todas as informações registradas sobre a Mula Sem Cabeça.
-# Resultado esperado: uma lista de pares propriedade -> valor
-#        (nome, classificação, nível de ameaça, estados, biomas,
-#        fontes etc.). Textos longos são cortados em 70 caracteres.
 # ============================================================
 
 print("\n" + "=" * 60)
@@ -411,13 +380,8 @@ for sujeito, predicado, objeto in sorted(
 # ============================================================
 # 10. CONSULTA 7 - QUEM APONTA PARA A CAATINGA (OBJETO FIXO)
 # ------------------------------------------------------------
-# Padrão: (None, None, ex:Bioma_caatinga) -> só o objeto fixo;
-#         sujeito e predicado são as incógnitas.
 # Busca: qualquer entidade ligada à Caatinga, por qualquer
 #        propriedade (bioma e bioma principal).
-# Resultado esperado: 36 ligações, sendo 21 por associadaABioma e
-#        15 por associadaABiomaPrincipal. Mostra a contagem por
-#        propriedade e não repete as 36 linhas.
 # ============================================================
 
 print("\n" + "=" * 60)
