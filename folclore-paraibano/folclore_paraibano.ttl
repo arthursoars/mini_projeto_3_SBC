@@ -1,0 +1,3372 @@
+@prefix ex: <https://w3id.org/folclore-paraibano/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/folclore-paraibano/ontology> a owl:Ontology ;
+    rdfs:label "Ontologia do Folclore Paraibano"@pt-br ;
+    rdfs:comment "Ontologia sobre entidades do folclore associadas à Paraíba, construída a partir da API Encantaria Digital."@pt-br ;
+    owl:versionInfo "1.0" .
+
+ex:aipo-e-tambia a ex:Origem ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """A lenda indígena sobre o parque, conta o verbete da Wikipédia, trata do amor entre dois jovens de tribos rivais: a índia Aipó, filha de um cacique potiguara, e o valente guerreiro Tambiá, da tribo cariri. A inimizade entre os dois povos impedia o casamento. Feito prisioneiro, Tambiá recebeu como "esposa da morte" a filha do inimigo. Executado na floresta, teve a última mensagem da amada: durante cinquenta luas, ela chorou sobre a tumba dele. Do pranto dela nasceu a fonte do sítio, chamada a partir daí Fonte Tambiá.
+
+O livro «O que o vento não levou», citado no verbete, conta de outro jeito: a índia era tabajara e se chamava Iapré, e, chorando a morte do amado enterrado ali, fez nascer uma fonte de água de excelente qualidade, na qual enxugava as lágrimas da saudade com os seus imensos cabelos."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_aipo-e-tambia_1 ;
+    ex:possuiClassificacaoOriginal "Origem"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Lenda de origem da fonte do Parque Arruda Câmara, a Bica, em João Pessoa. A jovem Aipó, filha de um cacique potiguara, e o guerreiro Tambiá, da tribo cariri, se amavam, mas a inimizade entre os povos impedia o casamento. Feito prisioneiro, Tambiá recebeu a filha do inimigo como \"esposa da morte\" e foi executado na floresta. Aipó chorou sobre a tumba dele durante cinquenta luas, e do seu pranto nasceu a fonte, chamada desde então Fonte Tambiá."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_agua,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_pb ;
+    ex:possuiFonte ex:fonte_aipo-e-tambia_1 ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Aipó e Tambiá"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiSlug "aipo-e-tambia"^^xsd:string ;
+    ex:possuiTagline "Ele era cariri, ela era filha de cacique inimigo. Executaram o guerreiro na mata, e o choro dela sobre a cova virou a fonte que deu água a João Pessoa."^^xsd:string .
+
+ex:associadaABioma a owl:ObjectProperty ;
+    rdfs:label "associadaABioma"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Bioma .
+
+ex:associadaABiomaPrincipal a owl:ObjectProperty ;
+    rdfs:label "associadaABiomaPrincipal"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Bioma .
+
+ex:associadaARegiao a owl:ObjectProperty ;
+    rdfs:label "associadaARegiao"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Regiao .
+
+ex:associadaARegiaoPrincipal a owl:ObjectProperty ;
+    rdfs:label "associadaARegiaoPrincipal"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Regiao .
+
+ex:associadaAoPovo a owl:ObjectProperty ;
+    rdfs:label "associadaAoPovo"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Povo .
+
+ex:entidadeDestino a owl:ObjectProperty ;
+    rdfs:label "entidadeDestino"@pt-br ;
+    rdfs:domain ex:RelacaoEntreEntidades ;
+    rdfs:range ex:EntidadeFolclorica .
+
+ex:motivoRelacao a owl:DatatypeProperty ;
+    rdfs:label "motivoRelacao"@pt-br ;
+    rdfs:domain ex:RelacaoEntreEntidades ;
+    rdfs:range xsd:string .
+
+ex:pai-mateus a ex:Guardiao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto "Conta a lenda, segundo o verbete da Wikipédia, que Pai Mateus seria um ermitão curandeiro que viveu naquela região por volta do século XVIII e era destino de muitas pessoas que o procuravam para se consultar. Não há outro registro do que ele fazia, nem de como ou quando morreu; ficou o nome do lugar."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_pai-mateus_1 ;
+    ex:possuiClassificacaoOriginal "Guardião"^^xsd:string ;
+    ex:possuiConfianca "baixa"^^xsd:string ;
+    ex:possuiDescricao "O Lajedo de Pai Mateus é um campo de grandes pedras arredondadas na zona rural de Cabaceiras, no Cariri da Paraíba. Conta a lenda que ali viveu, por volta do século XVIII, um ermitão curandeiro chamado Pai Mateus, procurado por muitas pessoas que iam se consultar com ele. O nome ficou na pedra."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_pb ;
+    ex:possuiFonte ex:fonte_pai-mateus_1 ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Pai Mateus"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiSlug "pai-mateus"^^xsd:string ;
+    ex:possuiTagline "Entre as pedras redondas do Cariri paraibano morava um ermitão que curava. Gente de longe vinha se consultar com ele, e o lajedo ficou com o seu nome."^^xsd:string .
+
+ex:possuiAnoCitacao a owl:DatatypeProperty ;
+    rdfs:label "possuiAnoCitacao"@pt-br ;
+    rdfs:domain ex:Citacao ;
+    rdfs:range xsd:integer .
+
+ex:possuiAutorCitacao a owl:DatatypeProperty ;
+    rdfs:label "possuiAutorCitacao"@pt-br ;
+    rdfs:domain ex:Citacao ;
+    rdfs:range xsd:string .
+
+ex:possuiCausoCompleto a owl:DatatypeProperty ;
+    rdfs:label "possuiCausoCompleto"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiCitacao a owl:ObjectProperty ;
+    rdfs:label "possuiCitacao"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Citacao .
+
+ex:possuiClassificacaoOriginal a owl:DatatypeProperty ;
+    rdfs:label "possuiClassificacaoOriginal"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiConfianca a owl:DatatypeProperty ;
+    rdfs:label "possuiConfianca"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiConfiancaVariacao a owl:DatatypeProperty ;
+    rdfs:label "possuiConfiancaVariacao"@pt-br ;
+    rdfs:domain ex:Variacao ;
+    rdfs:range xsd:string .
+
+ex:possuiCultoVivo a owl:DatatypeProperty ;
+    rdfs:label "possuiCultoVivo"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiDescricao a owl:DatatypeProperty ;
+    rdfs:label "possuiDescricao"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiElemento a owl:ObjectProperty ;
+    rdfs:label "possuiElemento"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Elemento .
+
+ex:possuiEstado a owl:ObjectProperty ;
+    rdfs:label "possuiEstado"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Estado .
+
+ex:possuiFonte a owl:ObjectProperty ;
+    rdfs:label "possuiFonte"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Fonte .
+
+ex:possuiLicencaFonte a owl:DatatypeProperty ;
+    rdfs:label "possuiLicencaFonte"@pt-br ;
+    rdfs:domain ex:Fonte ;
+    rdfs:range xsd:string .
+
+ex:possuiLocalidade a owl:DatatypeProperty ;
+    rdfs:label "possuiLocalidade"@pt-br ;
+    rdfs:domain ex:Variacao ;
+    rdfs:range xsd:string .
+
+ex:possuiMatrizCultural a owl:ObjectProperty ;
+    rdfs:label "possuiMatrizCultural"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:MatrizCultural .
+
+ex:possuiNivelAmeaca a owl:DatatypeProperty ;
+    rdfs:label "possuiNivelAmeaca"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiNome a owl:DatatypeProperty ;
+    rdfs:label "possuiNome"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiNomeLocal a owl:DatatypeProperty ;
+    rdfs:label "possuiNomeLocal"@pt-br ;
+    rdfs:domain ex:Variacao ;
+    rdfs:range xsd:string .
+
+ex:possuiObraCitacao a owl:DatatypeProperty ;
+    rdfs:label "possuiObraCitacao"@pt-br ;
+    rdfs:domain ex:Citacao ;
+    rdfs:range xsd:string .
+
+ex:possuiOrigemIncerta a owl:DatatypeProperty ;
+    rdfs:label "possuiOrigemIncerta"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:boolean .
+
+ex:possuiRaridade a owl:DatatypeProperty ;
+    rdfs:label "possuiRaridade"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiReferenciaFonte a owl:DatatypeProperty ;
+    rdfs:label "possuiReferenciaFonte"@pt-br ;
+    rdfs:domain ex:Fonte ;
+    rdfs:range xsd:string .
+
+ex:possuiRegistro a owl:DatatypeProperty ;
+    rdfs:label "possuiRegistro"@pt-br ;
+    rdfs:domain ex:Variacao ;
+    rdfs:range xsd:string .
+
+ex:possuiRelacaoRegistrada a owl:ObjectProperty ;
+    rdfs:label "possuiRelacaoRegistrada"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:RelacaoEntreEntidades ;
+    owl:inverseOf ex:entidadeOrigem .
+
+ex:possuiTagline a owl:DatatypeProperty ;
+    rdfs:label "possuiTagline"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:possuiTextoCitacao a owl:DatatypeProperty ;
+    rdfs:label "possuiTextoCitacao"@pt-br ;
+    rdfs:domain ex:Citacao ;
+    rdfs:range xsd:string .
+
+ex:possuiTipoFonte a owl:DatatypeProperty ;
+    rdfs:label "possuiTipoFonte"@pt-br ;
+    rdfs:domain ex:Fonte ;
+    rdfs:range xsd:string .
+
+ex:possuiVariacao a owl:ObjectProperty ;
+    rdfs:label "possuiVariacao"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range ex:Variacao ;
+    owl:inverseOf ex:variaDe .
+
+ex:tipoRelacao a owl:DatatypeProperty ;
+    rdfs:label "tipoRelacao"@pt-br ;
+    rdfs:domain ex:RelacaoEntreEntidades ;
+    rdfs:range xsd:string .
+
+ex:tres-sao-miguel a ex:Encantado ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:associadaAoPovo ex:Povo_potiguara ;
+    ex:possuiCausoCompleto """A Vila de São Miguel tem três São Miguel, conta Orlando Soares: São Miguel, o anjo; São Miguel Arcanjo; e agora São Miguel. O primeiro, o anjo, era de carne humana; tiraram-no e puseram aquele que está em São Francisco, o Arcanjo, e o terceiro é "esse que tá aí". Na transcrição completa, a pesquisadora anota entre parênteses que esse terceiro é a vila. Ele diz também que até hoje não fizeram a igreja de São Miguel, e que tio Bento, homem de muita coragem, subia na torre daquela igreja para ver a torre da igreja da Guia e, de lá, via as três Marias.
+
+Da gruta que sai de Jacaré de César em São Miguel, o Buraco do Flamengo, Orlando conta que era o túnel dele, que entra de um lado e sai do outro, perto do prédio que os holandeses fizeram. A Companhia Rio Tinto, diz ele com ironia, era "muito amorosa": mandava matar, e era preciso se esconder. Era o esconderijo dos índios; quando os expulsaram, tomaram conta."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_tres-sao-miguel_1 ;
+    ex:possuiClassificacaoOriginal "Encantado"^^xsd:string ;
+    ex:possuiConfianca "baixa"^^xsd:string ;
+    ex:possuiDescricao "Narrativa potiguara contada por Orlando Soares: a Vila de São Miguel tem três São Miguel. São Miguel, o anjo, era de carne humana e foi tirado de lá; puseram no lugar São Miguel Arcanjo, que hoje está na aldeia São Francisco; e o terceiro, na transcrição completa do relato, é a própria vila de São Miguel. Na mesma fala, Orlando conta dos túneis que saíam de Jacaré de César até São Miguel, como o Buraco do Flamengo, que serviam de esconderijo aos índios quando a Companhia Rio Tinto os perseguia."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_pb ;
+    ex:possuiFonte ex:fonte_tres-sao-miguel_1 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Os Três São Miguel"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiSlug "tres-sao-miguel"^^xsd:string ;
+    ex:possuiTagline "A Vila tem três São Miguel. O primeiro, o anjo, era de carne humana, e foi levado embora. Por baixo da terra, túneis ligavam as aldeias e escondiam os índios."^^xsd:string .
+
+ex:Estado_am a ex:Estado ;
+    rdfs:label "AM"@pt-br .
+
+ex:Estado_df a ex:Estado ;
+    rdfs:label "DF"@pt-br .
+
+ex:Estado_es a ex:Estado ;
+    rdfs:label "ES"@pt-br .
+
+ex:Estado_ms a ex:Estado ;
+    rdfs:label "MS"@pt-br .
+
+ex:Estado_pi a ex:Estado ;
+    rdfs:label "PI"@pt-br .
+
+ex:MatrizCultural_africana a ex:MatrizCultural ;
+    rdfs:label "africana"@pt-br .
+
+ex:Povo_acorianos a ex:Povo ;
+    rdfs:label "acorianos"@pt-br .
+
+ex:Povo_guarani a ex:Povo ;
+    rdfs:label "guarani"@pt-br .
+
+ex:Povo_tupinamba a ex:Povo ;
+    rdfs:label "tupinamba"@pt-br .
+
+ex:a-velha-do-tropical-hotel a ex:EntidadeFolclorica ;
+    ex:possuiNome "A Velha do Tropical Hotel"^^xsd:string ;
+    ex:possuiSlug "a-velha-do-tropical-hotel"^^xsd:string .
+
+ex:alamoa a ex:EntidadeFolclorica ;
+    ex:possuiNome "Alamoa"^^xsd:string ;
+    ex:possuiSlug "alamoa"^^xsd:string .
+
+ex:boca-de-ouro a ex:EntidadeFolclorica ;
+    ex:possuiNome "O Boca-de-Ouro"^^xsd:string ;
+    ex:possuiSlug "boca-de-ouro"^^xsd:string .
+
+ex:bode-do-ponte a ex:EntidadeFolclorica ;
+    ex:possuiNome "O Bode do Ponte"^^xsd:string ;
+    ex:possuiSlug "bode-do-ponte"^^xsd:string .
+
+ex:bumba-meu-boi a ex:EntidadeFolclorica ;
+    ex:possuiNome "Bumba-meu-boi"^^xsd:string ;
+    ex:possuiSlug "bumba-meu-boi"^^xsd:string .
+
+ex:cacimba-do-padre a ex:EntidadeFolclorica ;
+    ex:possuiNome "O Mistério da Cacimba do Padre"^^xsd:string ;
+    ex:possuiSlug "cacimba-do-padre"^^xsd:string .
+
+ex:capelobo a ex:EntidadeFolclorica ;
+    ex:possuiNome "Capelobo"^^xsd:string ;
+    ex:possuiSlug "capelobo"^^xsd:string .
+
+ex:carbunculo a ex:EntidadeFolclorica ;
+    ex:possuiNome "Carbúnculo"^^xsd:string ;
+    ex:possuiSlug "carbunculo"^^xsd:string .
+
+ex:citacao_aipo-e-tambia_1 a ex:Citacao ;
+    ex:possuiAutorCitacao "«O que o vento não levou» (apud Wikipédia)"^^xsd:string ;
+    ex:possuiObraCitacao "verbete «Parque Arruda Câmara»"^^xsd:string ;
+    ex:possuiTextoCitacao "Diz a lenda que uma índia tabajara por nome Iapré, chorando a morte do amado que ali havia sido enterrado fez nascer uma fonte d'água de excelente qualidade"^^xsd:string .
+
+ex:citacao_alma-de-gato_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1998 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "Ave agoureira cujo grito, semelhante ao miado de um gato, apavora as populações rurais, tomada por alma penada ou entidade que ronda as casas à noite... Sua força reside na indeterminação alucinante do pavor infantil."^^xsd:string .
+
+ex:citacao_babau_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Babau é a personificação sertaneja do engolidor insaciável: mito do pavor oral que originou a clássica expressão de perda irremediável."^^xsd:string .
+
+ex:citacao_babau_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1966 ;
+    ex:possuiAutorCitacao "Hermilo Borba Filho"^^xsd:string ;
+    ex:possuiObraCitacao "_Fisionomia e Espírito do Mamulengo_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas ruas e palcos do Nordeste, o Babau transita entre o assombro das noites sertanejas e o riso desenfreado dos folguedos de rua."^^xsd:string .
+
+ex:citacao_besta-fera_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "A Besta-Fera é a transposição sertaneja do centauro mítico e do cavalo apocalíptico: a encarnação do tumulto, da corrida desabalada e do medo noturno."^^xsd:string .
+
+ex:citacao_besta-fera_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1921 ;
+    ex:possuiAutorCitacao "Gustavo Barroso"^^xsd:string ;
+    ex:possuiObraCitacao "_Ao Som da Viola_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas noites de sexta-feira do sertão, o trote de ferro da Besta-Fera desafia as rezas bravas dos vaqueiros e faz tremer as paredes dos casebres."^^xsd:string .
+
+ex:citacao_bicho-sete-cabecas_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1947 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Geografia dos Mitos Brasileiros_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Bicho de Sete Cabeças é a transposição sertaneja da Hidra e do Dragão medieval, personificando o obstáculo supremo que exige extrema bravura moral."^^xsd:string .
+
+ex:citacao_bicho-sete-cabecas_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1885 ;
+    ex:possuiAutorCitacao "Sílvio Romero"^^xsd:string ;
+    ex:possuiObraCitacao "_Contos Populares do Brasil_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nos contos recolhidos no interior brasileiro, a besta de sete cabeças representa o perigo multifacetado que só a pureza de ânimo e a coragem conseguem decepar."^^xsd:string .
+
+ex:citacao_boi-da-cara-preta_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Boi da Cara Preta é a mais doce e universal das figuras de acalanto do Brasil: o espanto brando que adormece as crianças sem ferir sua inocência."^^xsd:string .
+
+ex:citacao_boi-da-cara-preta_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1981 ;
+    ex:possuiAutorCitacao "Veríssimo de Melo"^^xsd:string ;
+    ex:possuiObraCitacao "_Folclore Infantil_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas canções de ninar do povo brasileiro, a imagem do touro escuro sintetiza a autoridade patriarcal e o escudo protetor contra os pavores da noite."^^xsd:string .
+
+ex:citacao_boi-espacio_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1913 ;
+    ex:possuiAutorCitacao "João Simões Lopes Neto"^^xsd:string ;
+    ex:possuiObraCitacao "_Lendas do Sul_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Boi Espácio é a alma das antigas boiadas que continuam marchando na vastidão das coxilhas sob o silêncio da noite gaúcha."^^xsd:string .
+
+ex:citacao_boi-espacio_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1950 ;
+    ex:possuiAutorCitacao "Dante de Laytano"^^xsd:string ;
+    ex:possuiObraCitacao "_Folclore do Rio Grande do Sul_"^^xsd:string ;
+    ex:possuiTextoCitacao "Entre os mitos pastoris do Sul, o Boi Espácio personifica a solidão dos descampados e a presença misteriosa do gado ancestral."^^xsd:string .
+
+ex:citacao_botija_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1998 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "Botija. Tesouro enterrado, geralmente moedas de ouro ou prata guardadas em vaso de barro... A alma do finado aparece em sonho indicando o local exato. Deve-se desenterrar a sós, em segredo e em silêncio absoluto; se houver medo, indiscreção ou cobiça, o ouro se transforma em carvão."^^xsd:string .
+
+ex:citacao_branca-dias_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1543 ;
+    ex:possuiAutorCitacao "Tribunal do Santo Ofício"^^xsd:string ;
+    ex:possuiObraCitacao "Processo nº 5736, Inquisição de Lisboa"^^xsd:string ;
+    ex:possuiTextoCitacao "Cristã-nova, natural de Viana e moradora em Lisboa (...) acusada de judaísmo"^^xsd:string .
+
+ex:citacao_branca-dias_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1543 ;
+    ex:possuiAutorCitacao "Tribunal do Santo Ofício"^^xsd:string ;
+    ex:possuiObraCitacao "Sentença de Branca Dias, Inquisição de Lisboa"^^xsd:string ;
+    ex:possuiTextoCitacao "Abjuração pública, dois anos de cárcere e hábito penitencial"^^xsd:string .
+
+ex:citacao_bruxa_1 a ex:Citacao ;
+    ex:possuiAutorCitacao "A. S. Franchini"^^xsd:string ;
+    ex:possuiObraCitacao "As 100 melhores lendas do folclore brasileiro"^^xsd:string ;
+    ex:possuiTextoCitacao "De se transformar em coruja, morcego ou mesmo em uma mariposa negra"^^xsd:string .
+
+ex:citacao_cabeca-satanica_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1947 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Geografia dos Mitos Brasileiros_"^^xsd:string ;
+    ex:possuiTextoCitacao "A Cabeça Satânica é uma das mais pavorosas aparições das estradas noturnas: o membro cortado que corre sem pernas e apavora os viajantes com o ranger de seus dentes malditos."^^xsd:string .
+
+ex:citacao_cabeca-satanica_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1948 ;
+    ex:possuiAutorCitacao "Amadeu Amaral"^^xsd:string ;
+    ex:possuiObraCitacao "_Tradições Populares_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas noites do interior, a cabeça rolante personifica o remorso insepulto e a punição sobrenatural reservada aos que quebram juramentos sagrados."^^xsd:string .
+
+ex:citacao_caboclo-boiadeiro_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1980 ;
+    ex:possuiAutorCitacao "Carlos Rodrigues Brandão"^^xsd:string ;
+    ex:possuiObraCitacao "_Os Deuses do Povo_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Caboclo Boiadeiro é a personificação do trabalho duro, da coragem sertaneja e da sabedoria dos caminhos rurais na religiosidade brasileira."^^xsd:string .
+
+ex:citacao_caboclo-boiadeiro_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1933 ;
+    ex:possuiAutorCitacao "Mário de Andrade"^^xsd:string ;
+    ex:possuiObraCitacao "_Música de Feitiçaria no Brasil_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nos terreiros, a linha dos Boiadeiros representa o vigor que laça a desordem e restaura a firmeza nos passos dos que caminham na terra."^^xsd:string .
+
+ex:citacao_cabra-cabriola_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "A Cabra-Cabriola é a terrível assombração disciplinadora do Nordeste: monstro caprino que solta fogo pelas ventas e povoa as cantigas de ninar com dentes de navalha."^^xsd:string .
+
+ex:citacao_cabra-cabriola_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1921 ;
+    ex:possuiAutorCitacao "Gustavo Barroso"^^xsd:string ;
+    ex:possuiObraCitacao "_Ao Som da Viola_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nos casebres da Caatinga, a cantiga da Cabriola mantinha as crianças em silêncio respeitoso sob a escuridão do teto de palha."^^xsd:string .
+
+ex:citacao_cangaceiros-fantasmas_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 192030 ;
+    ex:possuiAutorCitacao "Imprensa nordestina da época (autoria não identificada na fonte)"^^xsd:string ;
+    ex:possuiObraCitacao "Citada em registro documental sobre Lampião"^^xsd:string ;
+    ex:possuiTextoCitacao "O sertanejo tem sempre nos lábios uma expressão de descrença quando se lhe promette a applicação de providencias"^^xsd:string .
+
+ex:citacao_carro-de-boi-assombrado_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Carro de Boi Assombrado é a mais poética e impressionante assombração das noites sertanejas: o ranger nostálgico do eixo de madeira que corta o silêncio sem tocar o solo."^^xsd:string .
+
+ex:citacao_carro-de-boi-assombrado_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1927 ;
+    ex:possuiAutorCitacao "Cornélio Pires"^^xsd:string ;
+    ex:possuiObraCitacao "_Conversas ao Pé do Fogo_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas noites frias do interior, o gemido do carro fantasma trazia às taperas o eco dos tempos antigos e o mistério das estradas sem fim."^^xsd:string .
+
+ex:citacao_comadre-fulozinha_1 a ex:Citacao ;
+    ex:possuiAutorCitacao "Tradição popular nordestina"^^xsd:string ;
+    ex:possuiTextoCitacao "Por isso não podemos chamá-la de caipora, senão ela nos bate com galhos de urtiga."^^xsd:string .
+
+ex:citacao_flor-do-mato_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1890 ;
+    ex:possuiAutorCitacao "Barbosa Rodrigues"^^xsd:string ;
+    ex:possuiObraCitacao "_Poranduba Amazonense_"^^xsd:string ;
+    ex:possuiTextoCitacao "A Flor do Mato é a encarnação poética da flora brasileira: o gênio silvestre benfazejo que defende o perfume das matas e recompensa a pureza dos simples."^^xsd:string .
+
+ex:citacao_flor-do-mato_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1947 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Geografia dos Mitos Brasileiros_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas brumas da Serra do Mar e nos campos de Minas, o mito da donzela botânica ensina que a beleza da flor é sagrada e inviolável."^^xsd:string .
+
+ex:citacao_fogo-corredor_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1560 ;
+    ex:possuiAutorCitacao "Padre José de Anchieta"^^xsd:string ;
+    ex:possuiObraCitacao "Carta de São Vicente"^^xsd:string ;
+    ex:possuiTextoCitacao "Não se vê outra coisa senão um facho cintilante correndo para ali; acomete rapidamente os índios e mata-os, como os curupiras"^^xsd:string .
+
+ex:citacao_homem-do-saco_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Homem do Saco é a encarnação universal do medo infantil, figura errante que delimita a fronteira segura do lar e o perigo incerto da rua."^^xsd:string .
+
+ex:citacao_homem-do-saco_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1985 ;
+    ex:possuiAutorCitacao "Roberto DaMatta"^^xsd:string ;
+    ex:possuiObraCitacao "_A Casa e a Rua_"^^xsd:string ;
+    ex:possuiTextoCitacao "Na transição entre a casa patriarcal e o espaço público moderno, o mito do velho andarilho funciona como sentinela pedagógica da infância."^^xsd:string .
+
+ex:citacao_joao-sem-bracos_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "Assombração dos sertões nordestinos, fantasma de estrada que surge estático impedindo a passagem dos viandantes."^^xsd:string .
+
+ex:citacao_lagoa-encantada-potiguara_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 2014 ;
+    ex:possuiAutorCitacao "relato potiguara (apud Barcellos, apud Rodrigues)"^^xsd:string ;
+    ex:possuiObraCitacao "«Práticas Educativo-Religiosas dos Potiguaras da Paraíba»"^^xsd:string ;
+    ex:possuiTextoCitacao "A lagoa encantada é uma mina. Tem um tesouro antigo. Tem armas."^^xsd:string .
+
+ex:citacao_lagoa-encantada-potiguara_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 2014 ;
+    ex:possuiAutorCitacao "relato potiguara (apud Barcellos, apud Rodrigues)"^^xsd:string ;
+    ex:possuiObraCitacao "«Práticas Educativo-Religiosas dos Potiguaras da Paraíba»"^^xsd:string ;
+    ex:possuiTextoCitacao "Era pra ele, mas ele não sabia. Ficou lagoa encantada do índio que não tirou o dinheiro"^^xsd:string .
+
+ex:citacao_mula-sem-cabeca_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "A Mula-sem-Cabeça é a mais popular e dramática corporificação do pecado e da penitência no Brasil: a fera de cascos de ferro e pescoço em chamas que rasga a noite das vilas coloniais."^^xsd:string .
+
+ex:citacao_mula-sem-cabeca_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1948 ;
+    ex:possuiAutorCitacao "Amadeu Amaral"^^xsd:string ;
+    ex:possuiObraCitacao "_Tradições Populares_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas noites frias do interior, o relincho de fogo da mula ecoava pelas encruzilhadas como o lamento vivo das paixões condenadas."^^xsd:string .
+
+ex:citacao_mulher-de-branco_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "A Mulher de Branco é a mais universal e poética aparição dos caminhos e casarões brasileiros: a noiva eterna cuja saudade desafia o túmulo e comove quem viaja na noite."^^xsd:string .
+
+ex:citacao_mulher-de-branco_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1955 ;
+    ex:possuiAutorCitacao "Gilberto Freyre"^^xsd:string ;
+    ex:possuiObraCitacao "_Assombrações do Recife Velho_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nos velhos sobrados de açúcar e nos casarões de café, a presença alva da donzela perpetua os dramas trágicos da honra patriarcal."^^xsd:string .
+
+ex:citacao_pai-do-mangue_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 2020 ;
+    ex:possuiAutorCitacao "Dona Zita (apud Milena Veríssimo Barbosa)"^^xsd:string ;
+    ex:possuiObraCitacao "«É história viva, num é história morta»"^^xsd:string ;
+    ex:possuiTextoCitacao "Ele, dizem que ele é dono do mangue né? Esse cumpade aí, que é o dono do mangue, e, quando ele quer que a pessoa pesque as coisas ele não perturba."^^xsd:string .
+
+ex:citacao_pai-do-mato_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Pai-do-Mato é senhor soberano da montaria bravia, cavalgando a queixada guia pelas brenhas agrestes."^^xsd:string .
+
+ex:citacao_pai-mateus_1 a ex:Citacao ;
+    ex:possuiAutorCitacao "Wikipédia"^^xsd:string ;
+    ex:possuiObraCitacao "verbete «Lajedo de Pai Mateus»"^^xsd:string ;
+    ex:possuiTextoCitacao "Conta a lenda que Pai Mateus seria um ermitão curandeiro que viveu naquela região por volta do século XVIII"^^xsd:string .
+
+ex:citacao_papa-figo_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1947 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Geografia dos Mitos Brasileiros_"^^xsd:string ;
+    ex:possuiTextoCitacao "O Papa-figo anda ao cair da tarde com seu surrão de couro, personificando o pavor infantil das ruas do Nordeste."^^xsd:string .
+
+ex:citacao_pedro-malasartes_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1946 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Contos Tradicionais do Brasil_"^^xsd:string ;
+    ex:possuiTextoCitacao "Pedro Malasartes é o tipo acabado do velhaco simpático, o herói popular cuja força é o engenho."^^xsd:string .
+
+ex:citacao_pedro-malasartes_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1912 ;
+    ex:possuiAutorCitacao "João Simões Lopes Neto"^^xsd:string ;
+    ex:possuiObraCitacao "_Casos do Romualdo_"^^xsd:string ;
+    ex:possuiTextoCitacao "Nas veredas do mundo, não há tranca de cofre nem carranca de patrão que a lábia do Malasartes não desarme."^^xsd:string .
+
+ex:citacao_rasga-mortalha_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1954 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Dicionário do Folclore Brasileiro_"^^xsd:string ;
+    ex:possuiTextoCitacao "Quando a coruja branca rasga a mortalha no céu sobre a cumeeira da casa, o sertanejo sabe que a morte vem buscar um enfermo."^^xsd:string .
+
+ex:citacao_sopinha-e-cu-de-fogo_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 2020 ;
+    ex:possuiAutorCitacao "Orlando Soares (apud Milena Veríssimo Barbosa)"^^xsd:string ;
+    ex:possuiObraCitacao "«É história viva, num é história morta»"^^xsd:string ;
+    ex:possuiTextoCitacao "Sopinha botava o mato abaixo e Cu de Fogo ia e queimava"^^xsd:string .
+
+ex:citacao_sume_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 1549 ;
+    ex:possuiAutorCitacao "Padre Manuel da Nóbrega"^^xsd:string ;
+    ex:possuiObraCitacao "_Cartas do Brasil_"^^xsd:string ;
+    ex:possuiTextoCitacao "Dizem que Sumé lhes ensinara a plantar a mandioca e lhes dera regras de convivência pacífica."^^xsd:string .
+
+ex:citacao_sume_2 a ex:Citacao ;
+    ex:possuiAnoCitacao 1947 ;
+    ex:possuiAutorCitacao "Luís da Câmara Cascudo"^^xsd:string ;
+    ex:possuiObraCitacao "_Geografia dos Mitos Brasileiros_"^^xsd:string ;
+    ex:possuiTextoCitacao "Sumé é o clássico herói civilizador da América indígena, benfeitor incomparável das tribos tupis."^^xsd:string .
+
+ex:citacao_tres-sao-miguel_1 a ex:Citacao ;
+    ex:possuiAnoCitacao 2020 ;
+    ex:possuiAutorCitacao "Orlando Soares (apud Milena Veríssimo Barbosa)"^^xsd:string ;
+    ex:possuiObraCitacao "«É história viva, num é história morta»"^^xsd:string ;
+    ex:possuiTextoCitacao "O São Migué, o anjo, era de carne humana, aí tiraram ele e botaram aquele que tá em São Francisco, que é o São Miguel arcanjo"^^xsd:string .
+
+ex:corpo-seco a ex:EntidadeFolclorica ;
+    ex:possuiNome "Corpo-Seco"^^xsd:string ;
+    ex:possuiSlug "corpo-seco"^^xsd:string .
+
+ex:diabinho-da-garrafa a ex:EntidadeFolclorica ;
+    ex:possuiNome "Diabinho da Garrafa"^^xsd:string ;
+    ex:possuiSlug "diabinho-da-garrafa"^^xsd:string .
+
+ex:emparedada-da-rua-nova a ex:EntidadeFolclorica ;
+    ex:possuiNome "A Emparedada da Rua Nova"^^xsd:string ;
+    ex:possuiSlug "emparedada-da-rua-nova"^^xsd:string .
+
+ex:enfermeiro-das-contas-brancas a ex:EntidadeFolclorica ;
+    ex:possuiNome "O Enfermeiro das Contas Brancas e o Sino de Ouro"^^xsd:string ;
+    ex:possuiSlug "enfermeiro-das-contas-brancas"^^xsd:string .
+
+ex:entidadeOrigem a owl:ObjectProperty ;
+    rdfs:label "entidadeOrigem"@pt-br ;
+    rdfs:domain ex:RelacaoEntreEntidades ;
+    rdfs:range ex:EntidadeFolclorica .
+
+ex:fantasma-do-ouro-preto a ex:EntidadeFolclorica ;
+    ex:possuiNome "Fantasma de Ouro Preto"^^xsd:string ;
+    ex:possuiSlug "fantasma-do-ouro-preto"^^xsd:string .
+
+ex:fonte_aipo-e-tambia_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Parque_Arruda_Câmara"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_alma-de-gato_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro, 10ª ed., Rio de Janeiro, Ediouro, 1998, verbete Alma-de-gato, p. 54"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_alma-de-gato_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.14"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_alma-de-gato_3 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Alma-de-gato"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_babau_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Bicho-pap%C3%A3o"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_babau_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "CNFCP, Tesauro de Folclore e Cultura Popular Brasileira, verbete \"Bicho-papão\""^^xsd:string ;
+    ex:possuiTipoFonte "web"^^xsd:string .
+
+ex:fonte_besta-fera_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Besta-fera"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_bicho-sete-cabecas_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro (verbete \"Bicho de Sete Cabeças\"), 1954"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_bicho-sete-cabecas_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Folhetos tradicionais da Literatura de Cordel Nordestina (séculos XIX e XX)"^^xsd:string ;
+    ex:possuiTipoFonte "literaria"^^xsd:string .
+
+ex:fonte_boi-da-cara-preta_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro (Verbete Boi da Cara Preta), Rio de Janeiro, INL, 1954"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_boi-da-cara-preta_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Mário de Andrade, Ensaio sobre a Música Brasileira (Cantigas de Berço), São Paulo, 1928"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_boi-espacio_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro (verbete \"Bois Misteriosos\"), 1954"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_botija_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro, 10ª ed., Rio de Janeiro, Ediouro, 1998, verbete Botija, p. 200-202"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_botija_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "A BOTIJA DE RIO FORMOSO E OUTRAS HISTÓRIAS, Revista Clio, UFPE, https://periodicos.ufpe.br/revistas/revistaclio/article/download/24237/19659"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_branca-dias_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Branca_Dias"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_bruxa_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.26"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_bruxa_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "A. S. Franchini, As 100 melhores lendas do folclore brasileiro (citado no artbook)"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_bruxa_3 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Franklin_Cascaes"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_cabeca-satanica_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Geografia dos Mitos Brasileiros (capítulo \"Fantasmas\"), 1947"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_caboclo-boiadeiro_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro (Vaqueiros e Encantados do Sertão), Rio de Janeiro, INL, 1954"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_caboclo-boiadeiro_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Edison Carneiro, Religiões Negras e Folclore, Rio de Janeiro, 1950"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_cabra-cabriola_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro, 10ª ed., Rio de Janeiro, Ediouro, 1998, verbete Cabra-Cabriola, p. 222; e Geografia dos Mitos Brasileiros, Global, 2002, p. 326-328"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_cabra-cabriola_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.28"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_cangaceiros-fantasmas_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Virgulino_Ferreira_da_Silva"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_cangaceiros-fantasmas_2 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Canga%C3%A7o"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_carro-de-boi-assombrado_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Geografia dos Mitos Brasileiros, 2ª ed., São Paulo, Global, 2002, p. 343-345 (Capítulo Fantasmas Rurais); e Dicionário do Folclore Brasileiro, verbete Carro de boi, p. 261-262"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_carro-de-boi-assombrado_2 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Carro_de_boi"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_comadre-fulozinha_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Comadre_Fulozinha"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_comadre-fulozinha_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro, p. 240"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_comadre-fulozinha_3 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Revista MATRIZes (USP), 2025; tese de doutorado UFPB, 2025, de autora Potiguara"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_flor-do-mato_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.54"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_fogo-corredor_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Boitat%C3%A1"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_fogo-corredor_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Carta de São Vicente, José de Anchieta, 1560 (domínio público)"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_homem-do-saco_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Geografia dos Mitos Brasileiros (capítulo \"Mitos de Controle\"), 1947"^^xsd:string ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_joao-sem-bracos_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro, Rio de Janeiro, Ediouro, 1954"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_joao-sem-bracos_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Lendas Brasileiras, 1945"^^xsd:string ;
+    ex:possuiTipoFonte "literaria"^^xsd:string .
+
+ex:fonte_lagoa-encantada-potiguara_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "José Marcos Gomes Rodrigues, «A Igreja Velha e a Lagoa Encantada: território e identidade em mitos potiguara», trabalho de conclusão de curso em Letras, UFPB, Campus IV, Mamanguape, 2019, https://repositorio.ufpb.br/jspui/bitstream/123456789/28017/1/JoseMarcosGomesRodrigues__TCC.pdf"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_lagoa-encantada-potiguara_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "L. Barcellos, «Práticas Educativo-Religiosas dos Potiguaras da Paraíba», João Pessoa, Editora da UFPB, 2014 (apud Rodrigues, 2019; não lido)"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_mula-sem-cabeca_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.82"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_mula-sem-cabeca_2 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Mula_sem_cabe%C3%A7a"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_mulher-de-branco_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.84"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_mulher-de-branco_2 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Mulher_da_meia-noite"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_pai-do-mangue_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Milena Veríssimo Barbosa, «Tradição, memória e identidade: as narrativas indígenas potiguara (re)contadas nas aldeias Jacaré de César e Três Rios», dissertação de mestrado em Letras, UFPB, João Pessoa, 2021, cap. «O Pai do Mangue», https://repositorio.ufpb.br/jspui/bitstream/123456789/22629/1/MilenaVeríssimoBarbosa_Dissert.pdf"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_pai-do-mangue_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Milena Veríssimo Barbosa, Luciane Alves Santos, Maria Alice Ribeiro Gabriel e Michelle Bianca Dantas, «É história viva, num é história morta: narrativas potiguaras do litoral norte da Paraíba», João Pessoa, Editora UFPB, 2020 (apud dissertação)"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_pai-do-mato_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.90"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_pai-do-mato_2 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Lendas_do_folclore_brasileiro"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_pai-mateus_1 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Lajedo_de_Pai_Mateus"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_papa-figo_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Chiaroscuro Studios Yearbook 2018, p.58"^^xsd:string ;
+    ex:possuiTipoFonte "artbook"^^xsd:string .
+
+ex:fonte_papa-figo_2 a ex:Fonte ;
+    ex:possuiLicencaFonte "CC BY-SA 4.0"^^xsd:string ;
+    ex:possuiReferenciaFonte "https://pt.wikipedia.org/wiki/Papa-figo"^^xsd:string ;
+    ex:possuiTipoFonte "wikipedia"^^xsd:string .
+
+ex:fonte_pedro-malasartes_1 a ex:Fonte ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_pedro-malasartes_2 a ex:Fonte ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_pedro-malasartes_3 a ex:Fonte ;
+    ex:possuiTipoFonte "literaria"^^xsd:string .
+
+ex:fonte_rasga-mortalha_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro (Verbete Rasga-Mortalha)"^^xsd:string ;
+    ex:possuiTipoFonte "literaria"^^xsd:string .
+
+ex:fonte_rasga-mortalha_2 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Gilberto Freyre, Assombrações do Recife Velho, 1955"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_sopinha-e-cu-de-fogo_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Milena Veríssimo Barbosa, «Tradição, memória e identidade: as narrativas indígenas potiguara (re)contadas nas aldeias Jacaré de César e Três Rios», dissertação de mestrado em Letras, UFPB, 2021, cap. «Sopinha e Cu de fogo», https://repositorio.ufpb.br/jspui/bitstream/123456789/22629/1/MilenaVeríssimoBarbosa_Dissert.pdf"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:fonte_sume_1 a ex:Fonte ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_sume_2 a ex:Fonte ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_sume_3 a ex:Fonte ;
+    ex:possuiTipoFonte "historica"^^xsd:string .
+
+ex:fonte_tres-sao-miguel_1 a ex:Fonte ;
+    ex:possuiReferenciaFonte "Milena Veríssimo Barbosa, «Tradição, memória e identidade: as narrativas indígenas potiguara (re)contadas nas aldeias Jacaré de César e Três Rios», dissertação de mestrado em Letras, UFPB, 2021, p. 82-83, https://repositorio.ufpb.br/jspui/bitstream/123456789/22629/1/MilenaVeríssimoBarbosa_Dissert.pdf"^^xsd:string ;
+    ex:possuiTipoFonte "academica"^^xsd:string .
+
+ex:hilux-preta a ex:EntidadeFolclorica ;
+    ex:possuiNome "Hilux Preta"^^xsd:string ;
+    ex:possuiSlug "hilux-preta"^^xsd:string .
+
+ex:ini-jara a ex:EntidadeFolclorica ;
+    ex:possuiNome "Ini Jará"^^xsd:string ;
+    ex:possuiSlug "ini-jara"^^xsd:string .
+
+ex:jurupari a ex:EntidadeFolclorica ;
+    ex:possuiNome "Jurupari"^^xsd:string ;
+    ex:possuiSlug "jurupari"^^xsd:string .
+
+ex:lagoa-encantada-potiguara a ex:Encantado ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:associadaAoPovo ex:Povo_potiguara ;
+    ex:possuiCausoCompleto """Seu Suru, ouvido na Vila Monte-Mór em 2015, diz que a lagoa se chama Encantada desde o início, do primeiro século, e que o povo falava que tinha vez que ela secava e enchia: era misteriosa.
+
+O relato do tesouro está no livro «Práticas Educativo-Religiosas dos Potiguaras da Paraíba», transcrito no TCC de José Marcos Gomes Rodrigues. A lagoa encantada é uma mina, tem um tesouro antigo, tem armas, e já foi seca uma vez, como se fosse um mistério. Manoel Domingo, um índio velho antigo, que ainda tem família em São Francisco, foi para o mangue e, quando chegou à lagoa, encontrou os peixes batendo na lama; não havia água nenhuma. Viu que ali tinha muito ouro, que brilhava: rifle, revólveres, metralhadora, uma infinidade de armas, e tudo era ouro. E ali tem uma corrente de ouro que atravessa de um lado para o outro. Quem pegar e quebrar a corrente faz a lagoa desembocar novamente no mar; se ninguém nunca a quebrar, ela nunca se abrirá. Manoel Domingo veio em casa chamar gente para buscar peixe, e quando chegou lá não havia peixe, nem ouro, nem nada. Era mar. O tesouro era para ele, mas ele não sabia, e a lagoa ficou sendo a lagoa encantada do índio que não tirou o dinheiro.
+
+A mesma lagoa tem outra face. Claudecir Braz, ouvido com Seu Suru, conta que a bisavó perdeu para a Encantada uma filha de sete anos. A menina tomava banho enquanto a mãe lavava roupa, e quando a mãe olhou ela já estava enterrada quase até a metade, lagoa adentro, e não havia como arrancá-la. Veio um pajé, que rezou e conseguiu tirá-la, mas depois do sétimo dia a menina foi definhando, com febre e várias doenças, e não sobreviveu. A bisavó dizia que não se podia levar criança para a lagoa, principalmente se tivesse os cabelos bonitos, por causa da questão dos Encantados."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_lagoa-encantada-potiguara_1,
+        ex:citacao_lagoa-encantada-potiguara_2 ;
+    ex:possuiClassificacaoOriginal "Encantado"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "No território potiguara do litoral norte da Paraíba há uma lagoa que se chama Encantada desde o começo, que às vezes secava e enchia sem explicação. Conta-se que ela é uma mina com um tesouro antigo: um índio velho, Manoel Domingo, a encontrou seca e viu no fundo uma infinidade de armas, todas de ouro, e uma corrente de ouro que a atravessa de um lado a outro. Quem quebrar a corrente faz a lagoa desembocar de novo no mar. Ele foi em casa chamar gente, e quando voltou não havia peixe, nem ouro, nem nada: havia mar."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_agua,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_pb ;
+    ex:possuiFonte ex:fonte_lagoa-encantada-potiguara_1,
+        ex:fonte_lagoa-encantada-potiguara_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "medio"^^xsd:string ;
+    ex:possuiNome "A Lagoa Encantada potiguara"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_lagoa-encantada-potiguara_1 ;
+    ex:possuiSlug "lagoa-encantada-potiguara"^^xsd:string ;
+    ex:possuiTagline "A lagoa secou uma vez, e no fundo havia armas de ouro e uma corrente atravessada de margem a margem. Manoel Domingo foi chamar gente, e quando voltou só havia mar."^^xsd:string .
+
+ex:lenda-dos-dois-cavaleiros a ex:EntidadeFolclorica ;
+    ex:possuiNome "Lenda dos Dois Cavaleiros"^^xsd:string ;
+    ex:possuiSlug "lenda-dos-dois-cavaleiros"^^xsd:string .
+
+ex:loira-do-banheiro a ex:EntidadeFolclorica ;
+    ex:possuiNome "Loira do Banheiro"^^xsd:string ;
+    ex:possuiSlug "loira-do-banheiro"^^xsd:string .
+
+ex:mae-do-ouro a ex:EntidadeFolclorica ;
+    ex:possuiNome "Mãe-do-Ouro"^^xsd:string ;
+    ex:possuiSlug "mae-do-ouro"^^xsd:string .
+
+ex:mandioca a ex:EntidadeFolclorica ;
+    ex:possuiNome "Mandioca (Lenda de Mani)"^^xsd:string ;
+    ex:possuiSlug "mandioca"^^xsd:string .
+
+ex:maria-degolada a ex:EntidadeFolclorica ;
+    ex:possuiNome "Maria Degolada"^^xsd:string ;
+    ex:possuiSlug "maria-degolada"^^xsd:string .
+
+ex:murucututu a ex:EntidadeFolclorica ;
+    ex:possuiNome "Murucututu"^^xsd:string ;
+    ex:possuiSlug "murucututu"^^xsd:string .
+
+ex:navio-fantasma-de-naufragados a ex:EntidadeFolclorica ;
+    ex:possuiNome "Navio Fantasma de Naufragados"^^xsd:string ;
+    ex:possuiSlug "navio-fantasma-de-naufragados"^^xsd:string .
+
+ex:nossa-senhora-o-linguado-e-o-siri a ex:EntidadeFolclorica ;
+    ex:possuiNome "Nossa Senhora, o Linguado e o Siri"^^xsd:string ;
+    ex:possuiSlug "nossa-senhora-o-linguado-e-o-siri"^^xsd:string .
+
+ex:opala-preto a ex:EntidadeFolclorica ;
+    ex:possuiNome "O Opala Preto"^^xsd:string ;
+    ex:possuiSlug "opala-preto"^^xsd:string .
+
+ex:peri-e-conceicao a ex:EntidadeFolclorica ;
+    ex:possuiNome "Peri e Conceição"^^xsd:string ;
+    ex:possuiSlug "peri-e-conceicao"^^xsd:string .
+
+ex:possuiSlug a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "possuiSlug"@pt-br ;
+    rdfs:domain ex:EntidadeFolclorica ;
+    rdfs:range xsd:string .
+
+ex:princesa-encantada-de-jericoacoara a ex:EntidadeFolclorica ;
+    ex:possuiNome "Princesa Encantada de Jericoacoara"^^xsd:string ;
+    ex:possuiSlug "princesa-encantada-de-jericoacoara"^^xsd:string .
+
+ex:reino-do-frota a ex:EntidadeFolclorica ;
+    ex:possuiNome "O Reino do Frota e a Casa das 365 Janelas"^^xsd:string ;
+    ex:possuiSlug "reino-do-frota"^^xsd:string .
+
+ex:relacao_alma-de-gato_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:bicho-papao ;
+    ex:entidadeOrigem ex:alma-de-gato ;
+    ex:motivoRelacao "Mesma função social, disciplinar crianças desobedientes através do medo, com método oposto: presença silenciosa em vez de ameaça verbal"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_alma-de-gato_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:matinta-pereira ;
+    ex:entidadeOrigem ex:alma-de-gato ;
+    ex:motivoRelacao "Espírito associado a uma ave que também alterna entre forma humana/espiritual e forma de pássaro no folclore nortista"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_babau_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:bicho-papao ;
+    ex:entidadeOrigem ex:babau ;
+    ex:motivoRelacao "Entidade ibérica de mesma função, citada na mesma tradição de cantigas de ninar"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_babau_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cuca ;
+    ex:entidadeOrigem ex:babau ;
+    ex:motivoRelacao "Mesma função de controle do sono infantil, mas com corpo documentado (bruxa ou jacaré), ao contrário do Babau"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_babau_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:quibungo ;
+    ex:entidadeOrigem ex:babau ;
+    ex:motivoRelacao "Entidade de raiz banto com mesma função disciplinar, mas com traço corporal específico (buraco nas costas)"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_besta-fera_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:bicho-papao ;
+    ex:entidadeOrigem ex:besta-fera ;
+    ex:motivoRelacao "Ambas entidades de controle social nordestinas, mas miram públicos opostos, infância doméstica versus errância adulta"^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_bicho-sete-cabecas_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:besta-fera ;
+    ex:entidadeOrigem ex:bicho-sete-cabecas ;
+    ex:motivoRelacao "Figura apocalíptica da tradição ibérico-nordestina que aterroriza os caminhos do sertão."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_bicho-sete-cabecas_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:boitata ;
+    ex:entidadeOrigem ex:bicho-sete-cabecas ;
+    ex:motivoRelacao "Entidade serpentina colossal associada ao elemento fogo no repertório mítico nacional."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_bicho-sete-cabecas_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:teju-jagua ;
+    ex:entidadeOrigem ex:bicho-sete-cabecas ;
+    ex:motivoRelacao "Outro monstro réptil lendário de múltiplas cabeças, este oriundo do ciclo cosmológico guarani."^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_boi-da-cara-preta_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cuca ;
+    ex:entidadeOrigem ex:boi-da-cara-preta ;
+    ex:motivoRelacao "A famosa bruxa das cantigas de berço que pega as crianças desobedientes."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_boi-da-cara-preta_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:tutu ;
+    ex:entidadeOrigem ex:boi-da-cara-preta ;
+    ex:motivoRelacao "Outro clássico espantalho infantil das cantigas de ninar coloniais."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_boi-espacio_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:bumba-meu-boi ;
+    ex:entidadeOrigem ex:boi-espacio ;
+    ex:motivoRelacao "Outra manifestação mítica central onde o gado assume valor sagrado e encantamento."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_boi-espacio_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:carro-de-boi-assombrado ;
+    ex:entidadeOrigem ex:boi-espacio ;
+    ex:motivoRelacao "Aparição sobrenatural que compartilha o mesmo ciclo pastoril e a memória histórica dos sertões."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_boi-espacio_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:vaqueiro-misterioso ;
+    ex:entidadeOrigem ex:boi-espacio ;
+    ex:motivoRelacao "O misterioso cavaleiro anônimo do sertão é o único rival à altura capaz de desafiar o gado encantado."^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_botija_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:bode-do-ponte ;
+    ex:entidadeOrigem ex:botija ;
+    ex:motivoRelacao "Segundo o 7Segundos, o Bode do Ponte passou a aparecer em sonho para mostrar onde enterrou botijas de ouro."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_botija_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:carbunculo ;
+    ex:entidadeOrigem ex:botija ;
+    ex:motivoRelacao "Guardião de riqueza enterrada por sinal sobrenatural; a própria ficha do Carbúnculo cita a Botija como parte da mesma família de sinais que apontam tesouro oculto no subsolo"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_botija_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:diabinho-da-garrafa ;
+    ex:entidadeOrigem ex:botija ;
+    ex:motivoRelacao "Outro mito brasileiro de riqueza sobrenatural sujeita a regra estrita e punição por descumpri-la; a própria ficha do Diabinho cita a Botija sob esse mesmo vínculo"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_botija_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:enfermeiro-das-contas-brancas ;
+    ex:entidadeOrigem ex:botija ;
+    ex:motivoRelacao "Nenhuma fonte liga as duas; o parentesco é de traço: ouro enterrado que só se deixa achar sob uma condição."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_botija_5 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:mae-do-ouro ;
+    ex:entidadeOrigem ex:botija ;
+    ex:motivoRelacao "Ambas revelam riqueza escondida na terra sob condição de segredo absoluto; quebrar o silêncio transforma o prêmio em perda, carvão na Botija, desabamento na Mãe-do-Ouro"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_botija_6 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:reino-do-frota ;
+    ex:entidadeOrigem ex:botija ;
+    ex:motivoRelacao "A página das garrafas de ouro de Pirenópolis diz que o Castelo do Frota e a Casa de 365 Janelas foram derrubados por quem procurava as garrafas escondidas nas paredes."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_botija_7 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:tesouro-de-cacaroca ;
+    ex:entidadeOrigem ex:botija ;
+    ex:motivoRelacao "Nenhuma fonte liga as duas; o parentesco é de traço: ouro enterrado que atrai escavadores e não se deixa achar."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_branca-dias_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cangaceiros-fantasmas ;
+    ex:entidadeOrigem ex:branca-dias ;
+    ex:motivoRelacao "Assombração nordestina ancorada em episódio histórico documentado"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_branca-dias_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:carro-de-boi-assombrado ;
+    ex:entidadeOrigem ex:branca-dias ;
+    ex:motivoRelacao "Memória histórica do interior nordestino, mesmo lote de curadoria"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_branca-dias_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:emparedada-da-rua-nova ;
+    ex:entidadeOrigem ex:branca-dias ;
+    ex:motivoRelacao "Figura feminina de Pernambuco transformada em assombração ligada a violência histórica contra mulheres"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_bruxa_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cuca ;
+    ex:entidadeOrigem ex:bruxa ;
+    ex:motivoRelacao "Também rapta e ameaça crianças que não dormem; metamorfa, mas de matriz ibérica e afro-bantu distinta"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_bruxa_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:matinta-pereira ;
+    ex:entidadeOrigem ex:bruxa ;
+    ex:motivoRelacao "Bruxa que se transforma em pássaro agourento, mesma lógica de metamorfose noturna, matriz nortista"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_bruxa_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:navio-fantasma-de-naufragados ;
+    ex:entidadeOrigem ex:bruxa ;
+    ex:motivoRelacao "Nenhuma fonte liga as duas; parentesco de traço: assombração marítima da mesma tradição açoriana da Ilha de Santa Catarina."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_bruxa_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:nossa-senhora-o-linguado-e-o-siri ;
+    ex:entidadeOrigem ex:bruxa ;
+    ex:motivoRelacao "Mesmo pesquisador (Franklin Cascaes) e mesma tradição de contos populares açorianos da Ilha de Santa Catarina."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_bruxa_5 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:peri-e-conceicao ;
+    ex:entidadeOrigem ex:bruxa ;
+    ex:motivoRelacao "As bruxas que julgam e punem o romance de Peri e Conceição são a mesma tradição açoriana de Florianópolis documentada nesta ficha."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_cabeca-satanica_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:besta-fera ;
+    ex:entidadeOrigem ex:cabeca-satanica ;
+    ex:motivoRelacao "Aparição infernal noturna que compartilha os caminhos desolados do sertão."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_cabeca-satanica_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:corpo-seco ;
+    ex:entidadeOrigem ex:cabeca-satanica ;
+    ex:motivoRelacao "Alma penada e ressequida que erra pelas estradas por ter sido rejeitada pela própria terra."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_cabeca-satanica_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cumacanga ;
+    ex:entidadeOrigem ex:cabeca-satanica ;
+    ex:motivoRelacao "Outra manifestação folclórica brasileira de cabeça desprendida que vaga pelas noites."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_caboclo-boiadeiro_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:boi-espacio ;
+    ex:entidadeOrigem ex:caboclo-boiadeiro ;
+    ex:motivoRelacao "O boi encantado indomável que desafia os melhores vaqueiros do sertão."^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_caboclo-boiadeiro_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:vaqueiro-misterioso ;
+    ex:entidadeOrigem ex:caboclo-boiadeiro ;
+    ex:motivoRelacao "Outra manifestação mítica da bravura sobrenatural do homem a cavalo nos sertões."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_cabra-cabriola_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cuca ;
+    ex:entidadeOrigem ex:cabra-cabriola ;
+    ex:motivoRelacao "Entidade irmã de controle social infantil; foco no horário de dormir em vez da vigilância à porta"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_cabra-cabriola_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:papa-figo ;
+    ex:entidadeOrigem ex:cabra-cabriola ;
+    ex:motivoRelacao "Entidade irmã de controle social infantil; foco na rua e no estranho que oferece doces"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_cabra-cabriola_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:quibungo ;
+    ex:entidadeOrigem ex:cabra-cabriola ;
+    ex:motivoRelacao "Entidade irmã de controle social infantil, de matriz afro-brasileira; foco no campo aberto em vez do lar"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_cangaceiros-fantasmas_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:branca-dias ;
+    ex:entidadeOrigem ex:cangaceiros-fantasmas ;
+    ex:motivoRelacao "Assombração nordestina ancorada em perseguição e violência histórica documentada"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_cangaceiros-fantasmas_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:carro-de-boi-assombrado ;
+    ex:entidadeOrigem ex:cangaceiros-fantasmas ;
+    ex:motivoRelacao "Manifestação sonora noturna nas estradas do sertão, mesmo lote de curadoria"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_cangaceiros-fantasmas_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:vaqueiro-misterioso ;
+    ex:entidadeOrigem ex:cangaceiros-fantasmas ;
+    ex:motivoRelacao "Figura fantasmagórica ligada à cultura do cavalo e do sertão, mesma paisagem cultural do cangaço"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_carro-de-boi-assombrado_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cangaceiros-fantasmas ;
+    ex:entidadeOrigem ex:carro-de-boi-assombrado ;
+    ex:motivoRelacao "Manifestação predominantemente sonora ligada à memória histórica do sertão nordestino"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_carro-de-boi-assombrado_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:fogo-corredor ;
+    ex:entidadeOrigem ex:carro-de-boi-assombrado ;
+    ex:motivoRelacao "Assombração noturna das estradas de terra do sertão, mesmo lote de curadoria"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_carro-de-boi-assombrado_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:vaqueiro-misterioso ;
+    ex:entidadeOrigem ex:carro-de-boi-assombrado ;
+    ex:motivoRelacao "Figura fantasmagórica ligada à mesma cultura pecuarista do sertão"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_comadre-fulozinha_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:caipora ;
+    ex:entidadeOrigem ex:comadre-fulozinha ;
+    ex:motivoRelacao "Frequentemente confundida com a Comadre, que rejeita ativamente a associação; mesma função de guardiã, origem e método distintos"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_comadre-fulozinha_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:curupira ;
+    ex:entidadeOrigem ex:comadre-fulozinha ;
+    ex:motivoRelacao "Guardião da mata de função equivalente, contraparte masculina consolidada no imaginário amazônico"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_comadre-fulozinha_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:matinta-pereira ;
+    ex:entidadeOrigem ex:comadre-fulozinha ;
+    ex:motivoRelacao "Nenhuma fonte consultada liga as duas diretamente; o parentesco é de traço: ambas se anunciam por assobio e só sossegam quando recebem fumo"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_comadre-fulozinha_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:pai-do-mangue ;
+    ex:entidadeOrigem ex:comadre-fulozinha ;
+    ex:motivoRelacao "A dissertação de Milena Veríssimo Barbosa trata os dois como seres que governam, com regras, a mata e o mangue do território potiguara."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_flor-do-mato_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:caipora ;
+    ex:entidadeOrigem ex:flor-do-mato ;
+    ex:motivoRelacao "Outra guardiã de mata da mesma família funcional, com pedágio semelhante e método de imitação de sons de animais"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_flor-do-mato_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:comadre-fulozinha ;
+    ex:entidadeOrigem ex:flor-do-mato ;
+    ex:motivoRelacao "Confundida ativamente com a Flor-do-Mato segundo o próprio artbook; mesma função, território e pedágio de fumo e mel"^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_flor-do-mato_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:curupira ;
+    ex:entidadeOrigem ex:flor-do-mato ;
+    ex:motivoRelacao "Guardião de mata com pedágio de fumo equivalente, mas que pune por padrão em vez de ajudar por padrão"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_fogo-corredor_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:boitata ;
+    ex:entidadeOrigem ex:fogo-corredor ;
+    ex:motivoRelacao "Mesmo fenômeno de fogo-fátuo, reinterpretado no Nordeste como almas penadas em vez de guardião do campo"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_fogo-corredor_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cangaceiros-fantasmas ;
+    ex:entidadeOrigem ex:fogo-corredor ;
+    ex:motivoRelacao "Manifestação noturna nas mesmas estradas do sertão nordestino"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_fogo-corredor_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:carneirinho-de-ouro ;
+    ex:entidadeOrigem ex:fogo-corredor ;
+    ex:motivoRelacao "A Geleia Total diz que em Bom Princípio do Piauí o carneirinho também é chamado de Fogo Corredor."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_fogo-corredor_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:carro-de-boi-assombrado ;
+    ex:entidadeOrigem ex:fogo-corredor ;
+    ex:motivoRelacao "Assombração noturna das estradas de terra do sertão, mesmo lote de curadoria"^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_fogo-corredor_5 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:curupira ;
+    ex:entidadeOrigem ex:fogo-corredor ;
+    ex:motivoRelacao "Registrado na mesma Carta de São Vicente de 1560"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_fogo-corredor_6 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:pai-do-mangue ;
+    ex:entidadeOrigem ex:fogo-corredor ;
+    ex:motivoRelacao "Para o cacique Cí e para dona Zita, o Batatão, a bola de fogo, é o próprio Pai do Mangue."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_homem-do-saco_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:bicho-papao ;
+    ex:entidadeOrigem ex:homem-do-saco ;
+    ex:motivoRelacao "Figura genérica primordial da disciplina infantil que fundamenta o medo de ser levado."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_homem-do-saco_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:hilux-preta ;
+    ex:entidadeOrigem ex:homem-do-saco ;
+    ex:motivoRelacao "O Diário do Nordeste conta as duas lado a lado entre as lendas urbanas de Fortaleza (2024), e a memorialista Ivânia Maia as cita juntas como alerta para as crianças."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_homem-do-saco_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:opala-preto ;
+    ex:entidadeOrigem ex:homem-do-saco ;
+    ex:motivoRelacao "A Aventuras na História compara o Opala Preto ao Homem do Saco: os dois seriam alertas dos pais aos filhos sobre os perigos da rua."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_homem-do-saco_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:papa-figo ;
+    ex:entidadeOrigem ex:homem-do-saco ;
+    ex:motivoRelacao "Outro mito clássico de controle infantil que sequestra crianças nas periferias e estradas rurais."^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_homem-do-saco_5 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:tutu ;
+    ex:entidadeOrigem ex:homem-do-saco ;
+    ex:motivoRelacao "Entidade tradicional que amedronta crianças que não dormem na hora certa."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_joao-sem-bracos_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cangaceiros-fantasmas ;
+    ex:entidadeOrigem ex:joao-sem-bracos ;
+    ex:motivoRelacao "Assombração de estrada ligada ao ciclo da violência e da memória do cangaço nordestino."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_joao-sem-bracos_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:fantasma-do-ouro-preto ;
+    ex:entidadeOrigem ex:joao-sem-bracos ;
+    ex:motivoRelacao "Outra aparição espectral que aterroriza caminhos e estradas ermas."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_lagoa-encantada-potiguara_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:carneirinho-de-ouro ;
+    ex:entidadeOrigem ex:lagoa-encantada-potiguara ;
+    ex:motivoRelacao "Nenhuma fonte liga as duas; o parentesco é de traço: uma corrente ligada a um tesouro na água, e o achado que some quando quem o viu volta com mais gente."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_mula-sem-cabeca_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cacimba-do-padre ;
+    ex:entidadeOrigem ex:mula-sem-cabeca ;
+    ex:motivoRelacao "Na lenda da Cacimba do Padre, em Fernando de Noronha, o fantasma do padre aparece montado numa mula sem cabeça toda branca."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_mula-sem-cabeca_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cumacanga ;
+    ex:entidadeOrigem ex:mula-sem-cabeca ;
+    ex:motivoRelacao "Variante amazônica e maranhense: mesma maldição por relação proibida com clérigo, mas só a cabeça se transforma"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_mula-sem-cabeca_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:lenda-dos-dois-cavaleiros ;
+    ex:entidadeOrigem ex:mula-sem-cabeca ;
+    ex:motivoRelacao "Nenhuma fonte liga as duas; parentesco de traço: montaria sem cabeça ligada a transgressão moral ou religiosa."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_mulher-de-branco_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:alamoa ;
+    ex:entidadeOrigem ex:mulher-de-branco ;
+    ex:motivoRelacao "Outra \"loira\" fantasmagórica nordestina que atrai homens para a morte em estradas e praias, com origem histórica específica (invasões holandesas) em vez de origem matrimonial trágica"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_mulher-de-branco_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:a-velha-do-tropical-hotel ;
+    ex:entidadeOrigem ex:mulher-de-branco ;
+    ex:motivoRelacao "Parentesco de traço: numa das versões manauaras, a velha fantasma se disfarça de bela moça e ataca quem acredita no disfarce"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_mulher-de-branco_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:loira-do-banheiro ;
+    ex:entidadeOrigem ex:mulher-de-branco ;
+    ex:motivoRelacao "Também um fantasma feminino de vestido claro ligado a uma morte trágica, mas confinado a banheiros escolares e dependente de invocação ritual; a Mulher de Branco surge sem ser chamada, em estradas e cemitérios abertos"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_mulher-de-branco_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:maria-degolada ;
+    ex:entidadeOrigem ex:mulher-de-branco ;
+    ex:motivoRelacao "Aparição histórica originária de crime real em Porto Alegre, venerada como santa popular"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_mulher-de-branco_5 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:mula-sem-cabeca ;
+    ex:entidadeOrigem ex:mulher-de-branco ;
+    ex:motivoRelacao "Outra maldição feminina ligada a transgressão amorosa que se manifesta em estradas e caminhos noturnos"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_mulher-de-branco_6 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:princesa-encantada-de-jericoacoara ;
+    ex:entidadeOrigem ex:mulher-de-branco ;
+    ex:motivoRelacao "Outra figura feminina de branco/dourado ligada a espera e maldição, mas passiva e não hostil; espera ser salva, não causa acidentes nem persegue quem se aproxima"^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_pai-do-mangue_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:comadre-fulozinha ;
+    ex:entidadeOrigem ex:pai-do-mangue ;
+    ex:motivoRelacao "A dissertação de Milena Veríssimo Barbosa trata os dois como seres que governam, com regras, o mangue e a mata do território potiguara."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_pai-do-mangue_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:fogo-corredor ;
+    ex:entidadeOrigem ex:pai-do-mangue ;
+    ex:motivoRelacao "Para o cacique Cí e para dona Zita, o Batatão, a bola de fogo, é o próprio Pai do Mangue."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_pai-do-mangue_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:sopinha-e-cu-de-fogo ;
+    ex:entidadeOrigem ex:pai-do-mangue ;
+    ex:motivoRelacao "Parentesco de traço: na mesma tradição potiguara, o Pai do Mangue protege o mangue e a dupla derruba e queima a mata."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_pai-do-mato_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:caipora ;
+    ex:entidadeOrigem ex:pai-do-mato ;
+    ex:motivoRelacao "Mesma família funcional de guardiões da mata; Pai-do-Mato tem porte de gigante e ponto fraco próprio, distinto da montaria e do pedágio da Caipora"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_pai-do-mato_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:capelobo ;
+    ex:entidadeOrigem ex:pai-do-mato ;
+    ex:motivoRelacao "Compartilha o ponto fraco no umbigo, traço que o próprio material de origem lê como sinal de parentesco entre monstros brasileiros"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_pai-do-mato_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:curupira ;
+    ex:entidadeOrigem ex:pai-do-mato ;
+    ex:motivoRelacao "Guardião da mata de função equivalente; Wikipédia trata os dois nomes como sinônimos regionais, o artbook os diferencia por corpo e método"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_pai-do-mato_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:vai-mahse ;
+    ex:entidadeOrigem ex:pai-do-mato ;
+    ex:motivoRelacao "Mesma função estrutural de guardião-mestre da caça que pune quem mata além do necessário, na cosmovisão desana do Rio Negro; entidade distinta, não sinônimo"^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_papa-figo_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:boca-de-ouro ;
+    ex:entidadeOrigem ex:papa-figo ;
+    ex:motivoRelacao "O Papa-Figo também é uma das histórias de Freyre adaptadas nos quadrinhos de 2017, ao lado do Boca-de-Ouro."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_papa-figo_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cabra-cabriola ;
+    ex:entidadeOrigem ex:papa-figo ;
+    ex:motivoRelacao "Entidade irmã de controle social infantil; foco na vigilância à porta"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_papa-figo_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:cuca ;
+    ex:entidadeOrigem ex:papa-figo ;
+    ex:motivoRelacao "Entidade irmã de controle social infantil; foco no horário de dormir"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_papa-figo_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:quibungo ;
+    ex:entidadeOrigem ex:papa-figo ;
+    ex:motivoRelacao "Entidade irmã de controle social infantil, de matriz afro-brasileira"^^xsd:string ;
+    ex:tipoRelacao "variant"^^xsd:string .
+
+ex:relacao_papa-figo_5 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:viuva-machado ;
+    ex:entidadeOrigem ex:papa-figo ;
+    ex:motivoRelacao "As fontes dizem que a lenda natalense fazia da Viúva Machado uma espécie de papa-figo, comedora do fígado de crianças."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_pedro-malasartes_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:curupira ;
+    ex:entidadeOrigem ex:pedro-malasartes ;
+    ex:motivoRelacao "Ambos empregam ilusões e ardis para desorientar invasores cobiçosos na terra."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_pedro-malasartes_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:romaozinho ;
+    ex:entidadeOrigem ex:pedro-malasartes ;
+    ex:motivoRelacao "Malasartes usa a malícia para a justiça cômica, contrapondo-se à perversidade de Romãozinho."^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_pedro-malasartes_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:saci ;
+    ex:entidadeOrigem ex:pedro-malasartes ;
+    ex:motivoRelacao "Par espiritual no apreço por travessuras lúdicas e rasteiras na arrogância humana."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_rasga-mortalha_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:matinta-pereira ;
+    ex:entidadeOrigem ex:rasga-mortalha ;
+    ex:motivoRelacao "Bruxa que costuma assumir a forma de ave noturna para exigir tabaco e semear agouro."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_rasga-mortalha_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:murucututu ;
+    ex:entidadeOrigem ex:rasga-mortalha ;
+    ex:motivoRelacao "A coruja que traz o sono e a cura, seu polo oposto da tradição aviária."^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_sopinha-e-cu-de-fogo_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:pai-do-mangue ;
+    ex:entidadeOrigem ex:sopinha-e-cu-de-fogo ;
+    ex:motivoRelacao "Parentesco de traço: na mesma tradição potiguara, o Pai do Mangue protege o mangue e a dupla derruba e queima a mata."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_sume_1 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:ini-jara ;
+    ex:entidadeOrigem ex:sume ;
+    ex:motivoRelacao "Entre os Kokama do Solimões, Sume é hoje o nome do xamã, descrito como representante na terra do deus criador Ini Jará."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:relacao_sume_2 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:jurupari ;
+    ex:entidadeOrigem ex:sume ;
+    ex:motivoRelacao "Legislador mítico amazônico de preceitos severos, em contraste com a via pacífica de Sumé."^^xsd:string ;
+    ex:tipoRelacao "rival"^^xsd:string .
+
+ex:relacao_sume_3 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:mandioca ;
+    ex:entidadeOrigem ex:sume ;
+    ex:motivoRelacao "A donzela mitológica de cujo corpo brotou a mandioca ensinada por Sumé."^^xsd:string ;
+    ex:tipoRelacao "elemental_kin"^^xsd:string .
+
+ex:relacao_sume_4 a ex:RelacaoEntreEntidades ;
+    ex:entidadeDestino ex:tupa ;
+    ex:entidadeOrigem ex:sume ;
+    ex:motivoRelacao "O trovão primordial de quem Sumé era considerado emissário e mestre terreno."^^xsd:string ;
+    ex:tipoRelacao "companion"^^xsd:string .
+
+ex:romaozinho a ex:EntidadeFolclorica ;
+    ex:possuiNome "Romãozinho"^^xsd:string ;
+    ex:possuiSlug "romaozinho"^^xsd:string .
+
+ex:saci a ex:EntidadeFolclorica ;
+    ex:possuiNome "Saci-Pererê"^^xsd:string ;
+    ex:possuiSlug "saci"^^xsd:string .
+
+ex:teju-jagua a ex:EntidadeFolclorica ;
+    ex:possuiNome "Teju Jagua"^^xsd:string ;
+    ex:possuiSlug "teju-jagua"^^xsd:string .
+
+ex:tesouro-de-cacaroca a ex:EntidadeFolclorica ;
+    ex:possuiNome "O Tesouro de Caçaroca"^^xsd:string ;
+    ex:possuiSlug "tesouro-de-cacaroca"^^xsd:string .
+
+ex:tupa a ex:EntidadeFolclorica ;
+    ex:possuiNome "Tupã"^^xsd:string ;
+    ex:possuiSlug "tupa"^^xsd:string .
+
+ex:vai-mahse a ex:EntidadeFolclorica ;
+    ex:possuiNome "Vai Mahsë"^^xsd:string ;
+    ex:possuiSlug "vai-mahse"^^xsd:string .
+
+ex:variaDe a owl:ObjectProperty ;
+    rdfs:label "variaDe"@pt-br ;
+    rdfs:domain ex:Variacao ;
+    rdfs:range ex:EntidadeFolclorica .
+
+ex:variacao_alma-de-gato_passaro-agouro a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiNomeLocal "Alma-de-caboclo / Alma-perdida"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_babau_devorador-das-encruzilhadas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Boqueirões escuros, estradas de terra e cancelas de fazendas"^^xsd:string ;
+    ex:possuiNomeLocal "O Babau da Caatinga"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_babau_mascarado-farsesco a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Ruas coloniais, praças públicas e festas de Reisado"^^xsd:string ;
+    ex:possuiNomeLocal "O Bicho Babau do Carnaval de Rua"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_besta-fera_centauro-infernal a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Vilas coloniais desertas, encruzilhadas sertanejas e ruas de terra batida"^^xsd:string ;
+    ex:possuiNomeLocal "A Besta-Fera da Meia-Noite"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_besta-fera_destruidor-de-cercas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Chapada do Araripe, vales do Cariri e fazendas sertanejas"^^xsd:string ;
+    ex:possuiNomeLocal "O Touro-Fera dos Pastos"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_bicho-sete-cabecas_hidra-do-acude a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Grutas e leitos secos do Sertão do Pajeú e Cariri"^^xsd:string ;
+    ex:possuiNomeLocal "A Serpente Heptacéfala da Seca"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_bicho-sete-cabecas_sete-grutas-das-gerais a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Serras de Ouro Preto, Mariana e Diamantina"^^xsd:string ;
+    ex:possuiNomeLocal "A Quimera das Galerias Abandonadas"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_boi-da-cara-preta_guardiao-dos-telhados a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Casas coloniais e taperas do interior brasileiro"^^xsd:string ;
+    ex:possuiNomeLocal "O Boi Vigilante da Cantiga"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_boi-da-cara-preta_touro-da-meia-noite a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Currais de pedra e carnaubais dos sertões secos"^^xsd:string ;
+    ex:possuiNomeLocal "O Barroso Preto do Sertão"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_boi-espacio_boiadas-fantasmas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Antigos caminhos de tropeiros das Missões a Sorocaba"^^xsd:string ;
+    ex:possuiNomeLocal "O Padrinho da Vacaria"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_boi-espacio_passo-da-campanha a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Campos de Santana do Livramento e Bagé"^^xsd:string ;
+    ex:possuiNomeLocal "O Touro Espectral dos Alambrados"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_botija_botija-de-itarema a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "Itarema"^^xsd:string ;
+    ex:possuiNomeLocal "Botija"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_botija_botija-de-jararaca a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Mossoró, no lugar chamado Saco, além da ponte de ferro"^^xsd:string ;
+    ex:possuiNomeLocal "botija de Jararaca"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_botija_ceara-mirim-canguaretama a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Ceará-Mirim, Canguaretama"^^xsd:string ;
+    ex:possuiNomeLocal "Botija de Ceará-Mirim / Canguaretama"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_botija_garrafas-de-ouro-de-pirenopolis a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Pirenópolis, a antiga Meia Ponte"^^xsd:string ;
+    ex:possuiNomeLocal "Garrafas de Ouro"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_botija_regiao-mineradora a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiNomeLocal "Botija de região mineradora"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_botija_rio-formoso a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Rio Formoso"^^xsd:string ;
+    ex:possuiNomeLocal "A Botija de Rio Formoso"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_botija_serra-da-rajada a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Serra da Rajada, entre Carnaúba dos Dantas, Acari, Jardim do Seridó e Parelhas, no Seridó"^^xsd:string ;
+    ex:possuiNomeLocal "botija da Serra da Rajada, tesouro da Rajada"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_botija_setima-cajazeira a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Fernando de Noronha"^^xsd:string ;
+    ex:possuiNomeLocal "O Tesouro Encantado"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_branca-dias_tradicao-paraibana a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiNomeLocal "Branca Dias da Paraíba"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_bruxa_baile-das-bruxas-de-itaguacu a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Praia de Itaguaçu, região continental de Florianópolis"^^xsd:string ;
+    ex:possuiNomeLocal "Baile das Bruxas de Itaguaçu (Salão de Festa das Bruxas)"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_bruxa_bruxa-da-aldeia-sao-miguel a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "aldeia São Miguel, a Vila, em Baía da Traição, no território potiguara"^^xsd:string ;
+    ex:possuiNomeLocal "a bruxa da Vila"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_bruxa_bruxa-guaratuba a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Guaratuba"^^xsd:string ;
+    ex:possuiNomeLocal "Bruxa de Guaratuba"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_bruxa_bruxa-metamorfa a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiNomeLocal "Bruxa"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_bruxa_bruxas-de-coqueirinho a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "aldeia Coqueirinho, em Marcação, no território potiguara do litoral norte da Paraíba"^^xsd:string ;
+    ex:possuiNomeLocal "Bruxas de Coqueirinho"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_cabeca-satanica_cabeca-rolante-da-meia-noite a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Encruzilhadas desertas do Sertão e Agreste"^^xsd:string ;
+    ex:possuiNomeLocal "A Caveira Roladeira"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_cabeca-satanica_cranio-luminoso-das-minas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Ruas calçadas e galerias de Ouro Preto e Sabará"^^xsd:string ;
+    ex:possuiNomeLocal "A Cabeça de Fogo do Garimpo"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_caboclo-boiadeiro_boiadeiro-da-jurema a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Cidades da Jurema e terreiros do agreste"^^xsd:string ;
+    ex:possuiNomeLocal "Mestre Zé Pelintra das Sete Porteiras"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_caboclo-boiadeiro_boiadeiro-lacador-do-sertao a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Caatingas fechadas do Raso da Catarina e sertões do São Francisco"^^xsd:string ;
+    ex:possuiNomeLocal "O Vaqueiro das Sete Léguas"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_cabra-cabriola_besta-fumegante a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Vilas sertanejas, choupanas de taipa e cercados de cabras"^^xsd:string ;
+    ex:possuiNomeLocal "A Cabriola do Sertão"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_cabra-cabriola_saltadora-do-serido a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Encostas rochosas e fazendas do Seridó"^^xsd:string ;
+    ex:possuiNomeLocal "A Fera dos Muros de Pedra"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_cangaceiros-fantasmas_memorial-da-resistencia a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "arredores do Memorial da Resistência, em Mossoró"^^xsd:string ;
+    ex:possuiNomeLocal "Fantasmas do Memorial da Resistência"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_cangaceiros-fantasmas_rotas-do-cangaco a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Vales do Pajeú e cânions do São Francisco"^^xsd:string ;
+    ex:possuiNomeLocal "Tropa de Lampião / Cavalgada das Almas"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_carro-de-boi-assombrado_carreto-da-madrugada a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Estradas de terra batida, encruzilhadas coloniais e porteiras de fazendas"^^xsd:string ;
+    ex:possuiNomeLocal "O Carro Fantasma das Estradas Velhas"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_carro-de-boi-assombrado_carro-caido a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "lagoa de Extremoz (Estremoz), no caminho de Natal à aldeia de São Miguel de Guajiru"^^xsd:string ;
+    ex:possuiNomeLocal "Carro Caído"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_carro-de-boi-assombrado_cortejo-das-minas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Caminho Velho da Estrada Real, ladeiras históricas de Minas Gerais"^^xsd:string ;
+    ex:possuiNomeLocal "O Carreto do Ouro Amaldiçoado"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_comadre-fulozinha_entidade-da-jurema a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Terreiros de catimbó-jurema da Paraíba e Pernambuco"^^xsd:string ;
+    ex:possuiNomeLocal "Comadre Fulozinha / Princesa da Jurema"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_comadre-fulozinha_flor-da-mata-potiguara a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "aldeias potiguara do litoral norte da Paraíba, como Jacaré de César e Três Rios"^^xsd:string ;
+    ex:possuiNomeLocal "Cumade Fulorzinha, Cumade Fulozinha, Mãe do Mato, Flor da Mata"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_comadre-fulozinha_menina-perdida a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Sertão paraibano e pernambucano"^^xsd:string ;
+    ex:possuiNomeLocal "Maria Florzinha / Menina da Mata"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_flor-do-mato_donzela-das-orquideas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Encostas úmidas da Serra do Mar e florestas de neblina"^^xsd:string ;
+    ex:possuiNomeLocal "A Moça-Flor da Mata Atlântica"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_flor-do-mato_senhora-das-sempre-vivas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Campos rupestres da Serra do Espinhaço e Chapada dos Veadeiros"^^xsd:string ;
+    ex:possuiNomeLocal "A Mãe das Flores Rupestres"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_fogo-corredor_bata-mineiro a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Vales e baixadas úmidas de Minas Gerais"^^xsd:string ;
+    ex:possuiNomeLocal "Bata"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_fogo-corredor_batatao-potiguara a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "aldeias potiguara do litoral norte da Paraíba, como Jacaré de César e o caminho da Carneira"^^xsd:string ;
+    ex:possuiNomeLocal "Batatão, também chamado Aibino"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_fogo-corredor_biatata-da-bahia a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Sertão e recôncavo baiano"^^xsd:string ;
+    ex:possuiNomeLocal "Biatatá / Fogo Baiano"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_fogo-corredor_jean-de-la-foice a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Margens do Baixo São Francisco"^^xsd:string ;
+    ex:possuiNomeLocal "Jean de la Foice / Jean Delafosse"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_fogo-corredor_joao-galafuz a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "mar de Pernambuco, sobretudo a ilha de Itamaracá, a Praia do Porto e Barreiros"^^xsd:string ;
+    ex:possuiNomeLocal "João Galafuz"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_fogo-corredor_luzerna a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "estradas e caminhos do interior do Nordeste; em Itabaiana, Sergipe, a palavra segue em uso na fala da serra"^^xsd:string ;
+    ex:possuiNomeLocal "Luzerna"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_homem-do-saco_andarilho-dos-becos a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Subúrbios urbanos, vilas coloniais e beiras de estrada"^^xsd:string ;
+    ex:possuiNomeLocal "O Velho do Saco"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_homem-do-saco_cirandeiro-da-estola a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Encostas sertanejas e arredores de feiras livres"^^xsd:string ;
+    ex:possuiNomeLocal "Papa-Figo do Sertão"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_homem-do-saco_maria-grampinho a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Cidade de Goiás, a antiga Vila Boa, e a casa de Cora Coralina"^^xsd:string ;
+    ex:possuiNomeLocal "Maria Grampinho"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_homem-do-saco_o-velho-da-kombi-branca a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiNomeLocal "O Homem da Kombi Branca"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_homem-do-saco_velho-do-saco-de-fortaleza a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Fortaleza"^^xsd:string ;
+    ex:possuiNomeLocal "Velho do Saco"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_joao-sem-bracos_joao-sem-pernas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiNomeLocal "João Sem Pernas"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_mula-sem-cabeca_besta-das-labaredas a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Encruzilhadas de terra batida, adros de igrejas matrizes e estradas rurais"^^xsd:string ;
+    ex:possuiNomeLocal "A Burra-de-Padre"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_mula-sem-cabeca_burrinha-de-padre a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiNomeLocal "Burrinha de Padre"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_mula-sem-cabeca_cercado-do-ze-padre a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "Cercado do Zé Padre, no bairro Farias Brito, parte que é Otávio Bonfim, atrás da avenida Bezerra de Menezes e em frente à igreja das Dores, em Fortaleza"^^xsd:string ;
+    ex:possuiNomeLocal "Mula sem cabeça; burra do padre"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_mula-sem-cabeca_lamento-das-paroquias a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Vilarejos sertanejos e capelas de vilas coloniais"^^xsd:string ;
+    ex:possuiNomeLocal "A Mula do Relincho Humano"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_mulher-de-branco_arquiteta-de-branco a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "Complexo Cultural da República, entre o Museu Nacional e a Biblioteca Nacional, Brasília"^^xsd:string ;
+    ex:possuiNomeLocal "Arquiteta de Branco"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_dama-da-meia-noite a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Bares urbanos, boates e portões de cemitérios"^^xsd:string ;
+    ex:possuiNomeLocal "Dama de Branco / Mulher da Meia-Noite"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_mulher-de-branco_dama-do-museu-imperial a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "jardins e bosque do Museu Imperial, Petrópolis"^^xsd:string ;
+    ex:possuiNomeLocal "A Dama de Branco"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_fidalga-dos-casaroes a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Casarões senhoriais de café, solares coloniais e fazendas patriarcais"^^xsd:string ;
+    ex:possuiNomeLocal "A Dama Branca da Casa-Grande"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_mulher-de-branco_galega-do-queixao a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "descida da Serra de Santa Luzia, na BR-230, entre Junco do Seridó e Santa Luzia, no sertão paraibano"^^xsd:string ;
+    ex:possuiNomeLocal "Galega do Queixão"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_loura-do-bonfim a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Bairro e Cemitério do Bonfim, Belo Horizonte"^^xsd:string ;
+    ex:possuiNomeLocal "Loura do Bonfim"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_moca-sem-face a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Belém"^^xsd:string ;
+    ex:possuiNomeLocal "A moça sem face"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_mulher-de-branco_mulher-de-branco-de-noronha a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "ruas de Fernando de Noronha"^^xsd:string ;
+    ex:possuiNomeLocal "A Mulher de Branco"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_mulher-de-branco_noiva-da-estrada a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Rodovias sinuosas de serra, beiras de estrada e cruzamentos rurais"^^xsd:string ;
+    ex:possuiNomeLocal "A Moça da Curva Perigosa"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_mulher-de-branco_noiva-da-santa-rita a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Igreja de Santa Rita e largo de Santa Rita, Paraty"^^xsd:string ;
+    ex:possuiNomeLocal "A Noiva da Santa Rita"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_noiva-de-mogi a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Rodovia SP-66 (trecho Mogi das Cruzes - Guararema)"^^xsd:string ;
+    ex:possuiNomeLocal "Noiva da Estrada"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_noiva-do-carmo a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "Igreja de Nossa Senhora do Carmo e Cemitério do Carmo, em frente a ela, em Sabará"^^xsd:string ;
+    ex:possuiNomeLocal "Noiva do Carmo; loura do cemitério do Carmo"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_noiva-do-jardim a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Praça Major Carlos Neves, Dois Córregos"^^xsd:string ;
+    ex:possuiNomeLocal "Noiva do Jardim"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_mulher-de-branco_velhinha-do-morro-do-comum a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "Morro do Comum, perto de Almofala, no litoral de Itarema"^^xsd:string ;
+    ex:possuiNomeLocal "Mulher de Branco"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_pai-do-mangue_guajara a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Almofala, em Itarema, entre os Tremembé"^^xsd:string ;
+    ex:possuiNomeLocal "Guajará, também chamado Pai do Mangue ou Pajé do Rio"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_pai-do-mato_cavaleiro-da-queixada a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Caatingas e matas secas do agreste e sertão nordestino"^^xsd:string ;
+    ex:possuiNomeLocal "Pai-do-Mato do Sertão"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_pai-do-mato_devorador-dos-vales a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Matas virgens de terra firme e igapós profundos da Amazônia"^^xsd:string ;
+    ex:possuiNomeLocal "Pai-da-Mata / Mapinguari-Pai"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_papa-figo_coronel-do-engenho a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Zona da Mata pernambucana e casarões açucareiros"^^xsd:string ;
+    ex:possuiNomeLocal "Papa-Figo dos Engenhos"^^xsd:string ;
+    ex:possuiRegistro "academico"^^xsd:string .
+
+ex:variacao_papa-figo_velho-do-saco-urbano a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Feiras livres, ruas coloniais de paralelepípedo e arrabaldes de Natal e Recife"^^xsd:string ;
+    ex:possuiNomeLocal "Velho do Saco / Papa-Figo Urbano"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_pedro-malasartes_panela-magica a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Sertão do Cariri e Pajeú"^^xsd:string ;
+    ex:possuiNomeLocal "Pedro Malasartes e a Panela Encantada"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_rasga-mortalha_coruja-da-matriz-de-canguaretama a ex:Variacao ;
+    ex:possuiConfiancaVariacao "baixa"^^xsd:string ;
+    ex:possuiLocalidade "centro de Canguaretama, perto da Praça Augusto Severo e da Igreja Matriz"^^xsd:string ;
+    ex:possuiNomeLocal "Coruja da Igreja Matriz, Rasga Mortalha, Coruja Branca"^^xsd:string ;
+    ex:possuiRegistro "web"^^xsd:string .
+
+ex:variacao_rasga-mortalha_suindara-agoureira a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiNomeLocal "Suindara Agoureira"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:variacao_sume_pedra-de-sao-pedro a ex:Variacao ;
+    ex:possuiConfiancaVariacao "media"^^xsd:string ;
+    ex:possuiLocalidade "Penedo, num rochedo de uma ilha próxima"^^xsd:string ;
+    ex:possuiNomeLocal "Sumé, como os locais chamavam São Tomé; Pedra de São Pedro, na Ilha de São Pedro"^^xsd:string ;
+    ex:possuiRegistro "relato_publicado"^^xsd:string .
+
+ex:variacao_sume_sume-paraiba a ex:Variacao ;
+    ex:possuiConfiancaVariacao "alta"^^xsd:string ;
+    ex:possuiLocalidade "Bacia do Rio Paraíba / Ingá"^^xsd:string ;
+    ex:possuiNomeLocal "Pai Zumé das Itacoatiaras"^^xsd:string ;
+    ex:possuiRegistro "folclorista"^^xsd:string .
+
+ex:viuva-machado a ex:EntidadeFolclorica ;
+    ex:possuiNome "A Viúva Machado"^^xsd:string ;
+    ex:possuiSlug "viuva-machado"^^xsd:string .
+
+ex:Estado_ma a ex:Estado ;
+    rdfs:label "MA"@pt-br .
+
+ex:Estado_se a ex:Estado ;
+    rdfs:label "SE"@pt-br .
+
+ex:MatrizCultural_moderna a ex:MatrizCultural ;
+    rdfs:label "moderna"@pt-br .
+
+ex:Origem a owl:Class ;
+    rdfs:label "Origem"@pt-br ;
+    rdfs:subClassOf ex:EntidadeFolclorica .
+
+ex:Povo_tupi a ex:Povo ;
+    rdfs:label "tupi"@pt-br .
+
+ex:RecursoDocumental a owl:Class ;
+    rdfs:label "RecursoDocumental"@pt-br ;
+    rdfs:subClassOf ex:RecursoFolclorico .
+
+ex:RecursoFolclorico a owl:Class ;
+    rdfs:label "RecursoFolclorico"@pt-br .
+
+ex:alma-de-gato a ex:Metamorfo ;
+    ex:associadaABioma ex:Bioma_cerrado,
+        ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_centro-oeste,
+        ex:Regiao_nordeste,
+        ex:Regiao_norte,
+        ex:Regiao_sudeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_norte ;
+    ex:possuiCausoCompleto "Em noites silenciosas, quando alguma criança faz birra demais, grita demais ou se recusa a dormir, é quando ele tende a se manifestar; na forma própria de um gato, olhos brilhantes cortando a escuridão do quarto ou do quintal. Não ataca, não fala, não se move contra ninguém. Apenas observa. Fica ali, no silêncio, até que a criança perceba a presença e volte a se comportar. Restaurada a obediência, ele desaparece do mesmo jeito que chegou, sem deixar rastro que prove que esteve ali."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_alma-de-gato_1 ;
+    ex:possuiClassificacaoOriginal "Metamorfo"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Presença noturna de origem indígena que aparece como um gato de olhos brilhantes para silenciar crianças em birra, o Alma-de-Gato empresta o nome, e talvez a origem, a um pássaro real de canto parecido com gemido felino. Ninguém documentou um único mal causado por ele. Ninguém, também, ousou desafiá-lo para descobrir se isso é coragem ou sorte."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_ar,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_pb,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_alma-de-gato_1,
+        ex:fonte_alma-de-gato_2,
+        ex:fonte_alma-de-gato_3 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Alma-de-Gato"^^xsd:string ;
+    ex:possuiOrigemIncerta true ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_alma-de-gato_1,
+        ex:relacao_alma-de-gato_2 ;
+    ex:possuiSlug "alma-de-gato"^^xsd:string ;
+    ex:possuiTagline "\"Um vulto, um calafrio, uma porta que se fecha…\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_alma-de-gato_passaro-agouro .
+
+ex:boi-da-cara-preta a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_cerrado,
+        ex:Bioma_mata-atlantica,
+        ex:Bioma_pampa ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste,
+        ex:Regiao_sudeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Não existe brasileiro que não tenha adormecido na infância ao som dolente e arrastado da cantiga que atravessou séculos de tradição oral: _"Boi, boi, boi, boi da cara preta..."_
+
+Estudado pelo antropólogo e folclorista Luís da Câmara Cascudo e pelo musicólogo Mário de Andrade, o Boi da Cara Preta é o bicho-papão rural por excelência. Diferente dos touros comuns de pasto, esta criatura possui natureza espectral e tamanho variável. Seu corpo é magro e esguio, coberto por pelos cinzentos e poeirentos, mas sua cabeça é marcada por uma pigmentação de treva impenetrável, uma máscara negra aveludada onde dois olhos redondos de fogo brando observam pelas frestas das janelas de madeira.
+
+O Boi da Cara Preta não arromba portas nem destrói paredes com fúria cega: ele desliza pelas sombras do curral e sobe silenciosamente nos caibros do telhado, emitindo um mugido abafado e cavernoso que ressoa como vento encanado. Ele é atraído especificamente pelas caretas, birras e pelo choro caprichoso das crianças na hora do descanso. Bastam os versos da cantiga entoados com voz firme para que o vulto se desfaça na escuridão da noite, lembrando aos pequenos que o repouso é a única salvaguarda contra os monstros da madrugada."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_boi-da-cara-preta_1,
+        ex:citacao_boi-da-cara-preta_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "A mais antiga e onipresente assombração infantil do cancioneiro tradicional brasileiro. O Boi da Cara Preta é uma entidade taurina espectral de pelagem cinzenta e máscara facial de negro absoluto, cujos olhos cintilam no topo dos muros, cercas e telhados coloniais. Invocado nas cantigas de ninar pelas amas e mães de todo o país, ele ronda as casas silenciosas para levar embora os infantes teimosos que recusam o sono."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rj,
+        ex:Estado_rn,
+        ex:Estado_rs,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_boi-da-cara-preta_1,
+        ex:fonte_boi-da-cara-preta_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Boi da Cara Preta"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_boi-da-cara-preta_1,
+        ex:relacao_boi-da-cara-preta_2 ;
+    ex:possuiSlug "boi-da-cara-preta"^^xsd:string ;
+    ex:possuiTagline "Boi, boi, boi... boi da cara preta, pega essa criança que tem medo de careta."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_boi-da-cara-preta_guardiao-dos-telhados,
+        ex:variacao_boi-da-cara-preta_touro-da-meia-noite .
+
+ex:boitata a ex:EntidadeFolclorica ;
+    ex:possuiNome "Boitatá"^^xsd:string ;
+    ex:possuiSlug "boitata"^^xsd:string .
+
+ex:caboclo-boiadeiro a ex:Encantado ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_cerrado ;
+    ex:associadaABiomaPrincipal ex:Bioma_cerrado ;
+    ex:associadaARegiao ex:Regiao_centro-oeste,
+        ex:Regiao_nordeste,
+        ex:Regiao_sudeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Em todas as estradas poeirentas de gado que cruzam o sertão da Bahia, as campinas de Minas Gerais e os cerrados de Goiás, o estalar de um chicote invisível no ar e o aboio melancólico ecoando nas serras são sinais inequívocos da passagem do Caboclo Boiadeiro. Documentado por folcloristas pioneiros como Edison Carneiro e Câmara Cascudo, ele é o arquétipo sagrado do homem do campo que domou a caatinga e o gado bravo.
+
+A lenda conta que o Boiadeiro foi o primeiro e mais destemido vaqueiro que já pisou na terra. Ao morrer em uma disparada lendária salvando sua tropa de uma enchente repentina ou de um despenhadeiro, foi acolhido pelas forças encantadas da terra. Ele não partiu para o descanso comum: transformou-se no guardião eterno das trilhas de gado e dos homens que vivem no lombo do cavalo.
+
+Montado em seu baio ligeiro, o Caboclo Boiadeiro galopa pelas chapadas nas tardes de trovoada. Ele traz no ombro o laço trançado de couro cru com doze braças de comprimento. Com esse laço sagrado, ele não amansa apenas os touros mais bravios e mandingueiros da caatinga: ele laça as ventanias furiosas, doma raios e dissipa nuvens de gafanhotos. Quando um vaqueiro cai ferido no espinheiro ou um rebanho se dispersa na escuridão de uma tempestade no cerrado, o Boiadeiro surge no horizonte soltando seu aboio estridente (_"Êeeea, booooi..."_), reunindo o gado disperso e salvando o sertanejo com sua presença protetora."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_caboclo-boiadeiro_1,
+        ex:citacao_caboclo-boiadeiro_2 ;
+    ex:possuiClassificacaoOriginal "Encantado"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "A figura mítica suprema do vaqueiro ancestral no folclore do sertão e na Encantaria brasileira. O Caboclo Boiadeiro é a personificação espiritual da coragem, da rusticidade e do domínio sobre os ermos e rebanhos. Montado em um cavalo vigoroso que não deixa rastros na terra seca, ele veste gibão e perneiras de couro cru, maneja um laço de couro mágico capaz de laçar ventos e tempestades e guia viajantes perdidos em meio à fúria das secas e dos temporais."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_ar,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_go,
+        ex:Estado_ma,
+        ex:Estado_mg,
+        ex:Estado_ms,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_pi,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_caboclo-boiadeiro_1,
+        ex:fonte_caboclo-boiadeiro_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_moderna ;
+    ex:possuiNivelAmeaca "medio"^^xsd:string ;
+    ex:possuiNome "Caboclo Boiadeiro"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_caboclo-boiadeiro_1,
+        ex:relacao_caboclo-boiadeiro_2 ;
+    ex:possuiSlug "caboclo-boiadeiro"^^xsd:string ;
+    ex:possuiTagline "Com gibão de couro curtido e laço de doze braças, ele tange o gado encantado e amansa as ventanias do sertão."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_caboclo-boiadeiro_boiadeiro-da-jurema,
+        ex:variacao_caboclo-boiadeiro_boiadeiro-lacador-do-sertao .
+
+ex:carneirinho-de-ouro a ex:EntidadeFolclorica ;
+    ex:possuiNome "Carneirinho de Ouro"^^xsd:string ;
+    ex:possuiSlug "carneirinho-de-ouro"^^xsd:string .
+
+ex:cumacanga a ex:EntidadeFolclorica ;
+    ex:possuiNome "Cumacanga (Curacanga)"^^xsd:string ;
+    ex:possuiSlug "cumacanga"^^xsd:string .
+
+ex:joao-sem-bracos a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Era noite de lua nova quando o tropeiro Manoel Caju saiu de Mossoró conduzindo uma tropa de burros carregada de rapadura. Na chapada deserta, a meia légua do próximo arraial, os animais empacaram de uma vez, com orelhas em pé e focinhos farejando o ar morno da caatinga. No meio da estrada poeirenta, estático como um mourão fincado no barro, estava o homem sem braços. Alto, de chapéu de couro sertanejo na cabeça e tronco rígido, mirava a tropa com dois olhos escuros e vazios.
+
+Manoel Caju conhecia os causos contados pelo avô nas fogueiras de São João. Lembrou da advertência dos antigos: nunca se deve falar nem se aproximar da aparição. Rezou a prece de São Bento em sussurro, bateu os calcanhares no flanco da mula guia e bradou aos companheiros que não olhassem para trás. A tropa arrancou a galope furioso pela poeira, vencendo a légua escura sem parar para respirar.
+
+Na manhã seguinte, de volta pela mesma estrada com o sol a pino, os vaqueiros encontraram as marcas fundas de cascos no solo seco. Os rastros cessavam bruscamente exatamente no ponto onde a figura estivera postada, sem pegadas humanas ao redor, como se a assombração tivesse evaporado na aridez do sertão."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_joao-sem-bracos_1 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "João Sem Braços é a assombração de um antigo sertanejo ou cangaceiro mutilado que surge imóvel no centro das estradas desertas da caatinga. Sem emitir sons ou pedir socorro, sua silhueta ereta e vazia paralisa viajantes e animais, provocando terror instantâneo em noites escuras."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_joao-sem-bracos_1,
+        ex:fonte_joao-sem-bracos_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica,
+        ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "João Sem Braços"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_joao-sem-bracos_1,
+        ex:relacao_joao-sem-bracos_2 ;
+    ex:possuiSlug "joao-sem-bracos"^^xsd:string ;
+    ex:possuiTagline "Parado no meio da estrada de terra, seu silêncio aterroriza mais do que qualquer bicho do sertão."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_joao-sem-bracos_joao-sem-pernas .
+
+ex:rasga-mortalha a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_amazonia,
+        ex:Bioma_caatinga,
+        ex:Bioma_cerrado ;
+    ex:associadaABiomaPrincipal ex:Bioma_amazonia ;
+    ex:associadaARegiao ex:Regiao_nordeste,
+        ex:Regiao_norte ;
+    ex:associadaARegiaoPrincipal ex:Regiao_norte ;
+    ex:possuiCausoCompleto """Não existe som que gele com mais rapidez o sangue de uma família no sertão nordestino ou nas margens dos rios amazônicos do que o voo rasante da Rasga-Mortalha. Nas noites sem vento, quando o calor abafado faz chiar os grilos na caatinga ou nos quintais coloniais, um vulto esbranquiçado de asas largas corta a escuridão sem produzir o mais leve ruído de penas. De repente, diretamente acima da cumeeira da casa, corta o ar aquele ruído seco, estridente e horripilante: _shhhhrrraaaaccckkk_.
+
+É o som de pano cru sendo rasgado com as mãos para confeccionar a mortalha fúnebre. O povo benze-se em pânico, corre para fechar portas e janelas e atira sal nas brasas do fogão. Conta a tradição registrada por Câmara Cascudo e Gilberto Freyre que a ave é atraída pelo cheiro imperceptível da alma que começa a se desprender do corpo em agonia. Onde a Rasga-Mortalha canta e pousa, encomendam-se as velas e chamam-se os parentes: a fatalidade foi lavrada no céu e a cova não tardará a receber seu dono."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_rasga-mortalha_1 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "A mais temida ave de agouro do Norte e Nordeste brasileiro. A Rasga-Mortalha é uma coruja de aspecto espectral e voo silencioso cujo grito cortante assemelha-se ao som de seda ou pano grosso sendo violentamente rasgado. Quando sobrevoa em círculos o telhado de uma casa onde repousa um enfermo, o saber popular decreta que a morte virá buscá-lo antes do findar da lua."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_ar,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_ma,
+        ex:Estado_pa,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_rasga-mortalha_1,
+        ex:fonte_rasga-mortalha_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "Rasga-Mortalha"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_rasga-mortalha_1,
+        ex:relacao_rasga-mortalha_2 ;
+    ex:possuiSlug "rasga-mortalha"^^xsd:string ;
+    ex:possuiTagline "Quando o tecido da mortalha rasga no céu noturno, a terra logo se abre para um novo sepulcro."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_rasga-mortalha_coruja-da-matriz-de-canguaretama,
+        ex:variacao_rasga-mortalha_suindara-agoureira .
+
+ex:sopinha-e-cu-de-fogo a ex:Encantado ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:associadaAoPovo ex:Povo_potiguara ;
+    ex:possuiCausoCompleto """Orlando Soares conta que conhece a história de Sopinha e Cu de Fogo, e ri. Sopinha botava o mato abaixo, e Cu de Fogo ia e queimava. Era o pai dele que contava essa história.
+
+É tudo o que o relato guarda. A pesquisadora observa que a narrativa carrega traços do cotidiano indígena ligado à queima da mata, e que, para Orlando, a destruição da mata não estava ligada só às ações de pessoas, mas a entes que colaboravam com ela."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_sopinha-e-cu-de-fogo_1 ;
+    ex:possuiClassificacaoOriginal "Encantado"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Personagens da tradição oral potiguara do litoral norte da Paraíba, narrados por Orlando Soares. Sopinha e Cu de Fogo são responsáveis pelo corte das árvores: um derruba a mata e o outro põe fogo nela. Para a pesquisadora Milena Veríssimo Barbosa, a história atribui a destruição da mata não só a pessoas, indígenas ou brancas, mas a entes que colaboram com ela."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_fogo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_pb ;
+    ex:possuiFonte ex:fonte_sopinha-e-cu-de-fogo_1 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "medio"^^xsd:string ;
+    ex:possuiNome "Sopinha e Cu de Fogo"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_sopinha-e-cu-de-fogo_1 ;
+    ex:possuiSlug "sopinha-e-cu-de-fogo"^^xsd:string ;
+    ex:possuiTagline "Na história que o pai de Orlando contava, a mata não caía só pela mão do homem: Sopinha botava o mato abaixo, e Cu de Fogo vinha atrás tocando fogo."^^xsd:string .
+
+ex:tutu a ex:EntidadeFolclorica ;
+    ex:possuiNome "Tutu Marambá"^^xsd:string ;
+    ex:possuiSlug "tutu"^^xsd:string .
+
+ex:Bioma_amazonia a ex:Bioma ;
+    rdfs:label "amazonia"@pt-br .
+
+ex:Bioma_pampa a ex:Bioma ;
+    rdfs:label "pampa"@pt-br .
+
+ex:Estado_pa a ex:Estado ;
+    rdfs:label "PA"@pt-br .
+
+ex:Estado_sc a ex:Estado ;
+    rdfs:label "SC"@pt-br .
+
+ex:Maldicao a owl:Class ;
+    rdfs:label "Maldicao"@pt-br ;
+    rdfs:subClassOf ex:EntidadeFolclorica .
+
+ex:Metamorfo a owl:Class ;
+    rdfs:label "Metamorfo"@pt-br ;
+    rdfs:subClassOf ex:EntidadeFolclorica .
+
+ex:babau a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Há entidades do folclore brasileiro com biografia: nascimento, corpo, hábito, fraqueza, ritual de troca. O Babau não tem nada disso. Tem uma frase.
+
+"Dorme menino, que o Babau vem aí"; a cantiga se repete, com pequenas variações, em casas de todo o Nordeste, cantada por mães, avós, tias, sempre na mesma função: impor a hora de dormir. Não existe, em nenhuma fonte consultada, uma narrativa sobre o Babau que vá além dessa ameaça. Ele não tem uma história de origem. Ninguém registrou onde mora, o que come, que forma assume quando finalmente chega."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_babau_1,
+        ex:citacao_babau_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "baixa"^^xsd:string ;
+    ex:possuiDescricao "O Babau não tem cara, não tem corpo, não tem uma única descrição fixa em nenhuma fonte, e é exatamente por isso que funciona. Entidade de pura ameaça, criada para impor o sono às crianças do Nordeste, ele não precisa de forma porque o medo que ele provoca nasce inteiro da imaginação de quem ouve o nome."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_ar,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_babau_1,
+        ex:fonte_babau_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Babau"^^xsd:string ;
+    ex:possuiOrigemIncerta true ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_babau_1,
+        ex:relacao_babau_2,
+        ex:relacao_babau_3 ;
+    ex:possuiSlug "babau"^^xsd:string ;
+    ex:possuiTagline "\"Dorme menino, que o Babau vem aí.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_babau_devorador-das-encruzilhadas,
+        ex:variacao_babau_mascarado-farsesco .
+
+ex:besta-fera a ex:Maldicao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Não é um bicho do mato. É uma sentença que corre.
+
+Aparece em noite de lua cheia, quando o disco no céu ilumina o suficiente para que ninguém tenha desculpa de não ter visto. Corre pelas estradas de terra do interior de Pernambuco, Alagoas e Paraíba, chicoteando os animais que encontra pelo caminho; cavalos param de repente, cachorros latem sem motivo aparente e depois se juntam a ela, formando matilha, como se reconhecessem nela algo que não é bicho nem gente. O relincho que solta não é de cavalo nenhum: é grito, é uivo, é as duas coisas ao mesmo tempo, e quem já ouviu diz que reconhece a diferença na hora, mesmo sem saber explicar como.
+
+Quem tem a infelicidade de olhar de frente para o rosto dela enlouquece; não para sempre, dizem as versões mais generosas, mas o bastante para que a família passe dias sem reconhecer quem voltou daquela estrada. A cura, quando vem, é lenta e nunca completa: sobra sempre um resquício de olhar perdido em quem cruzou com a Besta Fera e sobreviveu ao encontro.
+
+A perseguição, porque é sempre perseguição, ninguém a encontra parada, termina do mesmo jeito: ela corre até uma flor vermelha, encharcada de sangue, que nasce no meio do mato como se estivesse ali esperando por ela, e desaparece dentro da própria flor. Ninguém nunca a viu sair. Só entrar."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_besta-fera_1,
+        ex:citacao_besta-fera_2 ;
+    ex:possuiClassificacaoOriginal "Maldição"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Corpo de cavalo, dorso humano, e a crença firme de que por trás dela está o próprio Diabo escapado do Inferno. A Besta Fera galopa pelo interior de Pernambuco, Alagoas e Paraíba em noites de lua cheia, marcando com o \"sinal da besta\" quem tem a desgraça de cruzar seu caminho."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_fogo,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe ;
+    ex:possuiFonte ex:fonte_besta-fera_1 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "Besta Fera"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_besta-fera_1 ;
+    ex:possuiSlug "besta-fera"^^xsd:string ;
+    ex:possuiTagline "\"Ela corre pelas áreas florestadas até encontrar uma flor vermelha, coberta de sangue, na qual desaparece.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_besta-fera_centauro-infernal,
+        ex:variacao_besta-fera_destruidor-de-cercas .
+
+ex:bicho-sete-cabecas a ex:Guardiao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Quando a noite engolia os pequenos vilarejos do Nordeste, os cantadores de cordel desfiavam nas feiras a saga de reinos perdidos no meio da caatinga. Em todas as histórias que envolviam provas de coragem ou o resgate de donzelas e tesouros encantados, havia um obstáculo final: o Bicho de Sete Cabeças.
+
+Dizem que o monstro vive em desfiladeiros amaldiçoados de pedra quente e furnas profundas dos sertões. É uma fera escamosa gigantesca, capaz de cuspir fogo ou veneno pelas sete bocarronas. Ele não exige magia abstrata para ser compreendido; ele é a força bruta e avassaladora do destino. Cada uma de suas sete cabeças tem vida própria e, se o cavaleiro não for ágil o bastante para golpear todas no tempo certo, ou usar fogo e sal para cauterizar as feridas, a abominação recupera o fôlego e incendeia a paisagem ao redor.
+
+A tradição nos folhetos de cordel consagra que a força física pura raramente basta contra ele: é a esperteza engenhosa do sertanejo destemido que encontra a brecha na couraça de escamas, vencendo o monstro que a linguagem do povo transformou em símbolo de qualquer provação impossível."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_bicho-sete-cabecas_1,
+        ex:citacao_bicho-sete-cabecas_2 ;
+    ex:possuiClassificacaoOriginal "Guardião"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "A encarnação máxima do perigo intransponível na cultura nordestina. Oriundo da aclimação popular das hidras e dragões ibéricos para o cenário hostil das caatingas, o Bicho de Sete Cabeças é uma colossal serpente draconiana com sete longos pescoços independentes que cospem labaredas e guardam cavernas de pedra ardente. Na tradição do cordel, só pode ser vencido pela astúcia e coragem de um herói valoroso."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_fogo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ce,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_bicho-sete-cabecas_1,
+        ex:fonte_bicho-sete-cabecas_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "extremo"^^xsd:string ;
+    ex:possuiNome "Bicho de Sete Cabeças"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "epico"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_bicho-sete-cabecas_1,
+        ex:relacao_bicho-sete-cabecas_2,
+        ex:relacao_bicho-sete-cabecas_3 ;
+    ex:possuiSlug "bicho-sete-cabecas"^^xsd:string ;
+    ex:possuiTagline "Quando uma cabeça cai, o sertão inteiro treme."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_bicho-sete-cabecas_hidra-do-acude,
+        ex:variacao_bicho-sete-cabecas_sete-grutas-das-gerais .
+
+ex:cabeca-satanica a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_cerrado ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste,
+        ex:Regiao_norte ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Os tropeiros e vaqueiros mais velhos do Sertão evitam cavalgar em encruzilhadas nas noites de lua minguante para não cruzar com a Cabeça Errante. Conta a tradição que se trata do espírito condenado de um pecador execrável cuja cabeça foi apartada do corpo na sepultura, condenada a vagar sem descanso espalhando tormento.
+
+O encontro se anuncia pelo ruído sinistro de folhas secas estalando e pelo sibilar de um vento repentino que sopra sem motivo aparente. De súbito, a cabeça disforme surge rolando velozmente na escuridão da estrada de terra como uma esfera pesada. Em certos trechos, ela ergue-se do solo, usando a vasta cabeleira emaranhada como apoio elástico ou flutuando a poucos palmos da poeira.
+
+Se o cavaleiro não for rápido o bastante para esporear a montaria e alcançar um riacho de água corrente, a Cabeça aproxima-se com gargalhadas estridentes. O simples contato de sua pele ressequida ou de seus cabelos queimados na perna do viajante transmite uma enfermidade fulminante que consome as carnes e enlouquece a vítima em poucos dias."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_cabeca-satanica_1,
+        ex:citacao_cabeca-satanica_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "A Cabeça Satânica é uma das assombrações mais temidas das estradas do Nordeste. Trata-se de uma medonha cabeça humana decepada, desprovida de corpo, com cabelos longos e sujos de terra e olhos que ardem como carvões em brasa. Ela rola velozmente pelo solo ou flutua rente à poeira impulsionada pelos próprios cabelos, perseguindo viandantes noturnos para sugar sua força vital e infligir doenças mortais com seu toque maldito."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_fogo,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_cabeca-satanica_1 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "extremo"^^xsd:string ;
+    ex:possuiNome "Cabeça Satânica"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_cabeca-satanica_1,
+        ex:relacao_cabeca-satanica_2,
+        ex:relacao_cabeca-satanica_3 ;
+    ex:possuiSlug "cabeca-satanica"^^xsd:string ;
+    ex:possuiTagline "Onde ela rola, o mato queima e a vida seca."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_cabeca-satanica_cabeca-rolante-da-meia-noite,
+        ex:variacao_cabeca-satanica_cranio-luminoso-das-minas .
+
+ex:caipora a ex:EntidadeFolclorica ;
+    ex:possuiNome "Caipora"^^xsd:string ;
+    ex:possuiSlug "caipora"^^xsd:string .
+
+ex:flor-do-mato a ex:Guardiao ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """A Flor-do-Mato ativamente ajuda quem a respeita: ordena aos animais que fiquem próximos da área onde os caçadores estão, e guia de volta à estrada quem se perdeu.
+
+O problema aparece para quem não traz nada, nem fumo. Nesse caso, ela esconde ou afugenta toda a caça da região, e quem levou cachorro na expedição vê o animal surrado com varas, às vezes quase até a morte. Ela imita sons de bichos com perfeição suficiente para fazer caçadores e viajantes penetrarem cada vez mais fundo na mata, convencidos de que seguem uma presa real, até perceberem que estão perdidos, e é exatamente nesse momento que ela mais gargalha. O riso dela não é acompanhamento do castigo: é parte dele.
+
+Existe, porém, uma forma segura de transformar a Flor-do-Mato de aliada em inimiga permanente, e funciona ao contrário do que a lógica sugere: usar pimenta. Alguns caçadores, tentando afastá-la, passam pimenta-malagueta no focinho dos próprios cães antes de sair para caçar. O resultado é o oposto do pretendido; quem faz isso perde, de vez, a sorte na caça. Nunca mais encontra presa alguma, e quando encontra, erra o alvo sempre. Ela permanece por perto só para vaiar e rir da pontaria arruinada. O caçador que a ofende com pimenta acaba tendo que se aposentar da própria profissão."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_flor-do-mato_1,
+        ex:citacao_flor-do-mato_2 ;
+    ex:possuiClassificacaoOriginal "Guardião"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Diferente da maioria dos guardiões de mata, a Flor-do-Mato não se esconde: aparece com frequência, ajuda quem se perde e comanda os animais para perto do caçador que a agrada. Quem não deixa fumo na entrada da floresta descobre o outro lado dela; a caça desaparece, os cães levam surra, e o riso dela ecoa por trás de cada armadilha."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_go,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pr,
+        ex:Estado_rj,
+        ex:Estado_sc,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_flor-do-mato_1 ;
+    ex:possuiNivelAmeaca "medio"^^xsd:string ;
+    ex:possuiNome "Flor-do-Mato"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_flor-do-mato_1,
+        ex:relacao_flor-do-mato_2,
+        ex:relacao_flor-do-mato_3 ;
+    ex:possuiSlug "flor-do-mato"^^xsd:string ;
+    ex:possuiTagline "\"Heroína ou vilã? Fica bem complicado definir.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_flor-do-mato_donzela-das-orquideas,
+        ex:variacao_flor-do-mato_senhora-das-sempre-vivas .
+
+ex:pedro-malasartes a ex:Encantado ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_cerrado,
+        ex:Bioma_mata-atlantica,
+        ex:Bioma_pampa ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_centro-oeste,
+        ex:Regiao_nordeste,
+        ex:Regiao_sudeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Pelos caminhos poeirentos do sertão e pelas encruzilhadas do interior do Brasil, vaga um andarilho de passos ligeiros, roupas remendadas e olhar faiscante de esperteza: Pedro Malasartes. Imortalizado na tradição oral recolhida por Luís da Câmara Cascudo em _Contos Tradicionais do Brasil_ e recriado em inúmeras crônicas populares, Malasartes não possui ouro, terras ou tropas armadas, mas carrega na algibeira uma arma infinitamente mais perigosa: o engenho insuperável de quem sobrevive pela palavra.
+
+Dentre seus causos mais afamados, narra-se o dia em que ele vendeu a lendária 'panela de ferver sem fogo' a um fazendeiro sovina. Malasartes enterrou brasas vivas no solo à beira da estrada, cobriu-as de areia fina e pôs a panela sobre a terra aparentemente fria. Quando o avarento se aproximou a cavalo e viu a água borbulhando com toucinho e feijão, pagou uma fortuna pela panela milagrosa, apenas para descobrir em casa que a magia morava exclusivamente na astúcia do pícaro. Vingador cômico dos desvalidos, Malasartes engana cobradores gananciosos, vence apostas impossíveis com o diabo em noites de tempestade e desaparece na poeira da estrada assobiando uma moda de viola, lembrando a todos que a inteligência do pobre sempre desarma a soberba dos ricos."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_pedro-malasartes_1,
+        ex:citacao_pedro-malasartes_2 ;
+    ex:possuiClassificacaoOriginal "Encantado"^^xsd:string ;
+    ex:possuiDescricao "Figura lendária do ciclo pícaro ibero-brasileiro, Pedro Malasartes é o andarilho engenhoso que usa da lábia afiada e de truques cômicos para desmascarar patrões gananciosos e sobreviver à míngua."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_pe ;
+    ex:possuiFonte ex:fonte_pedro-malasartes_1,
+        ex:fonte_pedro-malasartes_2,
+        ex:fonte_pedro-malasartes_3 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Pedro Malasartes"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_pedro-malasartes_1,
+        ex:relacao_pedro-malasartes_2,
+        ex:relacao_pedro-malasartes_3 ;
+    ex:possuiSlug "pedro-malasartes"^^xsd:string ;
+    ex:possuiTagline "A astúcia popular que vira o jogo contra a avareza e ri na cara dos poderosos."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_pedro-malasartes_panela-magica .
+
+ex:quibungo a ex:EntidadeFolclorica ;
+    ex:possuiNome "Quibungo"^^xsd:string ;
+    ex:possuiSlug "quibungo"^^xsd:string .
+
+ex:Elemento_agua a ex:Elemento ;
+    rdfs:label "agua"@pt-br .
+
+ex:bicho-papao a ex:EntidadeFolclorica ;
+    ex:possuiNome "Bicho-Papão"^^xsd:string ;
+    ex:possuiSlug "bicho-papao"^^xsd:string .
+
+ex:boi-espacio a ex:Encantado ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """No ciclo do gado do Sertão nordestino, os vaqueiros são tidos como heróis quase invencíveis, capazes de laçar qualquer boi no meio dos espinhos da Caatinga. Mas toda região tem a lenda de um boi que nenhum homem conseguiu pegar. É o Boi Espácio.
+
+Ele surge do nada nas orlas das fazendas. Tem o pelo brilhante como a lua, porte majestoso, e em sua testa frequentemente reluz uma estrela ou seus chifres brilham com o fulgor do ouro e da prata. Quando os vaqueiros montam para laçá-lo, o novilho dispara numa velocidade impossível para um animal daquele peso. Rasga cercas de arame farpado e avelozes sem sofrer um único arranhão.
+
+Quando um vaqueiro obstinado finalmente crê tê-lo encurralado contra uma grota ou despenhadeiro de pedra, o Boi Espácio dá um salto portentoso sobre o abismo ou simplesmente se desfaz em um redemoinho de poeira e fumaça, deixando o cavaleiro perplexo e com o laço vazio nas mãos."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_boi-espacio_1,
+        ex:citacao_boi-espacio_2 ;
+    ex:possuiClassificacaoOriginal "Encantado"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "Um dos mitos mais fascinantes da cultura pastoril do sertão nordestino. O Boi Espácio é um novilho encantado de porte magnífico, chifres reluzentes e velocidade impossível que surge nos campos da caatinga desafiando os melhores vaqueiros da região. Nenhuma corda o laça, nenhum cavalo o alcança, e quando parece encurralado, salta precipícios intransponíveis ou desvanece no ar como poeira e miragem."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_pr,
+        ex:Estado_rs,
+        ex:Estado_sc ;
+    ex:possuiFonte ex:fonte_boi-espacio_1 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Boi Espácio"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_boi-espacio_1,
+        ex:relacao_boi-espacio_2,
+        ex:relacao_boi-espacio_3 ;
+    ex:possuiSlug "boi-espacio"^^xsd:string ;
+    ex:possuiTagline "O chifre é de ouro, mas o couro é de fumaça."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_boi-espacio_boiadas-fantasmas,
+        ex:variacao_boi-espacio_passo-da-campanha .
+
+ex:branca-dias a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto "Na Paraíba e em Pernambuco, conta-se que Branca Dias, sabendo que o Santo Ofício se aproximava e temendo pela prataria da família, peças que, na tradição judaica secreta que ela mantinha, carregavam também valor ritual, afundou tudo nas águas de um açude do engenho, escondendo-as de olhos inquisitoriais que nunca mais as encontrariam. A prataria, dizem, segue lá até hoje. E Branca também: seu espírito assombra as águas do açude, presa entre o mundo que a perseguiu viva e o fundo onde escondeu o último resquício da fé que não pôde professar às claras."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_branca-dias_1,
+        ex:citacao_branca-dias_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "Branca Dias existiu. Cristã-nova perseguida pela Inquisição por praticar o judaísmo em segredo, tornou-se senhora de engenho em Pernambuco no século XVI, e, mesmo morta, continuou sendo julgada. Da mulher real nasceu a lenda: o fantasma que afunda a prataria da família num açude para escondê-la da perseguição religiosa, e que ainda hoje assombraria as águas onde jurou nunca mais ser encontrada."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_agua,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_pb,
+        ex:Estado_pe ;
+    ex:possuiFonte ex:fonte_branca-dias_1 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Branca Dias (A Senhora do Engenho)"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "epico"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_branca-dias_1,
+        ex:relacao_branca-dias_2,
+        ex:relacao_branca-dias_3 ;
+    ex:possuiSlug "branca-dias"^^xsd:string ;
+    ex:possuiTagline "\"Cristã-nova, natural de Viana e moradora em Lisboa (...) acusada de judaísmo.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_branca-dias_tradicao-paraibana .
+
+ex:cabra-cabriola a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """Toda manhã, na saída para o trabalho, era ritual: a mãe reunia os filhos e repetia o aviso de sempre, não abram a porta para ninguém além de mim. A frase não era caso de excesso de zelo. No entardecer daquela terra, rondava um monstro de bocarra enorme, dentes saltados e afiados, de onde escapavam chamas e fuligem, e o mesmo fogo saía dos olhos e das narinas. Era a Cabra-Cabriola, e sabia exatamente onde bater.
+
+Ela chegava à porta e gritava para as crianças abrirem, tentando soar como a mãe que tinha acabado de sair. Falhava. A voz saía grossa, metálica, errada demais para enganar ouvidos que conheciam bem quem os chamava. Tentou de novo. Falhou de novo. A cada noite, as crianças ouviam o chamado, comparavam com a memória da voz real, e mantinham a porta trancada; sem exceção, sem hesitação.
+
+O que diferencia a Cabra-Cabriola da maioria dos monstros que rondam portas e florestas neste território é que ela não desiste, e não confia só na força. Um dia, resolveu observar antes de atacar: ficou à espreita perto da casa, escondida, e escutou a mãe se despedir dos filhos antes de sair. Guardou o tom, o ritmo, a cadência. Treinou a imitação incansavelmente, noite após noite, até a voz ficar quase idêntica, quase. O grosso, o metálico, o errado continuava ali, entalado na garganta que não era humana. As crianças, de novo, não abriram.
+
+Foi então que a Cabra-Cabriola fez o que nenhum outro bicho do fôlego brasileiro faz: mutilou a si mesma para aperfeiçoar o disfarce. Pegou uma bigorna e uma marreta, e bateu na própria língua, repetidamente, dolorosamente, até deixá-la mais fina; fina o bastante para que o som saísse limpo, humano, materno. Na noite seguinte, bateu à porta pela enésima vez. E dessa vez a voz enganou. As crianças, finalmente convencidas, destrancaram a porta que as tinha protegido por tantas noites. A Cabra-Cabriola não perdeu tempo: devorou-as ali mesmo, ferozmente, sem cerimônia."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_cabra-cabriola_1,
+        ex:citacao_cabra-cabriola_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Boca imensa, dentes saltados, chamas e fuligem escapando pelos olhos e narinas, a Cabra-Cabriola bate à porta imitando a voz de mãe. As crianças, atentas, não caem na primeira, na segunda, nem na décima tentativa. Só caem quando o monstro descobre como afinar a própria voz até ela enganar."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_fogo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_cabra-cabriola_1,
+        ex:fonte_cabra-cabriola_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "Cabra-Cabriola"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_cabra-cabriola_1,
+        ex:relacao_cabra-cabriola_2,
+        ex:relacao_cabra-cabriola_3 ;
+    ex:possuiSlug "cabra-cabriola"^^xsd:string ;
+    ex:possuiTagline "Bateu a própria língua na bigorna até a voz enganar os ouvidos de uma criança."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_cabra-cabriola_besta-fumegante,
+        ex:variacao_cabra-cabriola_saltadora-do-serido .
+
+ex:matinta-pereira a ex:EntidadeFolclorica ;
+    ex:possuiNome "Matinta Pereira"^^xsd:string ;
+    ex:possuiSlug "matinta-pereira"^^xsd:string .
+
+ex:mula-sem-cabeca a ex:Maldicao ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste,
+        ex:Regiao_sudeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_sudeste ;
+    ex:possuiCausoCompleto """Toda quinta-feira à noite, antes da meia-noite, ela precisa deixar sua casa em silêncio, sem acordar ninguém, sem que ninguém saiba, e caminhar até o pátio de uma igreja. É lá que a transformação, dolorosa, acontece.
+
+A partir daquele instante, não há mais mulher: só a fera correndo. Ela só volta a ser gente depois de cumprida a rota inteira, silenciosamente, a tempo de estar de novo em casa antes que alguém note sua ausência.
+
+Rompido o encanto, a mulher reaparece imediatamente, nua, humana de novo, e enquanto quem a libertou continuar morando na mesma cidade, ela não volta a se transformar."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_mula-sem-cabeca_1,
+        ex:citacao_mula-sem-cabeca_2 ;
+    ex:possuiClassificacaoOriginal "Maldição"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "A mulher que mantém um caso com um padre é condenada, nas noites de quinta para sexta-feira, a se transformar numa mula sem cabeça; labaredas onde deveria haver focinho, um freio de ferro manchado de sangue flutuando no meio do fogo. Ela galopa desgovernada até o amanhecer, atropelando o que encontra pela frente. A maldição nunca recai sobre o padre."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_fogo,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_es,
+        ex:Estado_go,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_pr,
+        ex:Estado_rj,
+        ex:Estado_rn,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_mula-sem-cabeca_1,
+        ex:fonte_mula-sem-cabeca_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "Mula Sem Cabeça"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "epico"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_mula-sem-cabeca_1,
+        ex:relacao_mula-sem-cabeca_2,
+        ex:relacao_mula-sem-cabeca_3 ;
+    ex:possuiSlug "mula-sem-cabeca"^^xsd:string ;
+    ex:possuiTagline "Toda sexta, alguém paga sozinha por um pecado de dois."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_mula-sem-cabeca_besta-das-labaredas,
+        ex:variacao_mula-sem-cabeca_burrinha-de-padre,
+        ex:variacao_mula-sem-cabeca_cercado-do-ze-padre,
+        ex:variacao_mula-sem-cabeca_lamento-das-paroquias .
+
+ex:pai-do-mato a ex:Guardiao ;
+    ex:associadaABioma ex:Bioma_amazonia,
+        ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_centro-oeste,
+        ex:Regiao_nordeste,
+        ex:Regiao_norte,
+        ex:Regiao_sudeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_norte ;
+    ex:possuiCausoCompleto """Toda expedição de caça ou mata adentro tem um risco que os mais velhos avisam antes da partida: nunca ficar para trás do grupo. Não por medo de se perder sozinho, por medo do que existe especificamente para quem se atrasa. O Pai-do-Mato não persegue caravanas inteiras. Ele espera o intervalo, o cansaço, o passo mais lento, e recolhe quem sobra.
+
+Apesar do apetite antropofágico, engole um humano inteiro, sem mastigar, o Pai-do-Mato não gosta de ser visto. Foge da presença humana, se esconde, e só se revela a quem já não tem mais como escapar: o retardatário da expedição, ou quem avançou destruindo a mata sem necessidade.
+
+Há uma pista que ele deixa sem querer: urina azul. Quem avista uma marca de xixi azul no chão da mata sabe duas coisas, que o Pai-do-Mato está ou esteve por perto, e que talvez seja hora de rever a posição na fila da expedição. Porque, se ele está caçando, alguém vai ser o último. E o último é sempre quem ele leva."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_pai-do-mato_1 ;
+    ex:possuiClassificacaoOriginal "Guardião"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Gigante de altura impossível de calcular, coberto de lama, cabelos compridos e unhas de dez metros, o Pai-do-Mato engole inteiros os que ficam para trás numa expedição ou destroem a mata que habita. Pele impenetrável a qualquer arma, só o umbigo corta. Prefere não ser visto: quem quiser rastreá-lo, procure a urina azul."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_am,
+        ex:Estado_pa,
+        ex:Estado_pb,
+        ex:Estado_pe ;
+    ex:possuiFonte ex:fonte_pai-do-mato_1,
+        ex:fonte_pai-do-mato_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "extremo"^^xsd:string ;
+    ex:possuiNome "Pai-do-Mato"^^xsd:string ;
+    ex:possuiOrigemIncerta true ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_pai-do-mato_1,
+        ex:relacao_pai-do-mato_2,
+        ex:relacao_pai-do-mato_3,
+        ex:relacao_pai-do-mato_4 ;
+    ex:possuiSlug "pai-do-mato"^^xsd:string ;
+    ex:possuiTagline "\"O ponto fraco é o umbigo.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_pai-do-mato_cavaleiro-da-queixada,
+        ex:variacao_pai-do-mato_devorador-dos-vales .
+
+ex:sume a ex:Encantado ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste,
+        ex:Regiao_sudeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:associadaAoPovo ex:Povo_guarani,
+        ex:Povo_tupi,
+        ex:Povo_tupinamba ;
+    ex:possuiCausoCompleto """Nas memórias mais recuadas transmitidas pelos pajés aos primeiros cronistas do século XVI, muito antes do desembarque das caravelas portuguesas, um sábio e venerável ancião caminhou pelas terras litorâneas do Brasil: Sumé (Pay Zumé). Conforme registrou o Padre Manuel da Nóbrega logo em sua carta de 1549 e o cosmógrafo francês André Thevet em 1557, os tupinambás mantinham viva a lembrança daquele que lhes revelou os maiores segredos da sobrevivência e da cultura.
+
+Sumé ensinou aos povos da floresta como domesticar a terra, plantar a mandioca brava, extrair o veneno da raiz para produzir a farinha nutridora e fiar o algodão selvagem. Ele estabeleceu normas pacíficas de parentesco, ensinou a cura pelas ervas e proibiu crueldades desmedidas. Contudo, quando facções guerreiras e cobiçosas se insurgiram contra suas sábias advertências e tentaram atingi-lo com flechas, as armas voltaram-se contra os agressores no ar. Com tristeza solene, Sumé caminhou tranquilamente sobre as ondas do Oceano Atlântico em direção ao horizonte oriental, deixando gravadas nas pedras costeiras de praias e cachoeiras as marcas fossilizadas de seus pés descalços (o célebre 'itacoatiara' ou pegadas de Sumé), com a promessa profética de que seus ensinamentos retornariam quando os homens buscassem a paz."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_sume_1,
+        ex:citacao_sume_2 ;
+    ex:possuiClassificacaoOriginal "Encantado"^^xsd:string ;
+    ex:possuiDescricao "Herói civilizador e mestre mítico primordial das nações tupi-guaranis, Sumé ensinou a agricultura da mandioca, o uso do fogo ordenado e as regras de convívio social antes de desaparecer pelo mar."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_pb ;
+    ex:possuiFonte ex:fonte_sume_1,
+        ex:fonte_sume_2,
+        ex:fonte_sume_3 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Sumé"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "epico"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_sume_1,
+        ex:relacao_sume_2,
+        ex:relacao_sume_3,
+        ex:relacao_sume_4 ;
+    ex:possuiSlug "sume"^^xsd:string ;
+    ex:possuiTagline "O lendário mestre das leis sagradas que ensinou o cultivo da mandioca e caminhou sobre as águas."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_sume_pedra-de-sao-pedro,
+        ex:variacao_sume_sume-paraiba .
+
+ex:vaqueiro-misterioso a ex:EntidadeFolclorica ;
+    ex:possuiNome "Vaqueiro Misterioso"^^xsd:string ;
+    ex:possuiSlug "vaqueiro-misterioso"^^xsd:string .
+
+ex:Estado_rs a ex:Estado ;
+    rdfs:label "RS"@pt-br .
+
+ex:MatrizCultural a owl:Class ;
+    rdfs:label "MatrizCultural"@pt-br .
+
+ex:Povo_potiguara a ex:Povo ;
+    rdfs:label "potiguara"@pt-br .
+
+ex:Regiao_centro-oeste a ex:Regiao ;
+    rdfs:label "Centro-Oeste"@pt-br .
+
+ex:bruxa a ex:Metamorfo ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_sul ;
+    ex:associadaAoPovo ex:Povo_acorianos ;
+    ex:possuiCausoCompleto "Foi em Florianópolis, porém, que a lenda ganhou sua expressão mais rica e mais brasileira: ali, contam, as bruxas roubam embarcações de pescadores à noite, transformam-se em borboletas gigantes para vigiar sem serem vistas, e dão nós indesatáveis nas crinas dos cavalos como assinatura de sua passagem, um dano pequeno, quase brincalhão, que ao mesmo tempo avisa: alguém esteve aqui, e não era humano."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_bruxa_1 ;
+    ex:possuiClassificacaoOriginal "Metamorfo"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Figura universal do imaginário humano, a Bruxa ganhou rosto próprio na Ilha de Santa Catarina com a colonização açoriana: mulheres que se transformam em coruja, morcego ou mariposa negra, roubam embarcações e sequestram crianças que não dormem. Foi o pesquisador Franklin Cascaes quem, por trinta anos, transformou os relatos orais da ilha em acervo documentado."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_ar,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_pb,
+        ex:Estado_pr,
+        ex:Estado_rs,
+        ex:Estado_sc ;
+    ex:possuiFonte ex:fonte_bruxa_1,
+        ex:fonte_bruxa_2,
+        ex:fonte_bruxa_3 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "Bruxa (Bruxas de Florianópolis)"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "epico"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_bruxa_1,
+        ex:relacao_bruxa_2,
+        ex:relacao_bruxa_3,
+        ex:relacao_bruxa_4,
+        ex:relacao_bruxa_5 ;
+    ex:possuiSlug "bruxa"^^xsd:string ;
+    ex:possuiTagline "Cumprimenta-se apenas com a mão esquerda; sinal, dizem, de quem faz pacto com o que não se nomeia."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_bruxa_baile-das-bruxas-de-itaguacu,
+        ex:variacao_bruxa_bruxa-da-aldeia-sao-miguel,
+        ex:variacao_bruxa_bruxa-guaratuba,
+        ex:variacao_bruxa_bruxa-metamorfa,
+        ex:variacao_bruxa_bruxas-de-coqueirinho .
+
+ex:cuca a ex:EntidadeFolclorica ;
+    ex:possuiNome "Cuca"^^xsd:string ;
+    ex:possuiSlug "cuca"^^xsd:string .
+
+ex:curupira a ex:EntidadeFolclorica ;
+    ex:possuiNome "Curupira"^^xsd:string ;
+    ex:possuiSlug "curupira"^^xsd:string .
+
+ex:homem-do-saco a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_cerrado,
+        ex:Bioma_mata-atlantica,
+        ex:Bioma_pampa ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste,
+        ex:Regiao_sudeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_sudeste ;
+    ex:possuiCausoCompleto """Quando a luz alaranjada do crepúsculo começa a ceder lugar às sombras nas ruas dos bairros residenciais, as mães costumavam interromper as brincadeiras infantis nas calçadas com uma ordem firme: "Entrem logo, que o Homem do Saco já vai passar".
+
+Diferente das criaturas fantásticas das matas virgens que exigem florestas densas para habitar, o Homem do Saco é o terror concreto do asfalto, do paralelepípedo e dos terrenos baldios. Apresenta-se como um andarilho decrépito, com casaco longo ensebado, chapéu puído abaixado sobre a testa e uma postura curvada sob o peso de um enorme saco de aniagem que arrasta pelas costas.
+
+A tradição popular alerta que seu andar lento e claudicante é mero disfarce: bastava uma criança distraída afastar-se da soleira de casa ou adentrar um beco deserto para o velho demonstrar uma agilidade sobrenatural. Com um bote rápido e silencioso, cobria a cabeça da vítima com a boca do saco, enfiava-a lá dentro e desaparecia virando a primeira esquina sem deixar qualquer rastro. O destino das crianças aprisionadas variava entre os relatos: levadas para terras distantes, transformadas em sabão ou mantidas sob cativeiro secreto."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_homem-do-saco_1,
+        ex:citacao_homem-do-saco_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "O mais temido mito de controle social infantil dos centros urbanos e subúrbios brasileiros. Descrito por Câmara Cascudo como o \"lobisomem da cidade\", manifesta-se como um velho maltrapilho e encurvado que caminha silenciosamente ao cair da tarde carregando às costas um saco de estopa encardido, espreitando crianças desobedientes que desrespeitam os horários e permanecem sozinhas nas calçadas desertas."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_go,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rj,
+        ex:Estado_rs,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_homem-do-saco_1 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "Homem do Saco"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_homem-do-saco_1,
+        ex:relacao_homem-do-saco_2,
+        ex:relacao_homem-do-saco_3,
+        ex:relacao_homem-do-saco_4,
+        ex:relacao_homem-do-saco_5 ;
+    ex:possuiSlug "homem-do-saco"^^xsd:string ;
+    ex:possuiTagline "Quem fica brincando na rua até escurecer acaba dentro do saco."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_homem-do-saco_andarilho-dos-becos,
+        ex:variacao_homem-do-saco_cirandeiro-da-estola,
+        ex:variacao_homem-do-saco_maria-grampinho,
+        ex:variacao_homem-do-saco_o-velho-da-kombi-branca,
+        ex:variacao_homem-do-saco_velho-do-saco-de-fortaleza .
+
+ex:Elemento a owl:Class ;
+    rdfs:label "Elemento"@pt-br .
+
+ex:Estado_pr a ex:Estado ;
+    rdfs:label "PR"@pt-br .
+
+ex:Estado_rj a ex:Estado ;
+    rdfs:label "RJ"@pt-br .
+
+ex:Povo a owl:Class ;
+    rdfs:label "Povo"@pt-br .
+
+ex:comadre-fulozinha a ex:Guardiao ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:associadaAoPovo ex:Povo_potiguara ;
+    ex:possuiCausoCompleto "Em uma das versões, ela é filha de um homem branco, rico e cruel, com uma mulher indígena de posição inferior na hierarquia colonial, uma união desigual, típica da violência que organizava as relações entre senhores e mulheres nativas. Quando a mãe morre, a menina, ainda criança, não tem para onde ir e para quem recorrer. É a própria mata que a recolhe. Ela cresce dentro da floresta e, ao crescer, toma para si o poder da natureza que a criou; não como dádiva, mas como vingança herdada: passa a punir com violência todo aquele que maltrata os animais e destrói a mata que um dia foi seu único lar."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_comadre-fulozinha_1 ;
+    ex:possuiClassificacaoOriginal "Guardião"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiCultoVivo "culto da Jurema, no catimbó nordestino"^^xsd:string ;
+    ex:possuiDescricao "Protetora feminina das matas do sertão nordestino, a Comadre Fulozinha usa o próprio cabelo, longo, negro, cobrindo o corpo inteiro, como arma contra quem entra na floresta sem deixar fumo e mel. Parente funcional da Caipora e do Curupira, mas com identidade regional que insiste em não se confundir com nenhum dos dois."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_comadre-fulozinha_1,
+        ex:fonte_comadre-fulozinha_2,
+        ex:fonte_comadre-fulozinha_3 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_africana,
+        ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "medio"^^xsd:string ;
+    ex:possuiNome "Comadre Fulozinha"^^xsd:string ;
+    ex:possuiOrigemIncerta true ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_comadre-fulozinha_1,
+        ex:relacao_comadre-fulozinha_2,
+        ex:relacao_comadre-fulozinha_3,
+        ex:relacao_comadre-fulozinha_4 ;
+    ex:possuiSlug "comadre-fulozinha"^^xsd:string ;
+    ex:possuiTagline "\"Por isso não podemos chamá-la de caipora, senão ela nos bate com galhos de urtiga.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_comadre-fulozinha_entidade-da-jurema,
+        ex:variacao_comadre-fulozinha_flor-da-mata-potiguara,
+        ex:variacao_comadre-fulozinha_menina-perdida .
+
+ex:mulher-de-branco a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_centro-oeste,
+        ex:Regiao_nordeste,
+        ex:Regiao_norte,
+        ex:Regiao_sudeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_norte ;
+    ex:possuiCausoCompleto "Na versão mais contada nas estradas do país, o vulto branco aparece de repente no meio da pista, sozinho, pedindo carona ou apenas caminhando onde não há para onde ir. Assim que o carro se aproxima, ela desaparece. O motorista segue viagem tentando entender o que viu; até olhar pelo retrovisor e encontrá-la sentada no banco de trás, onde não estava um segundo antes. É nesse instante que a maioria perde o controle do veículo. Acidentes sem explicação aparente nas estradas sinuosas do interior brasileiro carregam, até hoje, essa suspeita não confirmada: talvez parte deles tenha a Mulher de Branco como causa, não a pista molhada ou o sono do motorista."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_mulher-de-branco_1,
+        ex:citacao_mulher-de-branco_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "Vulto feminino de branco que surge em estradas desertas, cemitérios e adros de igreja depois da meia-noite. Pede carona, some da pista e reaparece no banco de trás do carro, o suficiente para tirar qualquer motorista do controle. Não é uma lenda única, mas uma família de mulheres trágicas com o mesmo figurino e o mesmo destino fatal para quem cruza seu caminho."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_ar,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_df,
+        ex:Estado_go,
+        ex:Estado_mg,
+        ex:Estado_pa,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_pr,
+        ex:Estado_rj,
+        ex:Estado_rs,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_mulher-de-branco_1,
+        ex:fonte_mulher-de-branco_2 ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "Mulher de Branco"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_mulher-de-branco_1,
+        ex:relacao_mulher-de-branco_2,
+        ex:relacao_mulher-de-branco_3,
+        ex:relacao_mulher-de-branco_4,
+        ex:relacao_mulher-de-branco_5,
+        ex:relacao_mulher-de-branco_6 ;
+    ex:possuiSlug "mulher-de-branco"^^xsd:string ;
+    ex:possuiTagline "Olhe pelo retrovisor. Se ela estiver lá, já é tarde demais."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_mulher-de-branco_arquiteta-de-branco,
+        ex:variacao_mulher-de-branco_dama-da-meia-noite,
+        ex:variacao_mulher-de-branco_dama-do-museu-imperial,
+        ex:variacao_mulher-de-branco_fidalga-dos-casaroes,
+        ex:variacao_mulher-de-branco_galega-do-queixao,
+        ex:variacao_mulher-de-branco_loura-do-bonfim,
+        ex:variacao_mulher-de-branco_moca-sem-face,
+        ex:variacao_mulher-de-branco_mulher-de-branco-de-noronha,
+        ex:variacao_mulher-de-branco_noiva-da-estrada,
+        ex:variacao_mulher-de-branco_noiva-da-santa-rita,
+        ex:variacao_mulher-de-branco_noiva-de-mogi,
+        ex:variacao_mulher-de-branco_noiva-do-carmo,
+        ex:variacao_mulher-de-branco_noiva-do-jardim,
+        ex:variacao_mulher-de-branco_velhinha-do-morro-do-comum .
+
+ex:pai-do-mangue a ex:Guardiao ;
+    ex:associadaABioma ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:associadaAoPovo ex:Povo_potiguara ;
+    ex:possuiCausoCompleto """Nos relatos recolhidos nas aldeias Jacaré de César e Três Rios, o Pai do Mangue é o ser que habita os manguezais do território potiguara e é considerado dono daquele espaço. Seu Orlando Soares o descreve como "um homão" de chapéu vermelho e diz que ele é o bicho mais perigoso que tem: se o pescador chega ao mangue e fala o nome dele, não pega um peixe. Orlando lembra a noite em que a mãe começou a chamar nome, a xingar, porque algo estava espantando os peixes; o colvo zoava de peixe e, quando iam ver, não tinha nenhum. Ele avisou que ela não devia ter xingado o Pai do Mangue, e ficaram lá até amanhecer, porque sair no escuro seria se perder.
+
+Dona Zita, de Três Rios, conta que ele não perturba quem ele quer que pesque; quando não quer, fica pescando também, e a pessoa ouve outra pessoa pescando e não pega nada. Ela diz que o viu com várias pessoas no alto da Boa Vista: um facho de fogo na cabeça, pequenininho quando descia e grande quando subia, cada vez mais perto, até todos correrem para o cemitério. O cacique Cí, de Três Rios, diz que já o viu na ladeira do porto, quando ali ainda havia mata: uma tochinha que ia crescendo e aumentando o brilho à medida que a pessoa se aproximava. Para ele, o Pai do Mangue aparece a quem não acredita, e faz o pescador que desdenha voltar do jeito que entrou, sem nada para os filhos."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_pai-do-mangue_1 ;
+    ex:possuiClassificacaoOriginal "Guardião"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "Entre os Potiguara do litoral norte da Paraíba, o Pai do Mangue é o dono do manguezal. Quem entra ali para pescar ou catar marisco segue as regras dele: não chamar nome, isto é, não dizer palavrão, e não desacreditar. Quando quer, ele deixa pescar; quando não quer, espanta os peixes, pesca junto com o pescador sem que se veja quem é, e pode fazer a pessoa se perder e não conseguir sair do mangue. Uns o descrevem como espírito, outros como um homem negro enorme de chapéu vermelho, outros como uma tocha de fogo que cresce."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_agua,
+        ex:Elemento_fogo ;
+    ex:possuiEstado ex:Estado_ce,
+        ex:Estado_pb ;
+    ex:possuiFonte ex:fonte_pai-do-mangue_1,
+        ex:fonte_pai-do-mangue_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "alto"^^xsd:string ;
+    ex:possuiNome "O Pai do Mangue"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "epico"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_pai-do-mangue_1,
+        ex:relacao_pai-do-mangue_2,
+        ex:relacao_pai-do-mangue_3 ;
+    ex:possuiSlug "pai-do-mangue"^^xsd:string ;
+    ex:possuiTagline "Quem fala palavrão no mangue ou duvida dele volta sem peixe, ou fica perdido até o dia amanhecer. No escuro da maré, alguém pesca ao lado, e não é gente."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_pai-do-mangue_guajara .
+
+ex:Bioma a owl:Class ;
+    rdfs:label "Bioma"@pt-br .
+
+ex:Elemento_ar a ex:Elemento ;
+    rdfs:label "ar"@pt-br .
+
+ex:Estado_go a ex:Estado ;
+    rdfs:label "GO"@pt-br .
+
+ex:Guardiao a owl:Class ;
+    rdfs:label "Guardiao"@pt-br ;
+    rdfs:subClassOf ex:EntidadeFolclorica .
+
+ex:Regiao a owl:Class ;
+    rdfs:label "Regiao"@pt-br .
+
+ex:botija a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga,
+        ex:Bioma_mata-atlantica ;
+    ex:associadaABiomaPrincipal ex:Bioma_mata-atlantica ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto """O problema é que quem enterrava a própria fortuna muitas vezes morria antes de contar a alguém onde a tinha escondido. Morte súbita, acidente, doença, violência; o segredo ia junto para debaixo da terra, e a alma, incapaz de descansar enquanto o dinheiro continuasse perdido e sem destino, ficava penando. É nesse ponto que a lenda começa de verdade: a alma escolhe alguém, quase sempre um vivo de índole honesta, ou alguém que precisa da ajuda mais do que qualquer outro na região, e aparece em sonho, repetidamente, entregando pistas até revelar o lugar exato onde a botija está enterrada.
+
+A revelação em sonho vem sempre amarrada a uma regra, e a regra não perdoa desvio nenhum: o escolhido precisa ir sozinho até o local, de preferência à meia-noite, sem levar ninguém junto, sem contar a ninguém antes, nem à esposa, nem ao melhor amigo, nem ao padre, a não ser que a própria instrução do sonho autorize. Precisa cavar em silêncio absoluto e sem sentir medo, por mais que a escuridão, o barulho da mata ou a própria consciência da presença de uma alma penada testando cada passo tentem provocar justamente esse medo. Quebrar qualquer uma dessas condições, hesitar, gritar, contar o plano antes de completar a busca, custa o prêmio inteiro: o ouro que estava ali, brilhando, se transforma em carvão, em pedra, ou em cacos de telha diante dos próprios olhos do buscador, como se a terra recusasse entregar riqueza a quem não provou merecer o silêncio que ela exigiu."""^^xsd:string ;
+    ex:possuiCitacao ex:citacao_botija_1 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Almas presas por um segredo, onde enterraram fortuna em vida, aparecem em sonho para revelar o esconderijo a um escolhido. A regra é rígida: desenterrar sozinho, à meia-noite, sem medo e sem contar a ninguém. Quebrar qualquer parte dela transforma o ouro em carvão diante dos próprios olhos."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ce,
+        ex:Estado_go,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_botija_1,
+        ex:fonte_botija_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "A Botija"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_botija_1,
+        ex:relacao_botija_2,
+        ex:relacao_botija_3,
+        ex:relacao_botija_4,
+        ex:relacao_botija_5,
+        ex:relacao_botija_6,
+        ex:relacao_botija_7 ;
+    ex:possuiSlug "botija"^^xsd:string ;
+    ex:possuiTagline "\"Se sentir medo ou contar a alguém, o ouro se transforma em carvão.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_botija_botija-de-itarema,
+        ex:variacao_botija_botija-de-jararaca,
+        ex:variacao_botija_ceara-mirim-canguaretama,
+        ex:variacao_botija_garrafas-de-ouro-de-pirenopolis,
+        ex:variacao_botija_regiao-mineradora,
+        ex:variacao_botija_rio-formoso,
+        ex:variacao_botija_serra-da-rajada,
+        ex:variacao_botija_setima-cajazeira .
+
+ex:cangaceiros-fantasmas a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto "Nas rotas antigas que os bandos percorriam, sobretudo nos pontos onde a história registra emboscadas, armadas pelos próprios cangaceiros ou, como em Angicos, armadas contra eles, consolidou-se entre os moradores do sertão a crença de que, em noites de lua cheia, é possível ouvir o bando inteiro voltando a existir por alguns minutos: o tropel de dezenas de cascos batendo na terra seca, o estampido do bacamarte e do rifle Winchester, os gritos de homens e mulheres em combate."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_cangaceiros-fantasmas_1 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "Nas trilhas onde o bando de Lampião armou emboscadas ou foi emboscado, moradores dizem escutar, em noites de lua cheia, o tropel de cavalos, tiros de bacamarte e os gritos de um combate que a história já registrou como encerrado. O Cangaço acabou há quase um século, mas nas estradas do sertão, a violência real daqueles anos ainda ecoa, como se o bando reencenasse, para sempre, a própria guerra."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn,
+        ex:Estado_se ;
+    ex:possuiFonte ex:fonte_cangaceiros-fantasmas_1,
+        ex:fonte_cangaceiros-fantasmas_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_moderna ;
+    ex:possuiNivelAmeaca "medio"^^xsd:string ;
+    ex:possuiNome "Cangaceiros Fantasmas"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "mitico"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_cangaceiros-fantasmas_1,
+        ex:relacao_cangaceiros-fantasmas_2,
+        ex:relacao_cangaceiros-fantasmas_3 ;
+    ex:possuiSlug "cangaceiros-fantasmas"^^xsd:string ;
+    ex:possuiTagline "\"O sertanejo tem sempre nos lábios uma expressão de descrença.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_cangaceiros-fantasmas_memorial-da-resistencia,
+        ex:variacao_cangaceiros-fantasmas_rotas-do-cangaco .
+
+ex:carro-de-boi-assombrado a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto "É madrugada, a casa está fechada, e o morador acorda ou já está acordado quando o rangido começa a se aproximar; distante no início, depois cada vez mais nítido, o eixo gemendo, as rodas arrastando na terra seca, e por cima de tudo isso a voz cantada do carreiro, arrastada, quase um lamento. O som cresce como se o carro estivesse passando bem em frente à casa. Quem tem coragem de espiar pela janela ou correr até a estrada encontra apenas terra vazia. Nenhuma marca de roda no chão, nenhuma poeira levantada, nenhum vulto se afastando. O som simplesmente cessa, como se tivesse entrado num ponto da estrada e desaparecido junto com o silêncio que volta em seguida."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_carro-de-boi-assombrado_1,
+        ex:citacao_carro-de-boi-assombrado_2 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "media"^^xsd:string ;
+    ex:possuiDescricao "Nas madrugadas silenciosas do sertão, moradores ouvem o rangido lento das rodas de madeira e o canto arrastado de um carreiro que já não existe. Não há carro, não há boi, não há homem; apenas o som, atravessando estradas de terra que a memória do gado ainda insiste em percorrer."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_ar,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_go,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_pr,
+        ex:Estado_rj,
+        ex:Estado_rn,
+        ex:Estado_sp ;
+    ex:possuiFonte ex:fonte_carro-de-boi-assombrado_1,
+        ex:fonte_carro-de-boi-assombrado_2 ;
+    ex:possuiNivelAmeaca "baixo"^^xsd:string ;
+    ex:possuiNome "Carro de Boi Assombrado"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "comum"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_carro-de-boi-assombrado_1,
+        ex:relacao_carro-de-boi-assombrado_2,
+        ex:relacao_carro-de-boi-assombrado_3 ;
+    ex:possuiSlug "carro-de-boi-assombrado"^^xsd:string ;
+    ex:possuiTagline "Na estrada vazia, o rangido chega antes da poeira, e a poeira nunca chega."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_carro-de-boi-assombrado_carreto-da-madrugada,
+        ex:variacao_carro-de-boi-assombrado_carro-caido,
+        ex:variacao_carro-de-boi-assombrado_cortejo-das-minas .
+
+ex:papa-figo a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:possuiCausoCompleto "O Papa-Figo age no fim de tarde, na hora exata em que as escolas soltam os alunos, o momento em que uma criança fica mais tempo desacompanhada na rua. Oferece doces, brinquedos, qualquer isca que funcione, e conduz a vítima a um lugar deserto. Ali, arremessa-a dentro de um saco. Ninguém mais vê essa criança."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_papa-figo_1 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "Não é fera, não é encanto, não é maldição: é um homem doente, de verdade, que ronda a saída das escolas oferecendo doces. O Papa-Figo acredita que o fígado de crianças cura a moléstia que o consome, e é, entre todos os monstros deste acervo, o mais próximo de ter existido."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_misticismo,
+        ex:Elemento_terra ;
+    ex:possuiEstado ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn ;
+    ex:possuiFonte ex:fonte_papa-figo_1,
+        ex:fonte_papa-figo_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_iberica ;
+    ex:possuiNivelAmeaca "extremo"^^xsd:string ;
+    ex:possuiNome "Papa-Figo"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_papa-figo_1,
+        ex:relacao_papa-figo_2,
+        ex:relacao_papa-figo_3,
+        ex:relacao_papa-figo_4,
+        ex:relacao_papa-figo_5 ;
+    ex:possuiSlug "papa-figo"^^xsd:string ;
+    ex:possuiTagline "Velho, sujo, faminto, e convencido de que o fígado de uma criança cura o que a medicina não consegue."^^xsd:string ;
+    ex:possuiVariacao ex:variacao_papa-figo_coronel-do-engenho,
+        ex:variacao_papa-figo_velho-do-saco-urbano .
+
+ex:Bioma_cerrado a ex:Bioma ;
+    rdfs:label "cerrado"@pt-br .
+
+ex:Elemento_fogo a ex:Elemento ;
+    rdfs:label "fogo"@pt-br .
+
+ex:Encantado a owl:Class ;
+    rdfs:label "Encantado"@pt-br ;
+    rdfs:subClassOf ex:EntidadeFolclorica .
+
+ex:Estado_al a ex:Estado ;
+    rdfs:label "AL"@pt-br .
+
+ex:Estado_sp a ex:Estado ;
+    rdfs:label "SP"@pt-br .
+
+ex:fogo-corredor a ex:Assombracao ;
+    ex:associadaABioma ex:Bioma_caatinga ;
+    ex:associadaABiomaPrincipal ex:Bioma_caatinga ;
+    ex:associadaARegiao ex:Regiao_nordeste,
+        ex:Regiao_sul ;
+    ex:associadaARegiaoPrincipal ex:Regiao_nordeste ;
+    ex:associadaAoPovo ex:Povo_tupi ;
+    ex:possuiCausoCompleto "O fogo aparece de repente na estrada e passa a correr atrás de quem caminha sozinho. Quem se depara com ele no escuro do sertão aprende rápido a não correr de volta."^^xsd:string ;
+    ex:possuiCitacao ex:citacao_fogo-corredor_1 ;
+    ex:possuiClassificacaoOriginal "Assombração"^^xsd:string ;
+    ex:possuiConfianca "alta"^^xsd:string ;
+    ex:possuiDescricao "Bolas de fogo que correm pelas estradas de terra do sertão, perseguindo quem viaja sozinho à noite. No Nordeste, ganham nome próprio, Fogo Corredor, ou Batatão, e uma explicação que o Boitatá do Sul nunca teve: são almas de amores proibidos e de crianças mortas sem batismo, presas entre o castigo e o perdão."^^xsd:string ;
+    ex:possuiElemento ex:Elemento_fogo,
+        ex:Elemento_misticismo ;
+    ex:possuiEstado ex:Estado_al,
+        ex:Estado_ba,
+        ex:Estado_ce,
+        ex:Estado_mg,
+        ex:Estado_pb,
+        ex:Estado_pe,
+        ex:Estado_rn,
+        ex:Estado_se ;
+    ex:possuiFonte ex:fonte_fogo-corredor_1,
+        ex:fonte_fogo-corredor_2 ;
+    ex:possuiMatrizCultural ex:MatrizCultural_indigena ;
+    ex:possuiNivelAmeaca "medio"^^xsd:string ;
+    ex:possuiNome "Fogo Corredor (Batatão)"^^xsd:string ;
+    ex:possuiOrigemIncerta false ;
+    ex:possuiRaridade "raro"^^xsd:string ;
+    ex:possuiRelacaoRegistrada ex:relacao_fogo-corredor_1,
+        ex:relacao_fogo-corredor_2,
+        ex:relacao_fogo-corredor_3,
+        ex:relacao_fogo-corredor_4,
+        ex:relacao_fogo-corredor_5,
+        ex:relacao_fogo-corredor_6 ;
+    ex:possuiSlug "fogo-corredor"^^xsd:string ;
+    ex:possuiTagline "\"Não se vê outra coisa senão um facho cintilante correndo para ali.\""^^xsd:string ;
+    ex:possuiVariacao ex:variacao_fogo-corredor_bata-mineiro,
+        ex:variacao_fogo-corredor_batatao-potiguara,
+        ex:variacao_fogo-corredor_biatata-da-bahia,
+        ex:variacao_fogo-corredor_jean-de-la-foice,
+        ex:variacao_fogo-corredor_joao-galafuz,
+        ex:variacao_fogo-corredor_luzerna .
+
+ex:Regiao_norte a ex:Regiao ;
+    rdfs:label "Norte"@pt-br .
+
+ex:MatrizCultural_indigena a ex:MatrizCultural ;
+    rdfs:label "indigena"@pt-br .
+
+ex:Regiao_sul a ex:Regiao ;
+    rdfs:label "Sul"@pt-br .
+
+ex:Regiao_sudeste a ex:Regiao ;
+    rdfs:label "Sudeste"@pt-br .
+
+ex:Estado_mg a ex:Estado ;
+    rdfs:label "MG"@pt-br .
+
+ex:Assombracao a owl:Class ;
+    rdfs:label "Assombracao"@pt-br ;
+    rdfs:subClassOf ex:EntidadeFolclorica .
+
+ex:Estado_rn a ex:Estado ;
+    rdfs:label "RN"@pt-br .
+
+ex:Estado_ba a ex:Estado ;
+    rdfs:label "BA"@pt-br .
+
+ex:MatrizCultural_iberica a ex:MatrizCultural ;
+    rdfs:label "iberica"@pt-br .
+
+ex:Elemento_terra a ex:Elemento ;
+    rdfs:label "terra"@pt-br .
+
+ex:Estado_ce a ex:Estado ;
+    rdfs:label "CE"@pt-br .
+
+ex:Estado_pe a ex:Estado ;
+    rdfs:label "PE"@pt-br .
+
+ex:Estado a owl:Class ;
+    rdfs:label "Estado"@pt-br .
+
+ex:Elemento_misticismo a ex:Elemento ;
+    rdfs:label "misticismo"@pt-br .
+
+ex:Estado_pb a ex:Estado ;
+    rdfs:label "PB"@pt-br .
+
+ex:Bioma_mata-atlantica a ex:Bioma ;
+    rdfs:label "mata_atlantica"@pt-br .
+
+ex:Bioma_caatinga a ex:Bioma ;
+    rdfs:label "caatinga"@pt-br .
+
+ex:Citacao a owl:Class ;
+    rdfs:label "Citacao"@pt-br ;
+    rdfs:subClassOf ex:RecursoDocumental .
+
+ex:Regiao_nordeste a ex:Regiao ;
+    rdfs:label "Nordeste"@pt-br .
+
+ex:Fonte a owl:Class ;
+    rdfs:label "Fonte"@pt-br ;
+    rdfs:subClassOf ex:RecursoDocumental .
+
+ex:EntidadeFolclorica a owl:Class ;
+    rdfs:label "EntidadeFolclorica"@pt-br ;
+    rdfs:subClassOf ex:RecursoFolclorico ;
+    owl:hasKey ( ex:possuiSlug ) .
+
+ex:Variacao a owl:Class ;
+    rdfs:label "Variacao"@pt-br .
+
+ex:RelacaoEntreEntidades a owl:Class ;
+    rdfs:label "RelacaoEntreEntidades"@pt-br .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ex:Assombracao ex:Encantado ex:Guardiao ex:Metamorfo ex:Maldicao ex:Origem ) .
+

@@ -1,0 +1,958 @@
+[
+    {
+        "slug": "botija",
+        "nome": "A Botija",
+        "titulo": "O Tesouro que Só Se Ganha em Silêncio Absoluto",
+        "descricao_curta": "Almas presas por um segredo, onde enterraram fortuna em vida, aparecem em sonho para revelar o esconderijo a um escolhido. A regra é rígida: desenterrar sozinho, à meia-noite, sem medo e sem contar a ninguém. Quebrar qualquer parte dela transforma o ouro em carvão diante dos próprios olhos.",
+        "classification": "Assombração",
+        "rarity_tier": "comum",
+        "threat_level": "baixo",
+        "element_primary": "terra",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste",
+            "Centro-Oeste",
+            "Sudeste"
+        ],
+        "estados": [
+            "CE",
+            "GO",
+            "MG",
+            "PB",
+            "PE",
+            "RN",
+            "SP"
+        ],
+        "biomas": [
+            "mata_atlantica",
+            "caatinga"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/botija/covers/botija-cover.webp"
+    },
+    {
+        "slug": "aipo-e-tambia",
+        "nome": "Aipó e Tambiá",
+        "titulo": "A Fonte das Lágrimas",
+        "descricao_curta": "Lenda de origem da fonte do Parque Arruda Câmara, a Bica, em João Pessoa. A jovem Aipó, filha de um cacique potiguara, e o guerreiro Tambiá, da tribo cariri, se amavam, mas a inimizade entre os povos impedia o casamento. Feito prisioneiro, Tambiá recebeu a filha do inimigo como \"esposa da morte\" e foi executado na floresta. Aipó chorou sobre a tumba dele durante cinquenta luas, e do seu pranto nasceu a fonte, chamada desde então Fonte Tambiá.",
+        "classification": "Origem",
+        "rarity_tier": "raro",
+        "threat_level": "baixo",
+        "element_primary": "agua",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "PB"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [],
+        "imagem": null
+    },
+    {
+        "slug": "lagoa-encantada-potiguara",
+        "nome": "A Lagoa Encantada potiguara",
+        "titulo": "A Corrente de Ouro no Fundo da Lagoa",
+        "descricao_curta": "No território potiguara do litoral norte da Paraíba há uma lagoa que se chama Encantada desde o começo, que às vezes secava e enchia sem explicação. Conta-se que ela é uma mina com um tesouro antigo: um índio velho, Manoel Domingo, a encontrou seca e viu no fundo uma infinidade de armas, todas de ouro, e uma corrente de ouro que a atravessa de um lado a outro. Quem quebrar a corrente faz a lagoa desembocar de novo no mar. Ele foi em casa chamar gente, e quando voltou não havia peixe, nem ouro, nem nada: havia mar.",
+        "classification": "Encantado",
+        "rarity_tier": "raro",
+        "threat_level": "medio",
+        "element_primary": "agua",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "PB"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": null
+    },
+    {
+        "slug": "alma-de-gato",
+        "nome": "Alma-de-Gato",
+        "titulo": "O Vulto Que Exige Silêncio",
+        "descricao_curta": "Presença noturna de origem indígena que aparece como um gato de olhos brilhantes para silenciar crianças em birra, o Alma-de-Gato empresta o nome, e talvez a origem, a um pássaro real de canto parecido com gemido felino. Ninguém documentou um único mal causado por ele. Ninguém, também, ousou desafiá-lo para descobrir se isso é coragem ou sorte.",
+        "classification": "Metamorfo",
+        "rarity_tier": "raro",
+        "threat_level": "baixo",
+        "element_primary": "misticismo",
+        "element_secondary": "ar",
+        "regioes": [
+            "Norte",
+            "Centro-Oeste",
+            "Nordeste",
+            "Sudeste",
+            "Sul"
+        ],
+        "estados": [
+            "PB",
+            "RN"
+        ],
+        "biomas": [
+            "mata_atlantica",
+            "cerrado"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/alma-de-gato/covers/alma-de-gato-cover.webp"
+    },
+    {
+        "slug": "babau",
+        "nome": "Babau",
+        "titulo": "A Ameaça Sem Rosto",
+        "descricao_curta": "O Babau não tem cara, não tem corpo, não tem uma única descrição fixa em nenhuma fonte, e é exatamente por isso que funciona. Entidade de pura ameaça, criada para impor o sono às crianças do Nordeste, ele não precisa de forma porque o medo que ele provoca nasce inteiro da imaginação de quem ouve o nome.",
+        "classification": "Assombração",
+        "rarity_tier": "comum",
+        "threat_level": "baixo",
+        "element_primary": "misticismo",
+        "element_secondary": "ar",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "PB",
+            "PE",
+            "RN"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/babau/covers/babau-cover.webp"
+    },
+    {
+        "slug": "besta-fera",
+        "nome": "Besta Fera",
+        "titulo": "O Sinal que a Noite de Lua Cheia Deixa em Quem Cruza o Caminho",
+        "descricao_curta": "Corpo de cavalo, dorso humano, e a crença firme de que por trás dela está o próprio Diabo escapado do Inferno. A Besta Fera galopa pelo interior de Pernambuco, Alagoas e Paraíba em noites de lua cheia, marcando com o \"sinal da besta\" quem tem a desgraça de cruzar seu caminho.",
+        "classification": "Maldição",
+        "rarity_tier": "raro",
+        "threat_level": "alto",
+        "element_primary": "misticismo",
+        "element_secondary": "fogo",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "AL",
+            "BA",
+            "CE",
+            "MG",
+            "PB",
+            "PE"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/besta-fera/covers/besta-fera-cover.webp"
+    },
+    {
+        "slug": "bicho-sete-cabecas",
+        "nome": "Bicho de Sete Cabeças",
+        "titulo": "O Dragão do Sertão",
+        "descricao_curta": "A encarnação máxima do perigo intransponível na cultura nordestina. Oriundo da aclimação popular das hidras e dragões ibéricos para o cenário hostil das caatingas, o Bicho de Sete Cabeças é uma colossal serpente draconiana com sete longos pescoços independentes que cospem labaredas e guardam cavernas de pedra ardente. Na tradição do cordel, só pode ser vencido pela astúcia e coragem de um herói valoroso.",
+        "classification": "Guardião",
+        "rarity_tier": "epico",
+        "threat_level": "extremo",
+        "element_primary": "fogo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste",
+            "Sudeste"
+        ],
+        "estados": [
+            "CE",
+            "MG",
+            "PB",
+            "PE",
+            "RN"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/bicho-sete-cabecas/covers/bicho-sete-cabecas-cover.webp"
+    },
+    {
+        "slug": "boi-da-cara-preta",
+        "nome": "Boi da Cara Preta",
+        "titulo": "O Pavor do Berço",
+        "descricao_curta": "A mais antiga e onipresente assombração infantil do cancioneiro tradicional brasileiro. O Boi da Cara Preta é uma entidade taurina espectral de pelagem cinzenta e máscara facial de negro absoluto, cujos olhos cintilam no topo dos muros, cercas e telhados coloniais. Invocado nas cantigas de ninar pelas amas e mães de todo o país, ele ronda as casas silenciosas para levar embora os infantes teimosos que recusam o sono.",
+        "classification": "Assombração",
+        "rarity_tier": "comum",
+        "threat_level": "baixo",
+        "element_primary": "misticismo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste",
+            "Sudeste",
+            "Sul"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "MG",
+            "PB",
+            "PE",
+            "RJ",
+            "RN",
+            "RS",
+            "SP"
+        ],
+        "biomas": [
+            "mata_atlantica",
+            "caatinga",
+            "cerrado",
+            "pampa"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/boi-da-cara-preta/covers/boi-da-cara-preta-cover.webp"
+    },
+    {
+        "slug": "boi-espacio",
+        "nome": "Boi Espácio",
+        "titulo": "O Gado que Ninguém Pega",
+        "descricao_curta": "Um dos mitos mais fascinantes da cultura pastoril do sertão nordestino. O Boi Espácio é um novilho encantado de porte magnífico, chifres reluzentes e velocidade impossível que surge nos campos da caatinga desafiando os melhores vaqueiros da região. Nenhuma corda o laça, nenhum cavalo o alcança, e quando parece encurralado, salta precipícios intransponíveis ou desvanece no ar como poeira e miragem.",
+        "classification": "Encantado",
+        "rarity_tier": "raro",
+        "threat_level": "baixo",
+        "element_primary": "terra",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste",
+            "Sul"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "PB",
+            "PE",
+            "PR",
+            "RS",
+            "SC"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/boi-espacio/covers/boi-espacio-cover.webp"
+    },
+    {
+        "slug": "branca-dias",
+        "nome": "Branca Dias (A Senhora do Engenho)",
+        "titulo": "A Senhora Que a Fé Não Deixou Descansar",
+        "descricao_curta": "Branca Dias existiu. Cristã-nova perseguida pela Inquisição por praticar o judaísmo em segredo, tornou-se senhora de engenho em Pernambuco no século XVI, e, mesmo morta, continuou sendo julgada. Da mulher real nasceu a lenda: o fantasma que afunda a prataria da família num açude para escondê-la da perseguição religiosa, e que ainda hoje assombraria as águas onde jurou nunca mais ser encontrada.",
+        "classification": "Assombração",
+        "rarity_tier": "epico",
+        "threat_level": "baixo",
+        "element_primary": "agua",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "PB",
+            "PE"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/branca-dias/covers/branca-dias-cover.webp"
+    },
+    {
+        "slug": "bruxa",
+        "nome": "Bruxa (Bruxas de Florianópolis)",
+        "titulo": "As Senhoras da Meia-Noite Açoriana",
+        "descricao_curta": "Figura universal do imaginário humano, a Bruxa ganhou rosto próprio na Ilha de Santa Catarina com a colonização açoriana: mulheres que se transformam em coruja, morcego ou mariposa negra, roubam embarcações e sequestram crianças que não dormem. Foi o pesquisador Franklin Cascaes quem, por trinta anos, transformou os relatos orais da ilha em acervo documentado.",
+        "classification": "Metamorfo",
+        "rarity_tier": "epico",
+        "threat_level": "alto",
+        "element_primary": "misticismo",
+        "element_secondary": "ar",
+        "regioes": [
+            "Sul",
+            "Nordeste"
+        ],
+        "estados": [
+            "PB",
+            "PR",
+            "RS",
+            "SC"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/bruxa/covers/bruxa-cover.webp"
+    },
+    {
+        "slug": "cabeca-satanica",
+        "nome": "Cabeça Satânica",
+        "titulo": "O Horror Errante",
+        "descricao_curta": "A Cabeça Satânica é uma das assombrações mais temidas das estradas do Nordeste. Trata-se de uma medonha cabeça humana decepada, desprovida de corpo, com cabelos longos e sujos de terra e olhos que ardem como carvões em brasa. Ela rola velozmente pelo solo ou flutua rente à poeira impulsionada pelos próprios cabelos, perseguindo viandantes noturnos para sugar sua força vital e infligir doenças mortais com seu toque maldito.",
+        "classification": "Assombração",
+        "rarity_tier": "raro",
+        "threat_level": "extremo",
+        "element_primary": "misticismo",
+        "element_secondary": "fogo",
+        "regioes": [
+            "Nordeste",
+            "Norte",
+            "Sudeste"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "MG",
+            "PB",
+            "PE",
+            "SP"
+        ],
+        "biomas": [
+            "caatinga",
+            "cerrado"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/cabeca-satanica/covers/cabeca-satanica-cover.webp"
+    },
+    {
+        "slug": "caboclo-boiadeiro",
+        "nome": "Caboclo Boiadeiro",
+        "titulo": "O Laçador das Tempestades",
+        "descricao_curta": "A figura mítica suprema do vaqueiro ancestral no folclore do sertão e na Encantaria brasileira. O Caboclo Boiadeiro é a personificação espiritual da coragem, da rusticidade e do domínio sobre os ermos e rebanhos. Montado em um cavalo vigoroso que não deixa rastros na terra seca, ele veste gibão e perneiras de couro cru, maneja um laço de couro mágico capaz de laçar ventos e tempestades e guia viajantes perdidos em meio à fúria das secas e dos temporais.",
+        "classification": "Encantado",
+        "rarity_tier": "raro",
+        "threat_level": "medio",
+        "element_primary": "terra",
+        "element_secondary": "ar",
+        "regioes": [
+            "Nordeste",
+            "Centro-Oeste",
+            "Sudeste"
+        ],
+        "estados": [
+            "AL",
+            "BA",
+            "CE",
+            "GO",
+            "MA",
+            "MG",
+            "MS",
+            "PB",
+            "PE",
+            "PI",
+            "RN"
+        ],
+        "biomas": [
+            "cerrado",
+            "caatinga"
+        ],
+        "origens": [
+            "moderna"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/caboclo-boiadeiro/covers/caboclo-boiadeiro-cover.webp"
+    },
+    {
+        "slug": "cabra-cabriola",
+        "nome": "Cabra-Cabriola",
+        "titulo": "A Bocarra que Aprendeu a Enganar",
+        "descricao_curta": "Boca imensa, dentes saltados, chamas e fuligem escapando pelos olhos e narinas, a Cabra-Cabriola bate à porta imitando a voz de mãe. As crianças, atentas, não caem na primeira, na segunda, nem na décima tentativa. Só caem quando o monstro descobre como afinar a própria voz até ela enganar.",
+        "classification": "Assombração",
+        "rarity_tier": "raro",
+        "threat_level": "alto",
+        "element_primary": "fogo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "CE",
+            "PB",
+            "PE",
+            "RN"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/cabra-cabriola/covers/cabra-cabriola-cover.webp"
+    },
+    {
+        "slug": "cangaceiros-fantasmas",
+        "nome": "Cangaceiros Fantasmas",
+        "titulo": "O Bando Que a Morte Não Dispersou",
+        "descricao_curta": "Nas trilhas onde o bando de Lampião armou emboscadas ou foi emboscado, moradores dizem escutar, em noites de lua cheia, o tropel de cavalos, tiros de bacamarte e os gritos de um combate que a história já registrou como encerrado. O Cangaço acabou há quase um século, mas nas estradas do sertão, a violência real daqueles anos ainda ecoa, como se o bando reencenasse, para sempre, a própria guerra.",
+        "classification": "Assombração",
+        "rarity_tier": "mitico",
+        "threat_level": "medio",
+        "element_primary": "misticismo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "AL",
+            "BA",
+            "CE",
+            "PB",
+            "PE",
+            "RN",
+            "SE"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "moderna"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/cangaceiros-fantasmas/covers/cangaceiros-fantasmas-cover.webp"
+    },
+    {
+        "slug": "carro-de-boi-assombrado",
+        "nome": "Carro de Boi Assombrado",
+        "titulo": "O Cantador Sem Carreiro",
+        "descricao_curta": "Nas madrugadas silenciosas do sertão, moradores ouvem o rangido lento das rodas de madeira e o canto arrastado de um carreiro que já não existe. Não há carro, não há boi, não há homem; apenas o som, atravessando estradas de terra que a memória do gado ainda insiste em percorrer.",
+        "classification": "Assombração",
+        "rarity_tier": "comum",
+        "threat_level": "baixo",
+        "element_primary": "misticismo",
+        "element_secondary": "ar",
+        "regioes": [
+            "Nordeste",
+            "Sudeste"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "GO",
+            "MG",
+            "PB",
+            "PE",
+            "PR",
+            "RJ",
+            "RN",
+            "SP"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/carro-de-boi-assombrado/covers/carro-de-boi-assombrado-cover.webp"
+    },
+    {
+        "slug": "comadre-fulozinha",
+        "nome": "Comadre Fulozinha",
+        "titulo": "A Cabocla que Não Aceita Ser Chamada de Caipora",
+        "descricao_curta": "Protetora feminina das matas do sertão nordestino, a Comadre Fulozinha usa o próprio cabelo, longo, negro, cobrindo o corpo inteiro, como arma contra quem entra na floresta sem deixar fumo e mel. Parente funcional da Caipora e do Curupira, mas com identidade regional que insiste em não se confundir com nenhum dos dois.",
+        "classification": "Guardião",
+        "rarity_tier": "raro",
+        "threat_level": "medio",
+        "element_primary": "terra",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "AL",
+            "CE",
+            "PB",
+            "PE",
+            "RN"
+        ],
+        "biomas": [
+            "caatinga",
+            "mata_atlantica"
+        ],
+        "origens": [
+            "indigena",
+            "africana"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/comadre-fulozinha/covers/comadre-fulozinha-cover.webp"
+    },
+    {
+        "slug": "flor-do-mato",
+        "nome": "Flor-do-Mato",
+        "titulo": "A Guardiã Que Não Se Esconde",
+        "descricao_curta": "Diferente da maioria dos guardiões de mata, a Flor-do-Mato não se esconde: aparece com frequência, ajuda quem se perde e comanda os animais para perto do caçador que a agrada. Quem não deixa fumo na entrada da floresta descobre o outro lado dela; a caça desaparece, os cães levam surra, e o riso dela ecoa por trás de cada armadilha.",
+        "classification": "Guardião",
+        "rarity_tier": "raro",
+        "threat_level": "medio",
+        "element_primary": "terra",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste",
+            "Sudeste"
+        ],
+        "estados": [
+            "BA",
+            "GO",
+            "MG",
+            "PB",
+            "PR",
+            "RJ",
+            "SC",
+            "SP"
+        ],
+        "biomas": [
+            "caatinga",
+            "mata_atlantica"
+        ],
+        "origens": [],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/flor-do-mato/covers/flor-do-mato-cover.webp"
+    },
+    {
+        "slug": "fogo-corredor",
+        "nome": "Fogo Corredor (Batatão)",
+        "titulo": "O Fogo Que Não Descansa",
+        "descricao_curta": "Bolas de fogo que correm pelas estradas de terra do sertão, perseguindo quem viaja sozinho à noite. No Nordeste, ganham nome próprio, Fogo Corredor, ou Batatão, e uma explicação que o Boitatá do Sul nunca teve: são almas de amores proibidos e de crianças mortas sem batismo, presas entre o castigo e o perdão.",
+        "classification": "Assombração",
+        "rarity_tier": "raro",
+        "threat_level": "medio",
+        "element_primary": "fogo",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste",
+            "Sudeste",
+            "Sul"
+        ],
+        "estados": [
+            "AL",
+            "BA",
+            "CE",
+            "MG",
+            "PB",
+            "PE",
+            "RN",
+            "SE"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/fogo-corredor/covers/fogo-corredor-cover.webp"
+    },
+    {
+        "slug": "homem-do-saco",
+        "nome": "Homem do Saco",
+        "titulo": "O Lobisomem da Cidade",
+        "descricao_curta": "O mais temido mito de controle social infantil dos centros urbanos e subúrbios brasileiros. Descrito por Câmara Cascudo como o \"lobisomem da cidade\", manifesta-se como um velho maltrapilho e encurvado que caminha silenciosamente ao cair da tarde carregando às costas um saco de estopa encardido, espreitando crianças desobedientes que desrespeitam os horários e permanecem sozinhas nas calçadas desertas.",
+        "classification": "Assombração",
+        "rarity_tier": "comum",
+        "threat_level": "alto",
+        "element_primary": "misticismo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Sudeste",
+            "Centro-Oeste",
+            "Nordeste",
+            "Sul"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "GO",
+            "MG",
+            "PB",
+            "PE",
+            "RJ",
+            "RS",
+            "SP"
+        ],
+        "biomas": [
+            "mata_atlantica",
+            "caatinga",
+            "cerrado",
+            "pampa"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/homem-do-saco/covers/homem-do-saco-cover.webp"
+    },
+    {
+        "slug": "joao-sem-bracos",
+        "nome": "João Sem Braços",
+        "titulo": "O Espectro Imóvel das Estradas da Caatinga",
+        "descricao_curta": "João Sem Braços é a assombração de um antigo sertanejo ou cangaceiro mutilado que surge imóvel no centro das estradas desertas da caatinga. Sem emitir sons ou pedir socorro, sua silhueta ereta e vazia paralisa viajantes e animais, provocando terror instantâneo em noites escuras.",
+        "classification": "Assombração",
+        "rarity_tier": "raro",
+        "threat_level": "alto",
+        "element_primary": "misticismo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "PB",
+            "RN"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "iberica",
+            "indigena"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/joao-sem-bracos/covers/joao-sem-bracos-cover.webp"
+    },
+    {
+        "slug": "mula-sem-cabeca",
+        "nome": "Mula Sem Cabeça",
+        "titulo": "A Noite em Que a Mulher Vira Fera",
+        "descricao_curta": "A mulher que mantém um caso com um padre é condenada, nas noites de quinta para sexta-feira, a se transformar numa mula sem cabeça; labaredas onde deveria haver focinho, um freio de ferro manchado de sangue flutuando no meio do fogo. Ela galopa desgovernada até o amanhecer, atropelando o que encontra pela frente. A maldição nunca recai sobre o padre.",
+        "classification": "Maldição",
+        "rarity_tier": "epico",
+        "threat_level": "alto",
+        "element_primary": "fogo",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Sudeste",
+            "Nordeste"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "ES",
+            "GO",
+            "MG",
+            "PB",
+            "PE",
+            "PR",
+            "RJ",
+            "RN",
+            "SP"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/mula-sem-cabeca/covers/mula-sem-cabeca-cover.webp"
+    },
+    {
+        "slug": "mulher-de-branco",
+        "nome": "Mulher de Branco",
+        "titulo": "A Carona Que Ninguém Termina de Dar",
+        "descricao_curta": "Vulto feminino de branco que surge em estradas desertas, cemitérios e adros de igreja depois da meia-noite. Pede carona, some da pista e reaparece no banco de trás do carro, o suficiente para tirar qualquer motorista do controle. Não é uma lenda única, mas uma família de mulheres trágicas com o mesmo figurino e o mesmo destino fatal para quem cruza seu caminho.",
+        "classification": "Assombração",
+        "rarity_tier": "comum",
+        "threat_level": "alto",
+        "element_primary": "misticismo",
+        "element_secondary": "ar",
+        "regioes": [
+            "Norte",
+            "Centro-Oeste",
+            "Nordeste",
+            "Sudeste",
+            "Sul"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "DF",
+            "GO",
+            "MG",
+            "PA",
+            "PB",
+            "PE",
+            "PR",
+            "RJ",
+            "RS",
+            "SP"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/mulher-de-branco/covers/mulher-de-branco-cover.webp"
+    },
+    {
+        "slug": "pai-do-mangue",
+        "nome": "O Pai do Mangue",
+        "titulo": "O Dono do Manguezal",
+        "descricao_curta": "Entre os Potiguara do litoral norte da Paraíba, o Pai do Mangue é o dono do manguezal. Quem entra ali para pescar ou catar marisco segue as regras dele: não chamar nome, isto é, não dizer palavrão, e não desacreditar. Quando quer, ele deixa pescar; quando não quer, espanta os peixes, pesca junto com o pescador sem que se veja quem é, e pode fazer a pessoa se perder e não conseguir sair do mangue. Uns o descrevem como espírito, outros como um homem negro enorme de chapéu vermelho, outros como uma tocha de fogo que cresce.",
+        "classification": "Guardião",
+        "rarity_tier": "epico",
+        "threat_level": "alto",
+        "element_primary": "agua",
+        "element_secondary": "fogo",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "CE",
+            "PB"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": null
+    },
+    {
+        "slug": "tres-sao-miguel",
+        "nome": "Os Três São Miguel",
+        "titulo": "O São Miguel de Carne",
+        "descricao_curta": "Narrativa potiguara contada por Orlando Soares: a Vila de São Miguel tem três São Miguel. São Miguel, o anjo, era de carne humana e foi tirado de lá; puseram no lugar São Miguel Arcanjo, que hoje está na aldeia São Francisco; e o terceiro, na transcrição completa do relato, é a própria vila de São Miguel. Na mesma fala, Orlando conta dos túneis que saíam de Jacaré de César até São Miguel, como o Buraco do Flamengo, que serviam de esconderijo aos índios quando a Companhia Rio Tinto os perseguia.",
+        "classification": "Encantado",
+        "rarity_tier": "comum",
+        "threat_level": "baixo",
+        "element_primary": "misticismo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "PB"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": null
+    },
+    {
+        "slug": "pai-do-mato",
+        "nome": "Pai-do-Mato",
+        "titulo": "O Gigante que Não Quer Ser Visto",
+        "descricao_curta": "Gigante de altura impossível de calcular, coberto de lama, cabelos compridos e unhas de dez metros, o Pai-do-Mato engole inteiros os que ficam para trás numa expedição ou destroem a mata que habita. Pele impenetrável a qualquer arma, só o umbigo corta. Prefere não ser visto: quem quiser rastreá-lo, procure a urina azul.",
+        "classification": "Guardião",
+        "rarity_tier": "raro",
+        "threat_level": "extremo",
+        "element_primary": "terra",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Norte",
+            "Centro-Oeste",
+            "Nordeste",
+            "Sudeste",
+            "Sul"
+        ],
+        "estados": [
+            "AL",
+            "AM",
+            "PA",
+            "PB",
+            "PE"
+        ],
+        "biomas": [
+            "mata_atlantica",
+            "amazonia"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/pai-do-mato/covers/pai-do-mato-cover.webp"
+    },
+    {
+        "slug": "pai-mateus",
+        "nome": "Pai Mateus",
+        "titulo": "O Ermitão do Lajedo",
+        "descricao_curta": "O Lajedo de Pai Mateus é um campo de grandes pedras arredondadas na zona rural de Cabaceiras, no Cariri da Paraíba. Conta a lenda que ali viveu, por volta do século XVIII, um ermitão curandeiro chamado Pai Mateus, procurado por muitas pessoas que iam se consultar com ele. O nome ficou na pedra.",
+        "classification": "Guardião",
+        "rarity_tier": "comum",
+        "threat_level": "baixo",
+        "element_primary": "terra",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "PB"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [],
+        "imagem": null
+    },
+    {
+        "slug": "papa-figo",
+        "nome": "Papa-Figo",
+        "titulo": "O Homem que Comeu a Cura",
+        "descricao_curta": "Não é fera, não é encanto, não é maldição: é um homem doente, de verdade, que ronda a saída das escolas oferecendo doces. O Papa-Figo acredita que o fígado de crianças cura a moléstia que o consome, e é, entre todos os monstros deste acervo, o mais próximo de ter existido.",
+        "classification": "Assombração",
+        "rarity_tier": "raro",
+        "threat_level": "extremo",
+        "element_primary": "misticismo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "BA",
+            "CE",
+            "PB",
+            "PE",
+            "RN"
+        ],
+        "biomas": [
+            "caatinga"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/papa-figo/covers/papa-figo-cover.webp"
+    },
+    {
+        "slug": "pedro-malasartes",
+        "nome": "Pedro Malasartes",
+        "titulo": "Pedro Malasartes: O Trapaceiro Sagaz do Sertão",
+        "descricao_curta": "Figura lendária do ciclo pícaro ibero-brasileiro, Pedro Malasartes é o andarilho engenhoso que usa da lábia afiada e de truques cômicos para desmascarar patrões gananciosos e sobreviver à míngua.",
+        "classification": "Encantado",
+        "rarity_tier": "raro",
+        "threat_level": "baixo",
+        "element_primary": "misticismo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste",
+            "Centro-Oeste",
+            "Sudeste",
+            "Sul"
+        ],
+        "estados": [
+            "CE",
+            "PB",
+            "PE"
+        ],
+        "biomas": [
+            "caatinga",
+            "cerrado",
+            "mata_atlantica",
+            "pampa"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/pedro-malasartes/covers/pedro-malasartes-cover.webp"
+    },
+    {
+        "slug": "rasga-mortalha",
+        "nome": "Rasga-Mortalha",
+        "titulo": "O Arauto do Fim",
+        "descricao_curta": "A mais temida ave de agouro do Norte e Nordeste brasileiro. A Rasga-Mortalha é uma coruja de aspecto espectral e voo silencioso cujo grito cortante assemelha-se ao som de seda ou pano grosso sendo violentamente rasgado. Quando sobrevoa em círculos o telhado de uma casa onde repousa um enfermo, o saber popular decreta que a morte virá buscá-lo antes do findar da lua.",
+        "classification": "Assombração",
+        "rarity_tier": "comum",
+        "threat_level": "alto",
+        "element_primary": "ar",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Norte",
+            "Nordeste"
+        ],
+        "estados": [
+            "AL",
+            "BA",
+            "CE",
+            "MA",
+            "PA",
+            "PB",
+            "PE",
+            "RN"
+        ],
+        "biomas": [
+            "amazonia",
+            "caatinga",
+            "cerrado"
+        ],
+        "origens": [
+            "iberica"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/rasga-mortalha/covers/rasga-mortalha-cover.webp"
+    },
+    {
+        "slug": "sopinha-e-cu-de-fogo",
+        "nome": "Sopinha e Cu de Fogo",
+        "titulo": "Um Derruba, o Outro Queima",
+        "descricao_curta": "Personagens da tradição oral potiguara do litoral norte da Paraíba, narrados por Orlando Soares. Sopinha e Cu de Fogo são responsáveis pelo corte das árvores: um derruba a mata e o outro põe fogo nela. Para a pesquisadora Milena Veríssimo Barbosa, a história atribui a destruição da mata não só a pessoas, indígenas ou brancas, mas a entes que colaboram com ela.",
+        "classification": "Encantado",
+        "rarity_tier": "raro",
+        "threat_level": "medio",
+        "element_primary": "fogo",
+        "element_secondary": "terra",
+        "regioes": [
+            "Nordeste"
+        ],
+        "estados": [
+            "PB"
+        ],
+        "biomas": [
+            "mata_atlantica"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": null
+    },
+    {
+        "slug": "sume",
+        "nome": "Sumé",
+        "titulo": "Sumé: O Benfeitor Mítico e Mestre da Agricultura",
+        "descricao_curta": "Herói civilizador e mestre mítico primordial das nações tupi-guaranis, Sumé ensinou a agricultura da mandioca, o uso do fogo ordenado e as regras de convívio social antes de desaparecer pelo mar.",
+        "classification": "Encantado",
+        "rarity_tier": "epico",
+        "threat_level": "baixo",
+        "element_primary": "terra",
+        "element_secondary": "misticismo",
+        "regioes": [
+            "Nordeste",
+            "Sudeste",
+            "Sul"
+        ],
+        "estados": [
+            "AL",
+            "PB"
+        ],
+        "biomas": [
+            "mata_atlantica",
+            "caatinga"
+        ],
+        "origens": [
+            "indigena"
+        ],
+        "imagem": "https://encantaria-public.s3.g.megas4.com/qawjy5c5yxqxn42obkcrvqx3yreezkg3l5raj/sume/covers/sume-cover.webp"
+    }
+]
