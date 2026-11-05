@@ -216,6 +216,7 @@ print("CONSULTA 8 - INSERT DATA")
 print("=" * 60)
 
 print("Indivíduo temporário inserido.")
+print("Total de triplas após a inserção:", len(g))
 
 for tripla in g.triples((EX.teste_sparql, None, None)):
     print(tripla)
@@ -278,6 +279,27 @@ for tripla in g.triples((EX.teste_sparql, None, None)):
     print(tripla)
 
 print("Total de triplas após a remoção:", len(g))
+
+
+# ============================================================
+# 13. CONSULTA 11 - ASK: UMA PERGUNTA COM RESPOSTA FALSA
+# ============================================================
+
+consulta_11 = """
+PREFIX ex: <https://w3id.org/folclore-paraibano/ontology#>
+
+ASK {
+    ex:aipo-e-tambia ex:possuiEstado ex:Estado_rs .
+}
+"""
+
+resultado_11 = g.query(consulta_11)
+
+print("\n" + "=" * 60)
+print("CONSULTA 11 - AIPÓ E TAMBIÁ ESTÁ ASSOCIADA AO RIO GRANDE DO SUL?")
+print("=" * 60)
+
+print(bool(resultado_11))
 # ============================================================
 # FINALIZAÇÃO
 # ============================================================
