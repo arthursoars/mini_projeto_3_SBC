@@ -12,14 +12,14 @@ A base reúne **32 entidades do folclore brasileiro associadas ao estado da Para
 
 Os dados vêm da API pública **Encantaria Digital** (`https://encantariadigital.com.br/api/v1/lendas`). A coleta percorreu todas as páginas da listagem, ficou com as entidades cujo campo `estados` contém `PB` e depois baixou a ficha completa de cada uma.
 
-| Item | Quantidade | Mínimo exigido |
-|---|---:|---:|
-| Classes (`owl:Class`) | 19 | 8 |
-| Propriedades de objeto | 15 | 5 |
-| Propriedades de dados | 24 | 5 |
-| Indivíduos (instâncias) | 407 | 25 |
-| Triplas no arquivo `.ttl` | 2.845 | 50 |
-| Construções OWL | 5 tipos (8 usos) | 5 |
+| Item | Quantidade |
+|---|---:|
+| Classes (`owl:Class`) | 19 |
+| Propriedades de objeto | 15 |
+| Propriedades de dados | 24 | 
+| Indivíduos (instâncias) | 407 |
+| Triplas no arquivo `.ttl` | 2.845 |
+| Construções OWL | 5 tipos (8 usos) |
 
 ### Sobre as 78 entidades e as 46 "referências"
 
